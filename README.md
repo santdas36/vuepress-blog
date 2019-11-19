@@ -21,7 +21,8 @@
 
 - [Documentation](https://vp-modern-docs.z3by.com) - clone this repo and run `yarn && yarn docs:dev`
 - [Live Example](https://vp-modern.z3by.com/) - clone this repo and run `yarn && yarn example:dev`
-
+- [Boilerplate](https://github.com/z3by/vuepress-blog-template)
+- [Tutorial](https://www.ahmadmostafa.com/2019/10/14/vuepress-modern-blog-theme/)
 
 ## Install
 
