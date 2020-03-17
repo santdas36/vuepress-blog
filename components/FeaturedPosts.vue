@@ -8,7 +8,7 @@
       <el-carousel-item
         v-for="post in posts"
         :key="post.key"
-        class="bg-light bg-cover border-10"
+        class="bg-light bg-cover"
         :style="{'background-image': post.frontmatter.image ? `url(${post.frontmatter.image})`: 'none', 'background-blend-mode': 'multiply'}"
       >
         <div class="carousel-card-content d-flex justify-content-center align-items-center flex-column h-100">
