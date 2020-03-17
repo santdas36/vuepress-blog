@@ -8,7 +8,7 @@
         to="/"
         class="text-decoration-none col-md-12 col-lg-9"
       >
-        <h2 class="mx-3 font-dancing">
+        <h2 class="mx-3">
           {{ $site.title }}
         </h2>
       </router-link>
