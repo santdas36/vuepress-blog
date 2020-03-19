@@ -23,7 +23,7 @@
               class="w-100 rounded"
             >
           </div>
-          <div class="ui-post-body col-sm-12 col-md-8">
+          <div class="ui-post-body col-sm-12 col-md-8 px-sm-0 px-md-3">
             <h3 class="mt-3">
               <router-link
                 :to="post.path"
