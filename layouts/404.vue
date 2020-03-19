@@ -21,10 +21,9 @@
             <div>
               <h4>Oops...</h4>
               <p class="project-description">{{ getMsg }}</p>
-              <router-link
-                :to="/"
-                class="el-button el-button--primary"
-              ><i class="el-icon-house"></i> Take me home</router-link>
+              <RouterLink to="/" class="el-button el-button--primary">
+                <i class="el-icon-house"></i> Take me home
+              </RouterLink>
             </div>
           </el-card>
         </el-col>
