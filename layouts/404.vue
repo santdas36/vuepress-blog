@@ -1,16 +1,80 @@
 <template>
-  <div class="theme-container">
-    <div class="theme-default-content">
-      <h1>404</h1>
-
-      <blockquote>{{ getMsg() }}</blockquote>
-
-      <RouterLink to="/">
-        Take me home.
-      </RouterLink>
-    </div>
-  </div>
+  <el-container>
+    <el-main>
+      <el-row
+        :gutter="10"
+        align="center"
+      >
+        <el-col
+          :sm="24"
+          :md="12"
+          :lg="8"
+        >
+          <el-card class="card project-card">
+            <div
+              class="project-card-header"
+            >
+              <div class="project-icon">
+                <i class="el-icon-coffee"></i>
+              </div>
+            </div>
+            <div>
+              <h4>Oops...</h4>
+              <p class="project-description">{{ getMsg }}</p>
+            </div>
+          </el-card>
+        </el-col>
+      </el-row>
+    </el-main>
+  </el-container>
 </template>
+
+<style lang="stylus">
+.el-container {
+  max-width: 1100px;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  min-height: 80vh;
+
+  .project-card.card {
+    margin: 8px;
+    background-color: darken($accentColor, 50%);
+    color: lighten($accentColor, 80%);
+
+    .project-card-header {
+      display: flex;
+      margin-bottom 1rem;
+      justify-content: space-between;
+      align-items: center;
+
+      .project-icon {
+        font-size: 3em;
+        position: relative;
+        top: 0.3rem;
+        color: lighten($accentColor, 50%);
+      }
+    }
+
+    p.project-description {
+      color: lighten($accentColor, 60%);
+      margin: 1.5rem auto;
+    }
+
+    .languages-list {
+      list-style: none;
+      display: flex;
+      padding: 0;
+      margin: 0;
+      color: lighten($accentColor, 40%);
+      font-family: monospace;
+
+      li {
+        padding: 0 5px;
+      }
+    }
+  }
+}
+</style>
 
 <script>
 const msgs = [
