@@ -8,7 +8,7 @@
       <el-carousel-item
         v-for="post in posts"
         :key="post.key"
-        class="bg-light bg-cover"
+        class="bg-light bg-cover citem"
         :style="{'background-image': post.frontmatter.image ? `url(${post.frontmatter.image})`: 'none'}"
       >
         <div class="carousel-card-content d-flex justify-content-center align-items-center flex-column h-100">
@@ -38,7 +38,7 @@ export default {
 .featured-posts {
   margin-top: -5rem;
 }
-.el-carousel-item {
+.citem {
   box-shadow: 0 2rem 2rem rgba(0,0,0,0.2);
 }
 </style>
