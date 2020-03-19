@@ -40,7 +40,7 @@
           title="Latest Posts"
         />
 
-        <div class="d-flex">
+        <div class="d-flex align-items-center justify-content-center">
           <component
             v-if="$pagination.length > 1 && paginationComponent"
             :is="paginationComponent"
