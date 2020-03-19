@@ -18,11 +18,11 @@ module.exports = (themeConfig, ctx) => {
       {
         id: "post",
         dirname: "_posts",
-        path: "/post",
+        path: "/",
         // layout: 'IndexPost', defaults to `Layout.vue`
         itemLayout: "Post",
         frontmatter: { title: "Home" },
-        itemPermalink: "/:year/:month/:day/:slug",
+        itemPermalink: "/post/:year/:month/:day/:slug",
         pagination: {
           lengthPerPage: 10
         }

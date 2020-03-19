@@ -39,7 +39,7 @@ module.exports = {
       },
       {
         text: "Posts",
-        link: "/posts/",
+        link: "/post/",
         icon: "el-icon-user",
         meta: {
           auth: true
