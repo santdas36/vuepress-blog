@@ -3,7 +3,7 @@
     <el-autocomplete
       v-model="state"
       :fetch-suggestions="querySearchAsync"
-      placeholder="Please input"
+      placeholder="Search..."
       @select="handleSelect"
       prefix-icon="el-icon-search"
       class="d-flex flex-grow-1"
@@ -16,7 +16,7 @@
 export default {
   data () {
     return {
-      query: 'f',
+      query: '',
       state: '',
     }
   },
