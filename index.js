@@ -18,7 +18,7 @@ module.exports = (themeConfig, ctx) => {
       {
         id: "post",
         dirname: "_posts",
-        path: "/",
+        path: "/post",
         // layout: 'IndexPost', defaults to `Layout.vue`
         itemLayout: "Post",
         frontmatter: { title: "Home" },
