@@ -35,15 +35,15 @@ module.exports = {
       {
         text: "Home",
         link: "/",
-        meta: {
-          auth: true
-        },
         icon: "el-icon-house"
       },
       {
-        text: "About",
-        link: "/about/",
-        icon: "el-icon-user"
+        text: "Posts",
+        link: "/posts/",
+        icon: "el-icon-user",
+        meta: {
+          auth: true
+        }
       },
       {
         text: "Projects",
