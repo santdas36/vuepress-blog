@@ -7,7 +7,7 @@
       <h1 class="font-dancing">{{ $site.title }}</h1>
       <h2>{{ $site.description }}</h2>
     </header>
-    <featured-posts class="mb-5"></featured-posts>
+    <featured-posts class="mb-5 mx-2"></featured-posts>
     <div class="row container-fluid flex-row-reverse">
       <aside class="col-sm-12 col-lg-3">
         <div>
