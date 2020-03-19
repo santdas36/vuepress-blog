@@ -59,6 +59,6 @@ export default {
       color: lighten($accentColor, 60%);
       margin: 1.5rem auto;
     }
-  }
+  
 }
 </style>
