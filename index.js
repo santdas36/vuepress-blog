@@ -30,7 +30,7 @@ module.exports = (themeConfig, ctx) => {
     ],
     frontmatters: [
       {
-        id: "tag",
+        id: "Category",
         keys: ["tag", "tags"],
         path: "/tag/",
         // layout: 'Tag',  defaults to `FrontmatterKey.vue`
