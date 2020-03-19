@@ -21,6 +21,10 @@
             <div>
               <h4>Oops...</h4>
               <p class="project-description">{{ getMsg }}</p>
+              <router-link
+                :to="/"
+                class="el-button el-button--primary"
+              ><i class="el-icon-house"></i> Take me home</router-link>
             </div>
           </el-card>
         </el-col>
@@ -28,6 +32,23 @@
     </el-main>
   </el-container>
 </template>
+
+<script>
+const msgs = [
+  `There's nothing here.`,
+  `How did we get here?`,
+  `That's a Four-Oh-Four.`,
+  `Looks like we've got some broken links.`
+]
+
+export default {
+  methods: {
+    getMsg () {
+      return msgs[Math.floor(Math.random() * msgs.length)]
+    }
+  }
+}
+</script>
 
 <style lang="stylus">
 .el-container {
@@ -58,6 +79,7 @@
     p.project-description {
       color: lighten($accentColor, 60%);
       margin: 1.5rem auto;
+      padding-bottom: 2rem;
     }
 
     .languages-list {
@@ -75,20 +97,3 @@
   }
 }
 </style>
-
-<script>
-const msgs = [
-  `There's nothing here.`,
-  `How did we get here?`,
-  `That's a Four-Oh-Four.`,
-  `Looks like we've got some broken links.`
-]
-
-export default {
-  methods: {
-    getMsg () {
-      return msgs[Math.floor(Math.random() * msgs.length)]
-    }
-  }
-}
-</script>
