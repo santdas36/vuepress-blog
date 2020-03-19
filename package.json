@@ -1,7 +1,7 @@
 {
-  "name": "vuepress-theme-modern-blog",
-  "version": "2.0.4",
-  "description": "Modern blog theme for VuePress",
+  "name": "vuepress-site",
+  "version": "0.1",
+  "description": "Site Description goes here",
   "main": "index.js",
   "files": [
     "index.js",
@@ -31,13 +31,13 @@
     "prepublishOnly": "npm run example:build && conventional-changelog -p angular -r 2 -i CHANGELOG.md -s"
   },
   "repository": {
-    "url": "z3by/vuepress-theme-modern-blog",
+    "url": "santdas/vuepress-theme-modern-blog-1",
     "type": "git"
   },
   "author": {
-    "email": "zoaby.am@gmail.com",
-    "name": "Ahmad Mostafa",
-    "url": "https://ahmadmostafa.com"
+    "email": "santdas36@gmail.com",
+    "name": "Dash Santosh",
+    "url": "http://santdas.tk"
   },
   "license": "MIT",
   "dependencies": {

@@ -9,7 +9,7 @@
         v-for="post in posts"
         :key="post.key"
         class="bg-light bg-cover"
-        :style="{'background-image': post.frontmatter.image ? `url(${post.frontmatter.image})`: 'none', 'background-blend-mode': 'multiply'}"
+        :style="{'background-image': post.frontmatter.image ? `url(${post.frontmatter.image})`: 'none'}"
       >
         <div class="carousel-card-content d-flex justify-content-center align-items-center flex-column h-100">
           <h2 class="story-title text-light text-center h3 mb-3">{{ post.title }}</h2>
@@ -37,5 +37,6 @@ export default {
 <style lang="stylus" scoped>
 .featured-posts {
   margin-top: -5rem;
+  box-shadow: 0 2rem 2rem rgba(0,0,0,0.2);
 }
 </style>

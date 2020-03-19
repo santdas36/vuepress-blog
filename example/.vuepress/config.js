@@ -1,6 +1,6 @@
 module.exports = {
-  title: "VuePress Blog Example",
-  description: "This is a blog example built by VuePress",
+  title: "Site Name",
+  description: "Site Description goes here",
   theme: require.resolve("../../"),
   themeConfig: {
     summary: true,
@@ -36,7 +36,7 @@ module.exports = {
       contact: [
         {
           type: "github",
-          link: "https://github.com/z3by"
+          link: "#"
         },
         {
           type: "instagram",
@@ -57,7 +57,7 @@ module.exports = {
           link: "https://policies.google.com/privacy?hl=en-US"
         },
         {
-          text: "MIT Licensed | Copyright © 2018-present Vue.js",
+          text: "Copyright © 2020 SantDas",
           link: ""
         }
       ]
