@@ -48,17 +48,15 @@ export default {
   margin-right: auto !important;
   margin-left: auto !important;
   min-height: 80vh;
+}
+.el-container .project-card.card {
+  margin: 8px;
+  background-color: darken($accentColor, 50%);
+  color: lighten($accentColor, 80%);
+}
 
-  .project-card.card {
-    margin: 8px;
-    background-color: darken($accentColor, 50%);
-    color: lighten($accentColor, 80%);
-    }
-
-    p.err-msg {
-      color: lighten($accentColor, 60%);
-      margin: 1.5rem auto;
-    }
-  
+.el-container .project-card.card p.err-msg {
+  color: lighten($accentColor, 60%);
+  margin: 1.5rem auto;
 }
 </style>
