@@ -5,7 +5,7 @@
       <el-card
         v-for="post in posts"
         :key="post.key"
-        class="my-3 cursor-pointer"
+        class="my-3 my-sm-1 cursor-pointer"
         :body-style="{ padding: '.5rem' }"
         shadow="hover"
       >

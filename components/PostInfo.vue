@@ -28,7 +28,7 @@ export default {
 </script>
 
 <style lang="stylus">
-div.post-info-item {
+div.post-info-item:not(last-child) {
   margin-right: 1rem;
   font-size: .8rem;
 
