@@ -44,15 +44,10 @@
 </template>
 
 <script>
-import SearchBox from "./SearchBox";
+import SearchBox from '@SearchBox';
 
 export default {
-  components: { SearchBox },
-  data () {
-    return {
-      activeIndex: '0',
-    };
-  },
+  components: { SearchBox }
 };
 </script>
 
