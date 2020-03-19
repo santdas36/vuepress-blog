@@ -20,9 +20,9 @@
             </div>
             <div>
               <h4>Oops...</h4>
-              <p class="project-description">{{ getMsg }}</p>
+              <p class="project-description">{{ getMsg() }}</p>
               <RouterLink to="/" class="el-button el-button--primary">
-                <i class="el-icon-house"></i> Take me home
+                <i class="el-icon-house"></i> &nbsp; Take me home
               </RouterLink>
             </div>
           </el-card>
@@ -78,20 +78,7 @@ export default {
     p.project-description {
       color: lighten($accentColor, 60%);
       margin: 1.5rem auto;
-      padding-bottom: 2rem;
-    }
-
-    .languages-list {
-      list-style: none;
-      display: flex;
-      padding: 0;
-      margin: 0;
-      color: lighten($accentColor, 40%);
-      font-family: monospace;
-
-      li {
-        padding: 0 5px;
-      }
+      padding-bottom: 1rem;
     }
   }
 }
