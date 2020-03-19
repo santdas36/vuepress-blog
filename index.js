@@ -53,7 +53,6 @@ module.exports = (themeConfig, ctx) => {
     "disqus",
     "seo",
     "reading-time",
-    "vuepress-auth0",
     "smooth-scroll",
     "reading-progress",
     "@vuepress/medium-zoom",
