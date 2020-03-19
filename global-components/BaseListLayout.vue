@@ -95,7 +95,7 @@ export default {
 }
 
 header.home-hero {
-  height: 680px;
+  height: 100%;
   background-size: cover;
   background-color: #aaa;
   background-attachment: fixed;
