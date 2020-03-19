@@ -39,6 +39,6 @@ export default {
   margin-top: -5rem;
 }
 .citem {
-  box-shadow: 0 2rem 2rem rgba(0,0,0,0.2);
+  box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.2);
 }
 </style>
