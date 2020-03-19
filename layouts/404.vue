@@ -8,7 +8,7 @@
         <el-col
           :sm="24"
           :md="12"
-          :lg="8"
+          :lg="12"
         >
           <el-card class="card project-card">
             <div
