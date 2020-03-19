@@ -37,6 +37,8 @@ export default {
 <style lang="stylus" scoped>
 .featured-posts {
   margin-top: -5rem;
+}
+.el-carousel-item {
   box-shadow: 0 2rem 2rem rgba(0,0,0,0.2);
 }
 </style>
