@@ -98,7 +98,6 @@ header.home-hero {
   height: 680px;
   background-size: cover;
   background-color: #aaa;
-  background-blend-mode: multiply;
   background-attachment: fixed;
   background-position: center;
   display: flex;

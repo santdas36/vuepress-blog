@@ -36,9 +36,9 @@ export default {
 
 <style lang="stylus" scoped>
 .featured-posts {
-  margin-top: -5rem;
+  margin-top: 1rem;
 }
 .citem {
-  box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.2);
+  box-shadow: 0 0.25rem 1rem rgba(0,0,0,0.2);
 }
 </style>
