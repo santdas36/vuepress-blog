@@ -3,7 +3,7 @@
     <el-carousel
       :interval="4000"
       type="card"
-      height="400px"
+      height="300px"
     >
       <el-carousel-item
         v-for="post in posts"
@@ -36,7 +36,7 @@ export default {
 
 <style lang="stylus" scoped>
 .featured-posts {
-  margin-top: 1rem;
+  margin-top: -3rem;
 }
 .citem {
   box-shadow: 0 0.25rem 1rem rgba(0,0,0,0.2);

@@ -95,7 +95,7 @@ export default {
 }
 
 header.home-hero {
-  height: 100%;
+  height: 420px;
   background-size: cover;
   background-color: #aaa;
   background-attachment: fixed;
@@ -109,6 +109,7 @@ header.home-hero {
     margin: 0;
     font-size: 4em;
     text-align: center;
+    text-shadow: 3px 3px 4px rgba(0,0,0,0.25);
 
     @media (max-width: 600px) {
       font-size: 2em;
@@ -122,6 +123,7 @@ header.home-hero {
     margin-right: auto;
     margin-left: auto;
     font-weight: 300;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.25);
   }
 }
 </style>
