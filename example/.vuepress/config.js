@@ -1,3 +1,5 @@
+const Auth = require('vuepress-auth0'); 
+
 module.exports = {
   head: [ 
     ['link', { rel: 'icon', href: '/logo.png' }], 
@@ -16,7 +18,12 @@ module.exports = {
         serviceWorker: true, 
         updatePopup: true 
       } 
-    ]
+    ],
+    [Auth, { 
+        domain: 'https://example.auth0.com', 
+        redirectUri: 'https://example.auth0.com/callback.html',
+        clientID: 'sdf2345234fgdf345vsfkdid843kjf89fcie8',
+    }],
   ],
   pwa: true,
   title: "Site Name",
@@ -28,6 +35,9 @@ module.exports = {
       {
         text: "Home",
         link: "/",
+        meta: {
+          auth: true
+        },
         icon: "el-icon-house"
       },
       {
@@ -48,8 +58,8 @@ module.exports = {
     socialShareNetworks: ["facebook", "twitter"], // required for social share plugin
     googleAnalytics: "", // Google Analytics tracking ID
     about: {
-      fullName: "Ahmad Mostafa",
-      bio: "I am a passionate Software Engineer, I love Vue.js ♥ ...",
+      fullName: "What do we have here...",
+      bio: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas",
       image: "https://www.ahmadmostafa.com/images/bg_1.png"
     },
     footer: {
