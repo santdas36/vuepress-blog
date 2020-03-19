@@ -7,7 +7,7 @@
       >
         <el-col
           :sm="24"
-          :md="12"
+          :md="18"
           :lg="18"
         >
           <el-card class="card project-card">
