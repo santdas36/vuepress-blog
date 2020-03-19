@@ -78,7 +78,8 @@ export default {
     p.project-description {
       color: lighten($accentColor, 60%);
       margin: 1.5rem auto;
-      font-size: 3.5em;
+      font-size: 2em;
+      font-weight: 700;
       padding-bottom: 1rem;
     }
   }
