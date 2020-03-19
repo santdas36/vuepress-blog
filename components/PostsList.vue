@@ -14,7 +14,7 @@
           @click="go(post.path)"
         >
           <div
-            class="ui-post-image col-sm-12 col-md-4"
+            class="ui-post-image col-sm-12 col-md-4 mt-md-3 mt-sm-0"
             v-if="post.frontmatter.image"
           >
             <img
