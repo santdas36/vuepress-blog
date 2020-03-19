@@ -1,5 +1,5 @@
 <template>
-  <main class="px-5">
+  <main class="px-md-5 px-sm-2 w-100 align-items-center justify-content-center">
     <h2>{{title}}</h2>
     <div class="container px-0">
       <el-card
@@ -23,7 +23,7 @@
               class="w-100 rounded"
             >
           </div>
-          <div class="ui-post-body col-sm-12 col-md-8 px-sm-0 px-md-3">
+          <div class="ui-post-body col-sm-12 col-md-8">
             <h3 class="mt-3">
               <router-link
                 :to="post.path"
