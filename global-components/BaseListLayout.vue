@@ -34,7 +34,7 @@
           </ul>
         </div>
       </aside>
-      <div class="col-sm-12 col-lg-9">
+      <div class="col-sm-12 col-lg-9 w-100 align-items-center justify-content-center">
         <PostsList
           :posts="pages"
           title="Latest Posts"
