@@ -21,6 +21,7 @@ module.exports = {
         icon: "el-icon-folder"
       }
     ],
+    pwa: true,
     sitemap: true, // enables sitemap plugin
     hostname: "https://ahmadmostafa.com/", // required for sitemap
     disqus: "disquswebsiteshortname", // if you want to incorporate Disqus for comments replace this value else just get rid of it
