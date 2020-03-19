@@ -20,9 +20,9 @@ module.exports = {
       } 
     ],
     [Auth, { 
-        domain: 'https://example.auth0.com', 
+        domain: 'vuetest36.auth0.com', 
         redirectUri: 'https://example.auth0.com/callback.html',
-        clientID: 'sdf2345234fgdf345vsfkdid843kjf89fcie8',
+        clientID: 'nhdYSDCI905iA6vpWomMhL8uHL88c3eu',
     }],
   ],
   pwa: true,
