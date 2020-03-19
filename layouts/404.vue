@@ -1,29 +1,15 @@
 <template>
-  <el-container>
-    <el-main>
-      <el-row
-        :gutter="10"
-        align="center"
-      >
-        <el-col
-          :sm="24"
-          :md="12"
-          :lg="12"
-        >
-          <el-card class="card project-card">
-            <div>
-              <h4>Oops...</h4>
-              <p class="err-msg">{{ getMsg }}</p>
-              <router-link
-              :to="/"
-              class="el-button el-button--primary"
-              ><i class="el-icon-house"></i> Take me home</router-link>     
-            </div>
-          </el-card>
-        </el-col>
-      </el-row>
-    </el-main>
-  </el-container>
+  <div class="theme-container">
+    <div class="theme-default-content">
+      <h1>404</h1>
+
+      <blockquote>{{ getMsg() }}</blockquote>
+
+      <RouterLink to="/">
+        Take me home.
+      </RouterLink>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -42,22 +28,3 @@ export default {
   }
 }
 </script>
-
-<style lang="stylus">
-.el-container {
-  max-width: 1100px;
-  margin-right: auto !important;
-  margin-left: auto !important;
-  min-height: 80vh;
-}
-.el-container .project-card.card {
-  margin: 8px;
-  background-color: darken($accentColor, 50%);
-  color: lighten($accentColor, 80%);
-}
-
-.el-container .project-card.card p.err-msg {
-  color: lighten($accentColor, 60%);
-  margin: 1.5rem auto;
-}
-</style>
