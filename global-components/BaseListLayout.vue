@@ -8,7 +8,7 @@
       <h2>{{ $site.description }}</h2>
     </header>
     <featured-posts class="mb-5 mx-2"></featured-posts>
-    <div class="row container-fluid flex-row-reverse">
+    <div class="row container-fluid flex-row-reverse w-100 align-items-center justify-content-center">
       <aside class="col-sm-12 col-lg-3">
         <div>
           <h3>Tags</h3>
@@ -34,7 +34,7 @@
           </ul>
         </div>
       </aside>
-      <div class="col-sm-12 col-md-12 col-lg-9">
+      <div class="col-sm-12 col-lg-9">
         <PostsList
           :posts="pages"
           title="Latest Posts"
