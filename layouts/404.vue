@@ -17,7 +17,7 @@
               <router-link
               :to="/"
               class="el-button el-button--primary"
-              ><i class="el-icon-house"></i> Take me home!</router-link>     
+              ><i class="el-icon-house"></i> Take me home</router-link>     
             </div>
           </el-card>
         </el-col>
@@ -42,6 +42,7 @@ export default {
   }
 }
 </script>
+
 <style lang="stylus">
 .el-container {
   max-width: 1100px;
