@@ -16,7 +16,7 @@ module.exports = (themeConfig, ctx) => {
   const defaultBlogPluginOptions = {
     directories: [
       {
-        id: "Posts",
+        id: "post",
         dirname: "_posts",
         path: "/",
         // layout: 'IndexPost', defaults to `Layout.vue`
@@ -30,7 +30,7 @@ module.exports = (themeConfig, ctx) => {
     ],
     frontmatters: [
       {
-        id: "Category",
+        id: "tag",
         keys: ["tag", "tags"],
         path: "/tag/",
         // layout: 'Tag',  defaults to `FrontmatterKey.vue`
