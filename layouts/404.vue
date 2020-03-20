@@ -84,8 +84,8 @@ export default {
       padding-bottom: 1rem;
     }
     .errDivider{
-      background: darken($accentColor, 50%);
-      width: 45%;
+      background: lighten($accentColor, 50%);
+      width: 30%;
     }
   }
 }
