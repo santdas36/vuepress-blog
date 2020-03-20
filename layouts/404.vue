@@ -20,7 +20,7 @@
             </div>
             <div>
               <h4>Oops...</h4>
-              <p class="project-description">{{ getMsg() }}</p>
+              <p class="errorMessage">{{ getMsg() }}</p>
               <RouterLink to="/" class="el-button el-button--primary">
                 <i class="el-icon-house"></i> &nbsp; Take me home
               </RouterLink>
@@ -75,7 +75,7 @@ export default {
       }
     }
 
-    p.project-description {
+    p.errorMessage {
       color: lighten($accentColor, 60%);
       margin: 1.5rem auto;
       font-size: 2em;
