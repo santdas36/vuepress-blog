@@ -9,9 +9,9 @@
     </header>
     <featured-posts class="mb-5 mx-2"></featured-posts>
     <div class="row container-fluid flex-row-reverse m-0 p-0">
-      <aside class="col-sm-12 col-lg-3">
+      <aside class="col-sm-12 col-lg-3 mx-auto">
         <div>
-          <h3>Tags</h3>
+          <h3>Categories</h3>
           <ul class="list-unstyled">
             <li
               v-for="tag in tags"
