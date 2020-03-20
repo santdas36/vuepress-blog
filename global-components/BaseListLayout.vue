@@ -126,9 +126,6 @@ header.home-hero {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.25);
   }
 }
-.tag-li .item {
-  background: $accentColor;
-}
 </style>
 
 
