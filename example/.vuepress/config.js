@@ -24,7 +24,7 @@ module.exports = {
     ],
     [Auth, { 
         domain: 'vuetest36.auth0.com', 
-        redirectUri: 'https://example.auth0.com/callback.html',
+        redirectUri: 'https://stoic-gates-d38a79.netlify.com/callback.html',
         clientID: 'nhdYSDCI905iA6vpWomMhL8uHL88c3eu',
     }],
   ],
