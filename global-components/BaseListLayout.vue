@@ -20,6 +20,7 @@
             >
               <el-badge
                 :value="tag.pages.length"
+                type="primary"
                 class="item"
               >
                 <router-link
