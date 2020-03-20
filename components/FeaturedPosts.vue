@@ -6,7 +6,8 @@
       height="300px"
     >
       <el-carousel-item
-        v-for="post in posts"
+        v-for="(post,index) in posts"
+        v-if="index <= 4"
         :key="post.key"
         class="bg-light bg-cover citem"
         :style="{'background-image': post.frontmatter.image ? `url(${post.frontmatter.image})`: 'none'}"
