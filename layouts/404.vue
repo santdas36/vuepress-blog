@@ -20,6 +20,7 @@
             </div>
             <div>
               <h4>Oops...</h4>
+              <hr>
               <p class="errorMessage">{{ getMsg() }}</p>
               <RouterLink to="/" class="el-button el-button--primary">
                 <i class="el-icon-house"></i> &nbsp; Take me home
