@@ -11,7 +11,7 @@ module.exports = (themeConfig, ctx) => {
   });
 
   themeConfig.heroImage =
-    themeConfig.heroImage || "https://source.unsplash.com/random/800x600";
+    themeConfig.heroImage || "/images/hero.jpeg";
 
   const defaultBlogPluginOptions = {
     directories: [
