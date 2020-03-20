@@ -8,9 +8,9 @@
       <h2>{{ $site.description }}</h2>
     </header>
     <featured-posts class="mb-5 mx-2"></featured-posts>
-    <div class="row container-fluid flex-row-reverse d-flex align-items-center justify-content-center">
+    <div class="row container-fluid flex-row-reverse mr-0 pr-0">
       <aside class="col-sm-12 col-lg-3">
-        <div class="ml-1">
+        <div>
           <h3>Tags</h3>
           <ul class="list-unstyled">
             <li
