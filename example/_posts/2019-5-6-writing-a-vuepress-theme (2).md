@@ -2,16 +2,15 @@
 date: 2019-5-6
 tags: 
   - theme
-  - blog
-  - vuepress
-author: ULIVZ
-location: Shanghai
-title: Writing a VuePress theme
+  - see
+  - through
+author: Vassaul
+location: See through
+title: Can I do it?
 image: https://source.unsplash.com/random/800x600
-featured: true
 ---
 
-# Writing a VuePress theme
+# Can I do it?
 
 To write a theme, create a `.vuepress/theme` directory in your docs root, and then create a `Layout.vue` file:
 

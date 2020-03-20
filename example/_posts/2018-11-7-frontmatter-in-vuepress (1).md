@@ -1,130 +1,244 @@
 ---
 date: 2018-11-7
 tags:
-  - frontmatter
-  - vuepress
-author: ULIVZ
-location: Hangzhou
-title: Front Matter in VuePress
+  - lorem
+  - iosum
+author: lipsum
+location: Latin
+title: Lipsum
 image: https://source.unsplash.com/random/800x600
-featured: true
 ---
 
-# Front Matter in VuePress
+# h1 Heading 8-)
+## h2 Heading
+### h3 Heading
+#### h4 Heading
+##### h5 Heading
+###### h6 Heading
 
-Any markdown file that contains a YAML front matter block will be processed by [gray-matter](https://github.com/jonschlinkert/gray-matter). The front matter must be the first thing in the markdown file and must take the form of valid YAML set between triple-dashed lines. Here is a basic example:
 
-```markdown
+## Horizontal Rules
+
+___
+
 ---
-title: Blogging Like a Hacker
-lang: en-US
----
+
+***
+
+
+## Typographic replacements
+
+Enable typographer option to see result.
+
+(c) (C) (r) (R) (tm) (TM) (p) (P) +-
+
+test.. test... test..... test?..... test!....
+
+!!!!!! ???? ,,  -- ---
+
+"Smartypants, double quotes" and 'single quotes'
+
+
+## Emphasis
+
+**This is bold text**
+
+__This is bold text__
+
+*This is italic text*
+
+_This is italic text_
+
+~~Strikethrough~~
+
+
+## Blockquotes
+
+
+> Blockquotes can also be nested...
+>> ...by using additional greater-than signs right next to each other...
+> > > ...or with spaces between arrows.
+
+
+## Lists
+
+Unordered
+
++ Create a list by starting a line with `+`, `-`, or `*`
++ Sub-lists are made by indenting 2 spaces:
+  - Marker character change forces new list start:
+    * Ac tristique libero volutpat at
+    + Facilisis in pretium nisl aliquet
+    - Nulla volutpat aliquam velit
++ Very easy!
+
+Ordered
+
+1. Lorem ipsum dolor sit amet
+2. Consectetur adipiscing elit
+3. Integer molestie lorem at massa
+
+
+1. You can use sequential numbers...
+1. ...or keep all the numbers as `1.`
+
+Start numbering with offset:
+
+57. foo
+1. bar
+
+
+## Code
+
+Inline `code`
+
+Indented code
+
+    // Some comments
+    line 1 of code
+    line 2 of code
+    line 3 of code
+
+
+Block code "fences"
+
+```
+Sample text here...
 ```
 
-Between these triple-dashed lines, you can set predefined variables (see [below](#predefined-variables) for a reference), or even create custom ones of your own. These variables will then be available to you to access using <code>[$frontmatter](./global-computed.md#frontmatter)</code> at the rest of the page, plus all custom and theming components.
+Syntax highlighting
 
-::: tip
-Front matter variables are **optional** in VuePress.
+``` js
+var foo = function (bar) {
+  return bar++;
+};
+
+console.log(foo(5));
+```
+
+## Tables
+
+| Option | Description |
+| ------ | ----------- |
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default. |
+| ext    | extension to be used for dest files. |
+
+Right aligned columns
+
+| Option | Description |
+| ------:| -----------:|
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default. |
+| ext    | extension to be used for dest files. |
+
+
+## Links
+
+[link text](http://dev.nodeca.com)
+
+[link with title](http://nodeca.github.io/pica/demo/ "title text!")
+
+Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
+
+
+## Images
+
+![Minion](https://octodex.github.com/images/minion.png)
+![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
+
+Like links, Images also have a footnote style syntax
+
+![Alt text][id]
+
+With a reference later in the document defining the URL location:
+
+[id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
+
+
+## Plugins
+
+The killer feature of `markdown-it` is very effective support of
+[syntax plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin).
+
+
+### [Emojies](https://github.com/markdown-it/markdown-it-emoji)
+
+> Classic markup: :wink: :crush: :cry: :tear: :laughing: :yum:
+>
+> Shortcuts (emoticons): :-) :-( 8-) ;)
+
+see [how to change output](https://github.com/markdown-it/markdown-it-emoji#change-output) with twemoji.
+
+
+### [Subscript](https://github.com/markdown-it/markdown-it-sub) / [Superscript](https://github.com/markdown-it/markdown-it-sup)
+
+- 19^th^
+- H~2~O
+
+
+### [\<ins>](https://github.com/markdown-it/markdown-it-ins)
+
+++Inserted text++
+
+
+### [\<mark>](https://github.com/markdown-it/markdown-it-mark)
+
+==Marked text==
+
+
+### [Footnotes](https://github.com/markdown-it/markdown-it-footnote)
+
+Footnote 1 link[^first].
+
+Footnote 2 link[^second].
+
+Inline footnote^[Text of inline footnote] definition.
+
+Duplicated footnote reference[^second].
+
+[^first]: Footnote **can have markup**
+
+    and multiple paragraphs.
+
+[^second]: Footnote text.
+
+
+### [Definition lists](https://github.com/markdown-it/markdown-it-deflist)
+
+Term 1
+
+:   Definition 1
+with lazy continuation.
+
+Term 2 with *inline markup*
+
+:   Definition 2
+
+        { some code, part of Definition 2 }
+
+    Third paragraph of definition 2.
+
+_Compact style:_
+
+Term 1
+  ~ Definition 1
+
+Term 2
+  ~ Definition 2a
+  ~ Definition 2b
+
+
+### [Abbreviations](https://github.com/markdown-it/markdown-it-abbr)
+
+This is HTML abbreviation example.
+
+It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
+
+*[HTML]: Hyper Text Markup Language
+
+### [Custom containers](https://github.com/markdown-it/markdown-it-container)
+
+::: warning
+*here be dragons*
 :::
-
-## Alternative Front Matter Formats
-
-In addition, VuePress also supports JSON or [TOML](https://github.com/toml-lang/toml) front matter.
-
-JSON front matter needs to start and end in curly braces:
-
-```
----
-{
-  "title": "Blogging Like a Hacker",
-  "lang": "en-US"
-}
----
-```
-
-TOML front matter needs to be explicitly marked as TOML:
-
-```
----toml
-title = "Blogging Like a Hacker"
-lang = "en-US"
----
-```
-
-
-## Predefined Variables
-
-### title
-
-- Type: `string`
-- Default: `h1_title || siteConfig.title`
-
-Title of current page.
-
-### lang
-
-- Type: `string`
-- Default: `en-US`
-
-Language of current page.
-
-### description
-
-- Type: `string`
-- Default: `siteConfig.description`
-
-Description of current page.
-
-### layout
-
-- Type: `string`
-- Default: `Layout`
-
-Set the layout component of the current page.
-
-### permalink
-
-- Type: `string`
-- Default: `siteConfig.permalink`
-
-Refer to: [Permalinks](./permalinks.md).
-
-### metaTitle
-
-- Type: `string`
-- Default: <code>\`${page.title} | ${siteConfig.title}\`</code>
-
-Override the default meta title.
-
-### meta
-
-- Type: `array`
-- Default: `undefined`
-
-Specify extra meta tags to be injected:
-
-``` yaml
----
-meta:
-  - name: description
-    content: hello
-  - name: keywords
-    content: super duper SEO
----
-```
-
-## Predefined Variables Powered By Default Theme
-
-### navbar
-
-- Type: `boolean`
-- Default: `undefined`
-
-See: [Default Theme Config > Disable the Navbar](../theme/default-theme-config.md#disable-the-navbar).
-
-### sidebar
-
-- Type: `boolean|'auto'`
-- Default: `undefined`
-
-See: [Default Theme Config > Sidebar](../theme/default-theme-config.md#sidebar).

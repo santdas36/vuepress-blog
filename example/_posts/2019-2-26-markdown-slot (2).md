@@ -1,17 +1,16 @@
 ---
 date: 2019-2-26
 tags: 
-  - markdown
-  - vuepress
-author: ULIVZ
-location: Hangzhou
-title: Markdown Slot
+  - social media
+  - chemistry
+author: Poleted
+location: Magic World
+title: See you now
 image: https://source.unsplash.com/random/800x600
-featured: true
 
 ---
 
-# Markdown Slot
+# See you now
 
 VuePress implements a content distribution API for Markdown. With this feature, you can split your document into multiple fragments to facilitate flexible composition in the layout component.
 

@@ -1,16 +1,15 @@
 ---
 date: 2018-11-7
 tags:
-  - frontmatter
-  - vuepress
-author: ULIVZ
-location: Hangzhou
-title: Front Matter in VuePress
+  - chemistry
+  - tutorial
+author: chem-dept
+location: china
+title: Tutorials
 image: https://source.unsplash.com/random/800x600
-featured: true
 ---
 
-# Front Matter in VuePress
+#  Tutorial in Chemicals
 
 Any markdown file that contains a YAML front matter block will be processed by [gray-matter](https://github.com/jonschlinkert/gray-matter). The front matter must be the first thing in the markdown file and must take the form of valid YAML set between triple-dashed lines. Here is a basic example:
 
