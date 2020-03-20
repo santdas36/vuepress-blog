@@ -1,6 +1,6 @@
 <template>
   <main class="px-md-5 px-lg-5 px-sm-0">
-    <h2>{{title}}</h2>
+    <h2 class="ml-md-3">{{title}}</h2>
     <div class="container px-0">
       <el-card
         v-for="post in posts"

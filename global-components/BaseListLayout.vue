@@ -11,7 +11,7 @@
     <div class="row container-fluid flex-row-reverse m-0 p-0">
       <aside class="col-sm-12 col-lg-3">
         <div>
-          <h3 class="ml-3">Tags</h3>
+          <h3>Tags</h3>
           <ul class="list-unstyled">
             <li
               v-for="tag in tags"
