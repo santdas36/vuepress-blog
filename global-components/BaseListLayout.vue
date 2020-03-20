@@ -16,7 +16,7 @@
             <li
               v-for="tag in tags"
               :key="tag.name"
-              class="d-inline-block mx-1 my-2"
+              class="d-inline-block mx-1 my-2 tag-li"
             >
               <el-badge
                 :value="tag.pages.length"
@@ -125,6 +125,9 @@ header.home-hero {
     font-weight: 300;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.25);
   }
+}
+.tag-li .item {
+  background: $accentColor;
 }
 </style>
 
