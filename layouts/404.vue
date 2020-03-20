@@ -20,7 +20,6 @@
             </div>
             <div>
               <h4>Oops...</h4>
-              <hr class="errDivider">
               <p class="errorMessage">{{ getMsg() }}</p>
               <RouterLink to="/" class="el-button el-button--primary">
                 <i class="el-icon-house"></i> &nbsp; Take me home
@@ -82,10 +81,6 @@ export default {
       font-size: 2em;
       font-weight: 700;
       padding-bottom: 1rem;
-    }
-    .errDivider{
-      background: lighten($accentColor, 50%);
-      width: 30%;
     }
   }
 }
