@@ -8,8 +8,8 @@
       <h2>{{ $site.description }}</h2>
     </header>
     <featured-posts class="mb-5 mx-2"></featured-posts>
-    <div class="row container-fluid flex-row-reverse m-0 p-0 justify-content-center">
-      <aside class="col-sm-12 col-lg-3 ml-0 ml-lg-n3 tags-container">
+    <div class="row container-fluid flex-row-reverse m-0 p-2 justify-content-center">
+      <aside class="col-sm-12 col-lg-3 ml-0 ml-lg-n3 px-3 px-lg-0">
         <div>
           <h3>Categories</h3>
           <ul class="list-unstyled">
@@ -93,9 +93,6 @@ export default {
   .content-wrapper {
     padding-bottom: 80px;
   }
-}
-.tags-container {
-max-width: 400px;
 }
 header.home-hero {
   height: 420px;
