@@ -15,7 +15,7 @@
     <el-input v-model="subscribe.email" placeholder="Email"></el-input>
   </el-form-item>
   <el-form-item>
-    <el-button type="primary" @click="submitForm('subscribe')">Subscribe</el-button>
+    <el-button size="small" type="primary" @click="submitForm('subscribe')">Subscribe</el-button>
   </el-form-item>
 </el-form>
 </div>
