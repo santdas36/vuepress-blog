@@ -48,7 +48,7 @@ export default {
     filter: blur(0);
   }
 }
-.el-carousel__item--card.is-in-stage {
+.el-carousel__item--card.is-active {
   filter: blur(0);
 }
 .el-carousel__mask {
