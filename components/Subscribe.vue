@@ -12,7 +12,7 @@
     label="Email"
     :rules="[
       { required: true, message: 'Please input your email address', trigger: 'blur' },
-      { type: 'email', message: 'Something's wrong', trigger: ['blur', 'change'] }
+      { type: 'email', message: 'Something is wrong', trigger: ['blur', 'change'] }
     ]"
   >
     <el-input v-model="subscribe.email"></el-input>
