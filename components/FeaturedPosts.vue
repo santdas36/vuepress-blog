@@ -41,16 +41,6 @@ export default {
 .citem {
   box-shadow: 0 0.25rem 1rem rgba(0,0,0,0.2);
 }
-.el-carousel__item--card {
-  filter: blur(3px);
-  
-  &:hover {
-    filter: blur(0);
-  }
-}
-.el-carousel__item--card.is-active {
-  filter: blur(0);
-}
 .el-carousel__mask {
   background: #000;
 }
