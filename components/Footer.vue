@@ -96,7 +96,7 @@ ol, ul {
 .footer {
   height: 60px;
   box-sizing: border-box;
-  background: linear-gradient(to right, darken($accentColor, 50%), darken($secondaryColor, 70%));
+  background: linear-gradient(to bottom, darken($accentColor, 50%), darken($secondaryColor, 70%));
   color: #FFF;
   display: flex;
   padding: 15px 32px;
