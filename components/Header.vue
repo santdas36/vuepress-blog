@@ -57,6 +57,9 @@ export default {
 </script>
 
 <style lang="stylus">
+#header {
+  z-index: 99;
+}
 .el-menu-item.is-active {
   border-bottom: 3px solid $accentColor !important;
 }
