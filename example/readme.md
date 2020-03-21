@@ -1,0 +1,5 @@
+---
+layout: GlobalLayout
+---
+
+<BaseListLayout />
