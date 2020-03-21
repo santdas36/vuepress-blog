@@ -29,6 +29,7 @@
           ></component>
         </div>
       </div>
+
       <aside class="col-sm-12 col-lg-3 py-3 my-2 flex-column">
         <div>
           <h3>Categories</h3>
@@ -63,6 +64,10 @@
 
     </div>
 
+    <back-to-top bottom="50px" right="50px">
+      <button type="button" class="btn btn-info btn-to-top"><i class="fa fa-chevron-up"></i></button>
+    </back-to-top>
+
   </div>
 </template>
 
@@ -70,13 +75,14 @@
 /* global THEME_BLOG_PAGINATION_COMPONENT */
 
 import Vue from "vue";
+import BackToTop from "vue-backtotop";
 import PostsList from "@theme/components/PostsList.vue";
 import Subscribe from "@theme/components/Subscribe.vue";
 import FeaturedPosts from "@theme/components/FeaturedPosts";
 import { Pagination, SimplePagination } from '@vuepress/plugin-blog/lib/client/components'
 
 export default {
-  components: { PostsList, Pagination, FeaturedPosts, Subscribe },
+  components: { PostsList, Pagination, FeaturedPosts, Subscribe, BackToTop },
   created () {
     this.paginationComponent = this.getPaginationComponent()
   },
