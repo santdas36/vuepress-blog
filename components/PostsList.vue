@@ -33,7 +33,7 @@
               </router-link>
             </h3>
             <div
-              class="ui-post-summary text-secondary my-2"
+              class="ui-post-summary text-secondary my-2 pr-3"
               v-if="post.summary"
             >
               {{ post.summary }}
