@@ -5,7 +5,7 @@
       <el-card
         v-for="post in posts"
         :key="post.key"
-        class="my-3 cursor-pointer"
+        class="mb-4 cursor-pointer"
         :body-style="{ padding: '.5rem' }"
         shadow="hover"
       >
@@ -14,7 +14,7 @@
           @click="go(post.path)"
         >
           <div
-            class="ui-post-image col-sm-12 col-md-4 mt-md-3 mt-sm-0"
+            class="ui-post-image col-sm-12 col-md-6 col-lg-5 mt-md-3 mt-sm-0"
             v-if="post.frontmatter.image"
           >
             <img
@@ -23,8 +23,8 @@
               class="w-100 rounded"
             >
           </div>
-          <div class="ui-post-body col-sm-12 col-md-8">
-            <h3 class="mt-3">
+          <div class="ui-post-body col-sm-12 col-md-6 col-lg-7 py-4">
+            <h3>
               <router-link
                 :to="post.path"
                 class="text-decoration-none"
@@ -42,7 +42,7 @@
                 class="read-more"
               >Read more</router-link>
             </div>
-            <div class="my-3 d-flex justify-content-end text-secondary">
+            <div class="d-flex justify-content-end text-secondary p-4 mt-2 border-top border-light">
               <PostInfo
                 :date="post.frontmatter.date"
                 :timeToRead="post.readingTime.text"
