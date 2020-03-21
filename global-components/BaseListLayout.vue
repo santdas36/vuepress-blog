@@ -34,9 +34,6 @@
           </ul>
         </div>
       </aside>
-      <aside class="col-sm-12 col-lg-3 py-3 my-2">
-        <Subscribe />
-      </aside>
       <div class="col-sm-12 col-lg-9">
         <PostsList
           :posts="pages"
@@ -51,6 +48,10 @@
         </div>
       </div>
     </div>
+
+    <div class="col-12">
+      <Subscribe />
+    </div>
   </div>
 </template>
 
@@ -64,7 +65,7 @@ import FeaturedPosts from "@theme/components/FeaturedPosts";
 import { Pagination, SimplePagination } from '@vuepress/plugin-blog/lib/client/components'
 
 export default {
-  components: { PostsList, Pagination, FeaturedPosts },
+  components: { PostsList, Pagination, FeaturedPosts, Subscribe },
   created () {
     this.paginationComponent = this.getPaginationComponent()
   },
