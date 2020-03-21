@@ -1,13 +1,13 @@
 <template>
   <div id="vuperess-theme-blog__post-layout">
     <main class="vuepress-blog-theme-content p-lg-1">
-      <div class="span-wrap pb-2 mb-2">
+      <div class="span-wrap pb-2 mb-4">
       <img
         :src="$frontmatter.image"
         :alt="$frontmatter.title"
         v-if="$frontmatter.image"
       />
-      <h1 align="center" class="mt-2">{{ $frontmatter.title }}</h1>
+      <h1 align="center" class="mt-4">{{ $frontmatter.title }}</h1>
       <PostInfo
         :date="$frontmatter.date"
         :timeToRead="$page.readingTime.text"
