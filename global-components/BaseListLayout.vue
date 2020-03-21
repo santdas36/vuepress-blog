@@ -9,11 +9,14 @@
     </header>
     <featured-posts class="mb-5 mx-3 d-sm-none d-md-block"></featured-posts>
     <div class="row container-fluid flex-row m-0 p-3 justify-content-center">
+
+      <div class="about-section col-12 my-5">
+        <h1>{{ $themeConfig.about.fullName }}</h1>
+        <p class="pt-2">{{ $themeConfig.about.bio }}</p>
+      </div>
+
       <div class="col-sm-12 col-lg-9">
-        <div class="about-section col-12 my-5">
-          <h1>{{ $themeConfig.about.fullName }}</h1>
-          <p class="pt-2">{{ $themeConfig.about.bio }}</p>
-        </div>
+
         <PostsList
           :posts="pages"
           title="Latest Posts"
