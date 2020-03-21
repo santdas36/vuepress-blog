@@ -7,7 +7,7 @@
         :alt="$frontmatter.title"
         v-if="$frontmatter.image"
       />
-      <h1 align="center" class="mt-4">{{ $frontmatter.title }}</h1>
+      <h1 align="center" class="mx-2 mt-4">{{ $frontmatter.title }}</h1>
       <PostInfo
         :date="$frontmatter.date"
         :timeToRead="$page.readingTime.text"
@@ -15,7 +15,7 @@
         class="text-secondary d-flex justify-content-center my-3"
       />
       </div>
-      <div class="d-flex justify-content-center">
+      <div class="d-flex justify-content-center mb-4">
         <router-link
           :to="'/tag/'+tag"
           v-for="tag in $page.frontmatter.tags"
@@ -23,7 +23,6 @@
           class="el-button el-button--small text-decoration-none d-inline-block"
         >#{{tag}}</router-link>
       </div>
-      <hr />
       <Content />
       <Toc />
       <ClientOnly v-if="$themeConfig.disqus">
