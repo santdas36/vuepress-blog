@@ -9,7 +9,7 @@
     </header>
     <featured-posts class="mb-5 mx-3 d-sm-none d-md-block"></featured-posts>
     <div class="row container-fluid flex-row-reverse m-0 p-3 justify-content-center">
-      <aside class="col-sm-12 col-lg-3 py-3 my-2">
+      <aside class="col-sm-12 col-lg-3 py-3 my-2 flex-column">
         <div>
           <h3>Categories</h3>
           <ul class="list-unstyled">
@@ -33,6 +33,12 @@
             </li>
           </ul>
         </div>
+
+        <div>
+          <h3>Newsletter</h3>
+          <p>Subscribe to get instant updates and notification about new content (Spam-Free)
+          <Subscribe />
+        </div>
       </aside>
       <div class="col-sm-12 col-lg-9">
         <PostsList
@@ -49,9 +55,6 @@
       </div>
     </div>
 
-    <div class="col-12">
-      <Subscribe />
-    </div>
   </div>
 </template>
 

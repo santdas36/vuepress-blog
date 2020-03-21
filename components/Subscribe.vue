@@ -3,13 +3,11 @@
 <el-form
 	:model="subscribe"
 	ref="subscribe"
-	label-width="120px"
 	class="subscription-form"
-     label-position="top"
 >
   <el-form-item
     prop="email"
-    label="Email"
+    placeholder="Email"
     :rules="[
       { required: true, message: 'Please input your email address', trigger: 'blur' },
       { type: 'email', message: 'Something is wrong', trigger: ['blur', 'change'] }
