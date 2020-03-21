@@ -1,13 +1,13 @@
 <template>
   <div id="vuperess-theme-blog__post-layout">
     <main class="vuepress-blog-theme-content">
-      <div class="span-wrap">
+      <div class="span-wrap pb-2 mb-2">
       <img
         :src="$frontmatter.image"
         :alt="$frontmatter.title"
         v-if="$frontmatter.image"
       />
-      <h1 align="center">{{ $frontmatter.title }}</h1>
+      <h1 align="center" class="mt-2">{{ $frontmatter.title }}</h1>
       <PostInfo
         :date="$frontmatter.date"
         :timeToRead="$page.readingTime.text"
@@ -15,7 +15,6 @@
         class="text-secondary d-flex justify-content-center my-3"
       />
       </div>
-      <hr>
       <div class="d-flex justify-content-center">
         <router-link
           :to="'/tag/'+tag"
@@ -61,7 +60,7 @@ export default {
 
   .span-wrap {
     border-radius: 15px;
-    box-shadow: 0 15px 15px rgba(0,0,0,0.25);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.25);
 
     img {
       border-radius: 15px 15px 0 0;
