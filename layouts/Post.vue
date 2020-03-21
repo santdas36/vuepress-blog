@@ -1,6 +1,7 @@
 <template>
   <div id="vuperess-theme-blog__post-layout">
     <main class="vuepress-blog-theme-content">
+      <div class="span-wrap">
       <img
         :src="$frontmatter.image"
         :alt="$frontmatter.title"
@@ -13,6 +14,7 @@
         :location="$frontmatter.location"
         class="text-secondary d-flex justify-content-center my-3"
       />
+      </div>
       <hr>
       <div class="d-flex justify-content-center">
         <router-link
@@ -56,6 +58,15 @@ export default {
   color: #2c3e50;
   position: relative;
   padding: 15px;
+
+  .span-wrap {
+    border-radius: 15px;
+    box-shadow: 0 15px 15px rgba(0,0,0,0.25);
+
+    img {
+      border-radius: 15px 15px 0 0;
+    }
+  }
 }
 
 .post-tags {
@@ -103,6 +114,9 @@ export default {
     padding: 3px 10px;
     margin-right: 10px;
     margin-bottom: 10px;
+  }
+  .vuepress-blog-theme-content {
+    margin:  0 1rem;
   }
 }
 </style>
