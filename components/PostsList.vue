@@ -1,7 +1,7 @@
 <template>
-  <main class="mx-md-5">
+  <main class="my-3">
     <h2 class="ml-sm-3">{{title}}</h2>
-    <div class="container px-0">
+    <div class="container p-3">
       <el-card
         v-for="post in posts"
         :key="post.key"
@@ -42,7 +42,7 @@
                 class="read-more"
               >Read more</router-link>
             </div>
-            <div class="d-flex justify-content-end text-secondary p-4 mt-2 border-top border-light">
+            <div class="d-flex justify-content-end text-secondary py-2 mt-4 border-top border-light">
               <PostInfo
                 :date="post.frontmatter.date"
                 :timeToRead="post.readingTime.text"
