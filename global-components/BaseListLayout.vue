@@ -9,7 +9,7 @@
     </header>
     <featured-posts class="mb-5 mx-3"></featured-posts>
     <div class="row container-fluid flex-row-reverse m-0 p-2 justify-content-center">
-      <aside class="col-sm-12 col-lg-3 mr-md-5">
+      <aside class="col-sm-12 col-lg-3">
         <div>
           <h3>Categories</h3>
           <ul class="list-unstyled">
