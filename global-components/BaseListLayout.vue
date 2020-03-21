@@ -9,6 +9,19 @@
     </header>
     <featured-posts class="mb-5 mx-3 d-sm-none d-md-block"></featured-posts>
     <div class="row container-fluid flex-row m-0 p-3 justify-content-center">
+      <div class="col-sm-12 col-lg-9">
+        <PostsList
+          :posts="pages"
+          title="Latest Posts"
+        />
+
+        <div class="d-flex w-100 align-items-center justify-content-center">
+          <component
+            v-if="$pagination.length > 1 && paginationComponent"
+            :is="paginationComponent"
+          ></component>
+        </div>
+      </div>
       <aside class="col-sm-12 col-lg-3 py-3 my-2 flex-column">
         <div>
           <h3>Categories</h3>
@@ -40,19 +53,7 @@
           <Subscribe />
         </div>
       </aside>
-      <div class="col-sm-12 col-lg-9">
-        <PostsList
-          :posts="pages"
-          title="Latest Posts"
-        />
 
-        <div class="d-flex w-100 align-items-center justify-content-center">
-          <component
-            v-if="$pagination.length > 1 && paginationComponent"
-            :is="paginationComponent"
-          ></component>
-        </div>
-      </div>
     </div>
 
   </div>
