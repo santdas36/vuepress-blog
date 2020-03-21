@@ -9,7 +9,7 @@
     </header>
     <featured-posts class="mb-5 mx-3 d-sm-none d-md-block"></featured-posts>
     <div class="row container-fluid flex-row-reverse m-0 p-3 justify-content-center">
-      <aside class="col-sm-12 col-lg-3 py-3 my-2 flex-column">
+      <aside class="col-sm-12 col-lg-4 py-3 my-2 flex-column">
         <div>
           <h3>Categories</h3>
           <ul class="list-unstyled">
@@ -40,7 +40,7 @@
           <Subscribe />
         </div>
       </aside>
-      <div class="col-sm-12 col-lg-9">
+      <div class="col-sm-12 col-lg-8">
         <PostsList
           :posts="pages"
           title="Latest Posts"
