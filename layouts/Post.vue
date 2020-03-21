@@ -66,6 +66,11 @@ export default {
       border-radius: 15px 15px 0 0;
     }
   }
+  .content__default {
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+  }
 }
 
 .post-tags {
