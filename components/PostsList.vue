@@ -10,7 +10,7 @@
         shadow="hover"
       >
         <div
-          class="ui-post row"
+          class="ui-post row p-3"
           @click="go(post.path)"
         >
           <div
@@ -24,7 +24,7 @@
             >
           </div>
           <div class="ui-post-body col-sm-12 col-md-8">
-            <h3 class="mt-3">
+            <h3 class="mt-sm-n3 mt-md-3">
               <router-link
                 :to="post.path"
                 class="text-decoration-none"
