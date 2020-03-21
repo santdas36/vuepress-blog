@@ -12,7 +12,7 @@
           {{ $site.title }}
         </h2>
       </router-link>
-      <SearchBox class="col-md-12 col-lg-3 mt-2 d-flex justify-content-end" />
+      <SearchBox class="col-md-12 col-lg-3 mt-0 mt-lg-4 d-flex justify-content-end" />
     </div>
     <nav class="px-5">
       <el-menu
@@ -58,16 +58,7 @@ export default {
 
 <style lang="stylus">
 .el-menu-item.is-active {
-  position: relative;
-}
-.el-menu-item.is-active:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 3px;
-  width: 100%;
-  background: $accentColor;
-  border-radius: 6px 6px 0 0;
+  border-bottom: 3px solid $accentColor !important;
 }
 
 </style>
