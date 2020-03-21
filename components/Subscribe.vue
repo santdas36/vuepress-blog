@@ -7,13 +7,12 @@
 >
   <el-form-item
     prop="email"
-    placeholder="Email"
     :rules="[
       { required: true, message: 'Please input your email address', trigger: 'blur' },
       { type: 'email', message: 'Something is wrong', trigger: ['blur', 'change'] }
     ]"
   >
-    <el-input v-model="subscribe.email"></el-input>
+    <el-input v-model="subscribe.email" placeholder="Email"></el-input>
   </el-form-item>
   <el-form-item>
     <el-button type="primary" @click="submitForm('subscribe')">Subscribe</el-button>
