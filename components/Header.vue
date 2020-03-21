@@ -58,6 +58,7 @@ export default {
 
 <style lang="stylus">
 .el-menu-item.is-active {
+  border-radius: 6px 6px 0 0;
   border-bottom: 3px solid $accentColor !important;
 }
 </style>
