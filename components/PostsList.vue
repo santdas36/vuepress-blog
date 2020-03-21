@@ -1,6 +1,6 @@
 <template>
   <main class="my-3">
-    <h2>{{title}}</h2>
+    <h2 class="pl-3">{{title}}</h2>
     <div class="container p-3">
       <el-card
         v-for="post in posts"
@@ -14,7 +14,7 @@
           @click="go(post.path)"
         >
           <div
-            class="ui-post-image col-sm-12 col-md-6 col-lg-5 mt-md-3 mt-sm-0"
+            class="ui-post-image col-sm-12 col-md-6 col-lg-5"
             v-if="post.frontmatter.image"
           >
             <img
