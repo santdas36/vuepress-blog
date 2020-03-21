@@ -1,6 +1,6 @@
 <template>
   <div id="vuperess-theme-blog__post-layout">
-    <main class="vuepress-blog-theme-content">
+    <main class="vuepress-blog-theme-content p-lg-1">
       <div class="span-wrap pb-2 mb-2">
       <img
         :src="$frontmatter.image"
@@ -56,7 +56,7 @@ export default {
   letter-spacing: 0px;
   color: #2c3e50;
   position: relative;
-  padding: 15px;
+  padding: 15px 30px;
 
   .span-wrap {
     border-radius: 15px;
@@ -113,9 +113,6 @@ export default {
     padding: 3px 10px;
     margin-right: 10px;
     margin-bottom: 10px;
-  }
-  .vuepress-blog-theme-content {
-    margin:  0 1rem;
   }
 }
 </style>
