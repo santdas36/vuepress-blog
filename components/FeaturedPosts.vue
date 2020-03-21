@@ -41,7 +41,7 @@ export default {
 .citem {
   box-shadow: 0 0.25rem 1rem rgba(0,0,0,0.2);
 }
-.el-carousel__mask {
-  background: #000 !important;
+.el-carousel__item .el-carousel__mask {
+  background-color: #000 !important;
 }
 </style>
