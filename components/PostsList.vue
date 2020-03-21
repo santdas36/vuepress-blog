@@ -24,7 +24,7 @@
             >
           </div>
           <div class="ui-post-body col-sm-12 col-md-8">
-            <h3 class="mt-sm-n3 mt-md-3">
+            <h3 class="mt-3">
               <router-link
                 :to="post.path"
                 class="text-decoration-none"
@@ -33,7 +33,7 @@
               </router-link>
             </h3>
             <div
-              class="ui-post-summary text-secondary my-2 pr-3"
+              class="ui-post-summary text-secondary my-2"
               v-if="post.summary"
             >
               {{ post.summary }}
