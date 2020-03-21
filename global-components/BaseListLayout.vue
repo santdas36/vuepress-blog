@@ -27,13 +27,15 @@
                   :to="tag.path"
                   class="el-button el-button--small text-decoration-none"
                 >
-
                   {{tag.name}}
                 </router-link>
               </el-badge>
             </li>
           </ul>
         </div>
+      </aside>
+      <aside class="col-sm-12 col-lg-3 py-3 my-2">
+        <Subscribe />
       </aside>
       <div class="col-sm-12 col-lg-9">
         <PostsList
@@ -57,6 +59,7 @@
 
 import Vue from "vue";
 import PostsList from "@theme/components/PostsList.vue";
+import Subscribe from "@theme/components/Subscribe.vue";
 import FeaturedPosts from "@theme/components/FeaturedPosts";
 import { Pagination, SimplePagination } from '@vuepress/plugin-blog/lib/client/components'
 
@@ -130,5 +133,4 @@ header.home-hero {
 
 
 <style src="prismjs/themes/prism-okaidia.css"></style>
-
 
