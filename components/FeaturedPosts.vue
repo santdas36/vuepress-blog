@@ -42,6 +42,6 @@ export default {
   box-shadow: 0 0.25rem 1rem rgba(0,0,0,0.2);
 }
 .el-carousel__mask {
-  background: #000;
+  background: #000 !important;
 }
 </style>
