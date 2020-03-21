@@ -32,6 +32,9 @@ export default {
 			}
 		};
 	},
+     components: {
+          Subscribe
+     },
 	methods: {
 		submitForm(formName) {
 			this.$refs[formName].validate(valid => {
