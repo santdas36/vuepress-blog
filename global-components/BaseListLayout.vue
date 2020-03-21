@@ -7,9 +7,9 @@
       <h1 class="font-dancing">{{ $site.title }}</h1>
       <h2>{{ $site.description }}</h2>
     </header>
-    <featured-posts class="mb-5 mx-2"></featured-posts>
+    <featured-posts class="mb-5 mx-3"></featured-posts>
     <div class="row container-fluid flex-row-reverse m-0 p-2 justify-content-center">
-      <aside class="col-sm-12 col-lg-3 ml-0 ml-lg-n3 px-3 px-lg-0">
+      <aside class="col-sm-12 col-lg-3 mr-md-5">
         <div>
           <h3>Categories</h3>
           <ul class="list-unstyled">
@@ -35,7 +35,7 @@
           </ul>
         </div>
       </aside>
-      <div class="col-sm-12 col-lg-9 mx-xs-2 mx-lg-0 px-0">
+      <div class="col-sm-12 col-lg-9">
         <PostsList
           :posts="pages"
           title="Latest Posts"
