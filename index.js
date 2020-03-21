@@ -58,6 +58,7 @@ module.exports = (themeConfig, ctx) => {
     "vuepress-auth0",
     "@vuepress/medium-zoom",
     "@vuepress/nprogress",
+    "@vuepress/back-to-top",
     ["@vuepress/blog", blogPluginOptions],
     [
       "@vuepress/search",
