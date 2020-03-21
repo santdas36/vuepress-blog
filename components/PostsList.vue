@@ -1,5 +1,5 @@
 <template>
-  <main class="px-md-5 px-lg-5 px-sm-0">
+  <main class="px-sm-0">
     <h2 class="ml-sm-3">{{title}}</h2>
     <div class="container px-0">
       <el-card
