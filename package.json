@@ -41,7 +41,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "vue-backtotop": "^1.6.1",
+    "@vuepress/plugin-back-to-top": "^1.0.0-rc.1",
     "@vuepress/plugin-blog": "^1.2.5",
     "@vuepress/plugin-google-analytics": "^1.1.0",
     "@vuepress/plugin-medium-zoom": "1.0.0",
@@ -60,7 +60,8 @@
     "vuepress-plugin-sitemap": "^2.1.2",
     "vuepress-plugin-smooth-scroll": "^0.0.4",
     "vuepress-plugin-social-share": "^0.0.6",
-    "vuepress-auth0": "^0.2.5"
+    "vuepress-auth0": "^0.2.5",
+    "vue-backtotop": "^1.6.1"
   },
   "devDependencies": {
     "conventional-changelog-cli": "^2.0.1",
