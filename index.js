@@ -56,6 +56,7 @@ module.exports = (themeConfig, ctx) => {
     "smooth-scroll",
     "reading-progress",
     "vuepress-auth0",
+    "vue-backtotop",
     "@vuepress/medium-zoom",
     "@vuepress/nprogress",
     ["@vuepress/blog", blogPluginOptions],
