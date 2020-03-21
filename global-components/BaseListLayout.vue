@@ -49,7 +49,7 @@
 
         <div class="py-3">
           <h3>Newsletter</h3>
-          <p class="py-2">Subscribe to get instant updates and notification about new content (Spam-Free)
+          <p class="py-2">Subscribe to get instant updates and notification about new content (Spam-Free)</p>
           <Subscribe />
         </div>
       </aside>
