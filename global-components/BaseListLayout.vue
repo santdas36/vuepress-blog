@@ -8,8 +8,8 @@
       <h2>{{ $site.description }}</h2>
     </header>
     <featured-posts class="mb-5 mx-3 d-sm-none d-md-block"></featured-posts>
-    <div class="row container-fluid flex-row-reverse m-0 p-3 justify-content-center">
-      <aside class="col-sm-12 col-lg-4 py-3 my-2 flex-column">
+    <div class="row container-fluid flex-row m-0 p-3 justify-content-center">
+      <aside class="col-sm-12 col-lg-3 py-3 my-2 flex-column">
         <div>
           <h3>Categories</h3>
           <ul class="list-unstyled">
@@ -34,13 +34,13 @@
           </ul>
         </div>
 
-        <div>
+        <div class="py-3">
           <h3>Newsletter</h3>
-          <p>Subscribe to get instant updates and notification about new content (Spam-Free)
+          <p class="my-2">Subscribe to get instant updates and notification about new content (Spam-Free)
           <Subscribe />
         </div>
       </aside>
-      <div class="col-sm-12 col-lg-8">
+      <div class="col-sm-12 col-lg-9">
         <PostsList
           :posts="pages"
           title="Latest Posts"
