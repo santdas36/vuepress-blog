@@ -29,8 +29,8 @@
           ></component>
         </div>
       </div>
-      <aside class="col-sm-12 col-lg-3 py-3 my-2 mr-0 mr-md-3 flex-column">
-        <div>
+      <aside class="col-sm-12 col-lg-3 py-3 my-2 flex-column">
+        <div class="mr-md-3">
           <h3>Categories</h3>
           <ul class="list-unstyled">
             <li
@@ -54,7 +54,7 @@
           </ul>
         </div>
 
-        <div class="py-3">
+        <div class="py-3 mr-md-3">
           <h3>Newsletter</h3>
           <p class="py-2">Subscribe to get instant updates and notification about new content (Spam-Free)</p>
           <Subscribe />
