@@ -15,7 +15,7 @@
         <p class="pt-2">{{ $themeConfig.about.bio }}</p>
       </div>
 
-      <div class="col-sm-12 col-lg-8">
+      <div class="col-sm-12 col-lg-9">
 
         <PostsList
           :posts="pages"
@@ -29,7 +29,7 @@
           ></component>
         </div>
       </div>
-      <aside class="col-sm-12 col-lg-4 pr-0 pr-md-3 py-3 my-2 flex-column">
+      <aside class="col-sm-12 col-lg-3 py-3 pr-0 pr-md-3 my-2 flex-column">
         <div>
           <h3>Categories</h3>
           <ul class="list-unstyled">
