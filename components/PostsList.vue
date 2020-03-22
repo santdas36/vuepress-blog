@@ -14,7 +14,7 @@
           @click="go(post.path)"
         >
           <div
-            class="ui-post-image col-sm-12 col-md-6 col-lg-5"
+            class="ui-post-image col-sm-12 col-md-4"
             v-if="post.frontmatter.image"
           >
             <img
@@ -23,7 +23,7 @@
               class="w-100 rounded"
             >
           </div>
-          <div class="ui-post-body col-sm-12 col-md-6 col-lg-7 py-4">
+          <div class="ui-post-body col-sm-12 col-md-8 py-4">
             <h3>
               <router-link
                 :to="post.path"

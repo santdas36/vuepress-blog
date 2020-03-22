@@ -10,12 +10,12 @@
     <featured-posts class="mb-5 mx-3 d-none d-md-block"></featured-posts>
     <div class="row container-fluid flex-row m-0 p-3 justify-content-center">
 
-      <div class="about-section col-12 py-5 px-3">
+      <div class="about-section col-12 py-5 px-3 px-md-5">
         <h1>{{ $themeConfig.about.fullName }}</h1>
         <p class="pt-2">{{ $themeConfig.about.bio }}</p>
       </div>
 
-      <div class="col-sm-12 col-lg-9">
+      <div class="col-sm-12 col-lg-8">
 
         <PostsList
           :posts="pages"
@@ -29,7 +29,7 @@
           ></component>
         </div>
       </div>
-      <aside class="col-sm-12 col-lg-3 py-3 my-2 flex-column">
+      <aside class="col-sm-12 col-lg-4 pr-0 pr-md-3 py-3 my-2 flex-column">
         <div>
           <h3>Categories</h3>
           <ul class="list-unstyled">
