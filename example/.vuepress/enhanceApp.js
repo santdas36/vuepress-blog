@@ -1,8 +1,4 @@
-/**
- * Client app enhancement file.
- *
- * https://v1.vuepress.vuejs.org/guide/basic-config.html#app-level-enhancements
- */
+import 'element-variables.scss'
 
 export default ({
   Vue, // the version of Vue being used in the VuePress app
@@ -10,7 +6,5 @@ export default ({
   router, // the router instance for the app
   siteData // site metadata
 }) => {
-    require('/theme/index.css');
 
-  // ...apply enhancements to the app
 }
