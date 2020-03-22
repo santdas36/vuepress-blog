@@ -1,4 +1,4 @@
-import 'element-variables.scss'
+import './element-variables.scss'
 
 export default ({
   Vue, // the version of Vue being used in the VuePress app
