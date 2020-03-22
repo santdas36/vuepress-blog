@@ -1,7 +1,7 @@
 <template>
   <main class="my-3">
     <h2 class="pl-3">{{title}}</h2>
-    <div class="container p-3">
+    <div class="container p-md-3">
       <el-card
         v-for="post in posts"
         :key="post.key"
