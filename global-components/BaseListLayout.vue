@@ -10,7 +10,7 @@
     <featured-posts class="mb-5 mx-3 d-none d-md-block"></featured-posts>
     <div class="row container-fluid flex-row m-0 p-3 justify-content-center">
 
-      <div class="about-section col-12 py-5 px-3 px-md-5">
+      <div class="about-section col-12 py-5 px-3">
         <h1>{{ $themeConfig.about.fullName }}</h1>
         <p class="pt-2">{{ $themeConfig.about.bio }}</p>
       </div>
@@ -30,7 +30,7 @@
         </div>
       </div>
       <aside class="col-sm-12 col-lg-3 py-3 my-2 flex-column">
-        <div class="mr-md-3">
+        <div class="mr-lg-3">
           <h3>Categories</h3>
           <ul class="list-unstyled">
             <li
@@ -54,7 +54,7 @@
           </ul>
         </div>
 
-        <div class="py-3 mr-md-3">
+        <div class="py-3 mr-lg-3">
           <h3>Newsletter</h3>
           <p class="py-2">Subscribe to get instant updates and notification about new content (Spam-Free)</p>
           <Subscribe />
