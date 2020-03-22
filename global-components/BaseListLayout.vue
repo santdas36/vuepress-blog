@@ -29,7 +29,7 @@
           ></component>
         </div>
       </div>
-      <aside class="col-sm-12 col-lg-3 p-3 my-2 flex-column">
+      <aside class="col-sm-12 col-lg-3 py-3 my-2 mr-0 mr-md-3 flex-column">
         <div>
           <h3>Categories</h3>
           <ul class="list-unstyled">
