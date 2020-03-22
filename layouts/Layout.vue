@@ -1,6 +1,6 @@
 <template>
   <div>
-    <BaseListLayout v-if="$page.frontmatter.home" />
+    <BaseListLayout v-if="$pagination" />
     <Content v-else />
   </div>
 </template>
