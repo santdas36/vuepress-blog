@@ -8,5 +8,4 @@ export default ({
     siteData // site metadata
 }) => {
     Vue.use(ElementUI);
-    require('/theme/index.css');
 }

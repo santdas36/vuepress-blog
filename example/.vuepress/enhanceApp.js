@@ -10,5 +10,7 @@ export default ({
   router, // the router instance for the app
   siteData // site metadata
 }) => {
+    require('/theme/index.css');
+
   // ...apply enhancements to the app
 }
