@@ -10,8 +10,7 @@
     "layouts",
     "global-components",
     "fonts",
-    "components",
-    "theme"
+    "components"
   ],
   "keywords": [
     "vuepress",
