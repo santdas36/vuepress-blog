@@ -1,6 +1,6 @@
 <template>
   <main class="my-3">
-    <h2 class="pl-0 pl-md-3">{{title}}</h2>
+    <h2 class="pl-0 pl-md-3">{{ title }}</h2>
     <div class="container p-0 p-md-3">
       <el-card
         v-for="post in posts"
