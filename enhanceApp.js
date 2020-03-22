@@ -1,4 +1,3 @@
-import '/theme/index.css';
 import ElementUI from 'element-ui';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -9,4 +8,5 @@ export default ({
     siteData // site metadata
 }) => {
     Vue.use(ElementUI);
+    require('/theme/index.css');
 }
