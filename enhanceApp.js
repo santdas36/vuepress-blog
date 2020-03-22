@@ -1,4 +1,4 @@
-import '/theme/index.css';
+import '../theme/index.css';
 import ElementUI from 'element-ui';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
