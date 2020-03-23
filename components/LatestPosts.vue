@@ -4,11 +4,11 @@
         v-for="(post, index) in posts"
         v-if="index < 5"
         :key="post.key"
-        class="cursor-pointer col-sm-12 col-md-8 col-lg-6 shadow card"
+        class="cursor-pointer col-sm-12 col-md-8 col-lg-6 m-2 shadow card"
         @click="go(post.path)"
         >
           <div
-            class="col-12"
+            class="col-12 m-n2"
             v-if="post.frontmatter.image"
           >
             <img
