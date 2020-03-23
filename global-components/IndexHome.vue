@@ -78,7 +78,7 @@ export default {
       return this.$site.$tag.list
     }
   },
-  }
+  
 };
 </script>
 
