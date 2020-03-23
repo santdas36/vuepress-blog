@@ -1,10 +1,10 @@
 <template>
-    <div class="latest-posts row col-12 d-flex flex-row justify-content-around">
+    <div class="latest-posts row">
       <el-card
         v-for="(post, index) in posts"
         v-if="index < 5"
         :key="post.key"
-        class="mb-4 cursor-pointer col-sm-12 col-md-8 col-lg-6"
+        class="cursor-pointer col-sm-12 col-md-8 col-lg-4 mx-0 mx-md-4 mb-4"
         shadow="hover"
       >
         <div
