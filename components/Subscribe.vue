@@ -8,7 +8,7 @@
   <el-form-item
     prop="email"
     :rules="[
-      { required: true, type: 'email', message: 'Check your input...', trigger: 'blur' }
+      { required: true, type: 'email', message: 'Check your input', trigger: 'blur' }
     ]"
   >
     <el-input v-model="subscribe.email" placeholder="Email"></el-input>
@@ -38,8 +38,7 @@ export default {
 				if (valid) {
 					subscribeToMailchimp(this.mail).then(res => {
                            this.loading = false;
-                           this.type = "success";
-                            setTimeout( this.type = "primary", 1000);
+                           this.$message({ message: 'Congrats. You subscription is now active.', type: 'success' });
                          });
 				} else {
 					this.loading = false
