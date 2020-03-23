@@ -1,0 +1,62 @@
+<template>
+      <el-card
+        v-for="(post, index) in posts"
+        v-if="index < 5"
+        :key="post.key"
+        class="mb-4 cursor-pointer"
+        shadow="hover"
+      >
+        <div
+          class="ui-post row p-3"
+          @click="go(post.path)"
+        >
+          <div
+            class="ui-post-image col-12"
+            v-if="post.frontmatter.image"
+          >
+            <img
+              :src="post.frontmatter.image"
+              :alt="post.title"
+              class="w-100 rounded"
+            >
+          </div>
+          <div class="ui-post-body col-12">
+            <h3>
+              <router-link
+                :to="post.path"
+                class="text-decoration-none"
+              >
+                {{ post.title }}
+              </router-link>
+            </h3>
+            <div
+              class="ui-post-summary text-secondary my-2"
+              v-if="post.summary"
+            ><span class="space-tab"></span>
+              {{ post.summary }}
+              <router-link
+                :to="post.path"
+                class="read-more"
+              >Read more</router-link>
+            </div>
+          </div>
+        </div>
+      </el-card>
+</template>
+
+<script>
+export default {
+  props: ["posts"],
+  methods: {
+    go (path) {
+      this.$router.push(path)
+    }
+  }
+};
+</script>
+
+<style lang="stylus">
+.cursor-pointer {
+  cursor: pointer;
+}
+</style>

@@ -10,21 +10,28 @@
     <featured-posts class="mb-5 mx-3 d-none "></featured-posts>
     <div class="row container-fluid flex-row m-0 p-3 justify-content-center">
 
-      <div class="about-section col-12 py-5 px-3 px-lg-5">
-        <h1>{{ $themeConfig.about.fullName }}</h1>
-        <p class="pt-2">{{ $themeConfig.about.bio }}</p>
-      </div>
+    <div class="col-12 py-5 px-3 px-lg-5">
+        <div class="about-section">
+          <h1>{{ $themeConfig.about.fullName }}</h1>
+          <p class="pt-2">{{ $themeConfig.about.bio }}</p>
+        </div>
 
-      <div class="col-sm-12 col-lg-9">
-
-        <PostsList
+      <div class="row col-12 flex-row justify-content-space-around">
+        <h2>Latest Articles</h2>
+        <LatestPosts
           :posts="pages"
-          title="Latest Posts"
+          class="col-sm-12 col-md-8 col-lg-6"
         />
-
       </div>
-      <aside class="col-sm-12 col-lg-3 py-3 my-2 flex-column">
 
+          <router-link
+            :to="/post/"
+            class="el-button el-button--primary"
+          >Browse Articles</router-link>
+
+    </div>
+
+      <aside class="col-sm-12 col-lg-8 offset-lg-2 py-3 my-2 flex-column">
         <div class="py-3 mr-lg-3">
           <h3>Newsletter</h3>
           <p class="py-2">Subscribe to get instant updates and notification about new content (Spam-Free)</p>
@@ -32,19 +39,17 @@
         </div>
       </aside>
 
-    </div>
-
   </div>
 </template>
 
 <script>
 import Vue from "vue";
-import PostsList from "@theme/components/PostsList.vue";
+import LatestPosts from "@theme/components/LatestPostst.vue";
 import Subscribe from "@theme/components/Subscribe.vue";
 import FeaturedPosts from "@theme/components/FeaturedPosts";
 
 export default {
-  components: { PostsList, FeaturedPosts, Subscribe },
+  components: { LatestPosts, FeaturedPosts, Subscribe },
   computed: {
     pages () {
       return this.$site.pages
