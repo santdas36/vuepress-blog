@@ -1,10 +1,10 @@
 <template>
-    <div class="latest-posts row col-12 px-3 px-lg-5">
+    <div class="latest-posts row col-12 px-3 px-lg-5 d-flex justify-content-space-around align-items-center">
       <div
         v-for="(post, index) in posts"
         v-if="index < 5"
         :key="post.key"
-        class="cursor-pointer col-sm-12 col-lg-6 py-3 px-2 m-2 border"
+        class="cursor-pointer col-sm-12 col-lg-5 py-4 px-2 border m-3 m-lg-0 latestposts-card"
         @click="go(post.path)"
         >
           <div
