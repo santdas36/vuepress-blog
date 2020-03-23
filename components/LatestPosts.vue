@@ -8,11 +8,11 @@
         shadow="hover"
       >
         <div
-          class="ui-post row p-1"
+          class="row p-2"
           @click="go(post.path)"
         >
           <div
-            class="ui-post-image col-12"
+            class="col-12"
             v-if="post.frontmatter.image"
           >
             <img
@@ -21,7 +21,7 @@
               class="w-100 rounded"
             >
           </div>
-          <div class="ui-post-body col-12 pt-4">
+          <div class="col-12 pt-4">
             <h3>
               <router-link
                 :to="post.path"
@@ -31,7 +31,7 @@
               </router-link>
             </h3>
             <div
-              class="ui-post-summary text-secondary my-2"
+              class="text-secondary my-2"
               v-if="post.summary"
             ><span class="space-tab"></span>
               {{ post.summary }}
