@@ -18,7 +18,8 @@ module.exports = (themeConfig, ctx) => {
       {
         id: "post",
         dirname: "_posts",
-        path: "/",
+        path: "/post/",
+        title: "Articles",
         // layout: 'IndexPost', defaults to `Layout.vue`
         itemLayout: "Post",
         frontmatter: { title: "Home" },
@@ -33,8 +34,9 @@ module.exports = (themeConfig, ctx) => {
         id: "tag",
         keys: ["tag", "tags"],
         path: "/tag/",
+        title: "Category",
         // layout: 'Tag',  defaults to `FrontmatterKey.vue`
-        frontmatter: { title: "Tag" },
+        frontmatter: { title: "Category" },
         pagination: {
           lengthPerPage: 6
         }

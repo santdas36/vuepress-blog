@@ -23,6 +23,11 @@ module.exports = {
         updatePopup: true 
       } 
     ],
+    [ 'vuepress-plugin-mailchimp', 
+      { 
+        endpoint: 'https://santdas.us19.list-manage.com/subscribe/post?u=71d679c6a39869fde4e46c635&amp;id=2ca318da1e' 
+      } 
+    ],
     [Auth, { 
         domain: 'vuetest36.auth0.com', 
         redirectUri: 'https://stoic-gates-d38a79.netlify.com/callback.html',
