@@ -24,29 +24,6 @@
 
       </div>
       <aside class="col-sm-12 col-lg-3 py-3 my-2 flex-column">
-        <div class="mr-lg-3">
-          <h3>Categories</h3>
-          <ul class="list-unstyled">
-            <li
-              v-for="tag in tags"
-              :key="tag.name"
-              class="d-inline-block mr-3 my-2"
-            >
-              <el-badge
-                :value="tag.pages.length"
-                type="primary"
-                class="item"
-              >
-                <router-link
-                  :to="tag.path"
-                  class="el-button el-button--small text-decoration-none"
-                >
-                  {{tag.name}}
-                </router-link>
-              </el-badge>
-            </li>
-          </ul>
-        </div>
 
         <div class="py-3 mr-lg-3">
           <h3>Newsletter</h3>
@@ -61,8 +38,6 @@
 </template>
 
 <script>
-/* global THEME_BLOG_PAGINATION_COMPONENT */
-
 import Vue from "vue";
 import PostsList from "@theme/components/PostsList.vue";
 import Subscribe from "@theme/components/Subscribe.vue";
@@ -73,9 +48,6 @@ export default {
   computed: {
     pages () {
       return this.$site.pages
-    },
-    tags () {
-      return this.$site.frontmatter.tag.list
     }
   },
   
