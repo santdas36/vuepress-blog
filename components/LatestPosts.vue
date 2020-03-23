@@ -1,5 +1,5 @@
 <template>
-    <div class="latest-posts row col-12 px-3 px-lg-5 d-flex justify-content-space-around align-items-center">
+    <div class="latest-posts row col-12 px-3 px-lg-5 d-flex justify-content-around align-items-center">
       <div
         v-for="(post, index) in posts"
         v-if="index < 5"
