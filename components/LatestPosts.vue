@@ -1,5 +1,5 @@
 <template>
-    <div class="latest-posts row">
+    <div class="latest-posts row col-12 px-3 px-lg-5">
       <el-card
         v-for="(post, index) in posts"
         v-if="index < 5"
@@ -8,11 +8,11 @@
         shadow="hover"
       >
         <div
-          class="row"
+          class="row p-1"
           @click="go(post.path)"
         >
           <div
-            class="col-12"
+            class="col-12 m-n1"
             v-if="post.frontmatter.image"
           >
             <img
