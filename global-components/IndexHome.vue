@@ -44,7 +44,7 @@
 
 <script>
 import Vue from "vue";
-import LatestPosts from "@theme/components/LatestPostst.vue";
+import LatestPosts from "@theme/components/LatestPosts.vue";
 import Subscribe from "@theme/components/Subscribe.vue";
 import FeaturedPosts from "@theme/components/FeaturedPosts";
 
