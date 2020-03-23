@@ -6,21 +6,15 @@
 	class="subscription-form"
 >
   <el-form-item
-    prop="name"
-  >
-    <el-input v-model="subscribe.name" placeholder="Name"></el-input>
-  </el-form-item>
-  <el-form-item
     prop="email"
     :rules="[
-      { required: true, message: 'Please input your email address', trigger: 'blur' },
-      { type: 'email', message: 'Something is wrong', trigger: ['blur', 'change'] }
+      { required: true, type: 'email', message: 'Check your input...', trigger: 'blur' }
     ]"
   >
     <el-input v-model="subscribe.email" placeholder="Email"></el-input>
   </el-form-item>
   <el-form-item>
-    <el-button size="small" type="primary" @click="submitForm('subscribe')">Subscribe</el-button>
+    <el-button size="small" :loading="loading" type="primary" @click="submitForm('subscribe')">Subscribe</el-button>
   </el-form-item>
 </el-form>
 </div>
@@ -30,21 +24,21 @@ import subscribeToMailchimp from "vuepress-plugin-mailchimp/src/mailchimpSubscri
 export default {
 	data() {
 		return {
+               loading: false,
 			subscribe: {
-				email: "",
-                    mail: ""
+				email: ""
 			},
 		};
 	},
 	methods: {
 		submitForm(formName) {
+               this.loading = true;
 			this.$refs[formName].validate(valid => {
 				if (valid) {
-					subscribeToMailchimp(this.mail, { FNAME: name }).then(res => {
-                           alert("Done!"); });
+					subscribeToMailchimp(this.mail).then(res => {
+                           this.loading = false });
 				} else {
-					alert("error");
-					return false;
+					this.loading = false
 				}
 			});
 		}
