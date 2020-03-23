@@ -16,9 +16,8 @@
           <p class="py-2">{{ $themeConfig.about.bio }}</p>
         </div>
       <h2 class="py-2">Latest Articles</h2>
-      <div class="row col-12">
-        <latest-posts class="col-sm-12 col-md-8 col-lg-4"></latest-posts>
-      </div>
+
+      <latest-posts></latest-posts>
 
           <el-button
             :to="/post/"
