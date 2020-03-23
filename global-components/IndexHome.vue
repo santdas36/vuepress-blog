@@ -75,7 +75,7 @@ export default {
       return this.$site.pages
     },
     tags () {
-      return this.$site.$tag.list
+      return this.$site.frontmatter.tag.list
     }
   },
   
