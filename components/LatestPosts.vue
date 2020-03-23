@@ -1,18 +1,14 @@
 <template>
     <div class="latest-posts row col-12 px-3 px-lg-5">
-      <el-card
+      <div
         v-for="(post, index) in posts"
         v-if="index < 5"
         :key="post.key"
-        class="cursor-pointer col-sm-12 col-md-8 col-lg-6"
-        shadow="hover"
-      >
-        <div
-          class="row p-1"
-          @click="go(post.path)"
+        class="cursor-pointer col-sm-12 col-md-8 col-lg-6 shadow card"
+        @click="go(post.path)"
         >
           <div
-            class="col-12 m-n1"
+            class="col-12"
             v-if="post.frontmatter.image"
           >
             <img
@@ -41,8 +37,7 @@
               >Read more</router-link>
             </div>
           </div>
-        </div>
-      </el-card>
+      </div>
     </div>
 </template>
 
