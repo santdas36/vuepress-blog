@@ -8,7 +8,7 @@
       <h2>{{ $site.description }}</h2>
     </header>
     <featured-posts class="mb-5 mx-3 d-none"></featured-posts>
-    <div class="row container-fluid flex-row m-0 p-3 justify-content-center">
+    <div class="row container-fluid">
 
     <div class="col-12 py-5 px-3 px-lg-5">
         <div class="about-section">
@@ -16,8 +16,7 @@
           <p class="py-2">{{ $themeConfig.about.bio }}</p>
         </div>
       <h2 class="py-2">Latest Articles</h2>
-      <div class="row col-12 flex-row justify-content-space-around">
-        
+      <div class="row col-12">
         <latest-posts class="col-sm-12 col-md-8 col-lg-6"></latest-posts>
       </div>
 
@@ -29,8 +28,8 @@
 
     </div>
 
-      <aside class="col-sm-12 col-lg-8 offset-lg-2 py-3 my-2 flex-column">
-        <div class="py-3 mr-lg-3">
+      <aside class="col-sm-12 col-lg-8 py-3 my-2 flex-column">
+        <div class="py-3">
           <h2>Newsletter</h2>
           <p class="py-2">Subscribe to get instant updates and notification about new content (Spam-Free)</p>
           <Subscribe />
