@@ -13,11 +13,11 @@
     <div class="col-12 py-5 px-3 px-lg-5">
         <div class="about-section">
           <h1>{{ $themeConfig.about.fullName }}</h1>
-          <p class="pt-2">{{ $themeConfig.about.bio }}</p>
+          <p class="py-2">{{ $themeConfig.about.bio }}</p>
         </div>
-
+      <h2 class="py-2">Latest Articles</h2>
       <div class="row col-12 flex-row justify-content-space-around">
-        <h2>Latest Articles</h2>
+        
         <latest-posts class="col-sm-12 col-md-8 col-lg-6"></latest-posts>
       </div>
 
@@ -31,7 +31,7 @@
 
       <aside class="col-sm-12 col-lg-8 offset-lg-2 py-3 my-2 flex-column">
         <div class="py-3 mr-lg-3">
-          <h3>Newsletter</h3>
+          <h2>Newsletter</h2>
           <p class="py-2">Subscribe to get instant updates and notification about new content (Spam-Free)</p>
           <Subscribe />
         </div>
