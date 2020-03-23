@@ -4,7 +4,7 @@
         v-for="(post, index) in posts"
         v-if="index < 5"
         :key="post.key"
-        class="cursor-pointer col-sm-12 col-md-8 col-lg-4 mx-0 mx-md-4 mb-4 p-0"
+        class="cursor-pointer col-sm-12 col-md-8 col-lg-6 mx-0 mx-md-4"
         shadow="hover"
       >
         <div
