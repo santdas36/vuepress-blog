@@ -4,7 +4,7 @@
         v-for="(post, index) in posts"
         v-if="index < 5"
         :key="post.key"
-        class="cursor-pointer col-sm-12 col-md-8 col-lg-6 shadow"
+        class="cursor-pointer col-sm-12 col-md-8 col-lg-6 p-0 m-0 border"
         @click="go(post.path)"
         >
           <div
