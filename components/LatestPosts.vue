@@ -8,7 +8,7 @@
         shadow="hover"
       >
         <div
-          class="ui-post row p-2"
+          class="ui-post row p-1"
           @click="go(post.path)"
         >
           <div
@@ -21,7 +21,7 @@
               class="w-100 rounded"
             >
           </div>
-          <div class="ui-post-body col-12 pt-3">
+          <div class="ui-post-body col-12 pt-4">
             <h3>
               <router-link
                 :to="post.path"
