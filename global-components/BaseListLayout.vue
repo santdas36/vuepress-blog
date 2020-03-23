@@ -9,6 +9,12 @@
           title="Posts Archive"
         />
 
+        <div class="d-flex w-100 align-items-center justify-content-center">
+          <component
+            v-if="$pagination.length > 1 && paginationComponent"
+            :is="paginationComponent"
+          ></component>
+        </div>
       </div>
       <aside class="col-sm-12 col-lg-3 py-3 my-2 flex-column">
         <div class="mr-lg-3">
@@ -42,13 +48,6 @@
         </div>
       </aside>
 
-    </div>
-
-    <div class="d-flex w-100 align-items-center justify-content-center">
-      <component
-        v-if="$pagination.length > 1 && paginationComponent"
-        :is="paginationComponent"
-      ></component>
     </div>
 
   </div>
