@@ -1,3 +1,5 @@
 ---
-layout: IndexHome
+home: true
+title: Home
 ---
+<IndexHome />
