@@ -1,7 +1,7 @@
 <template>
   <div id="vuperess-theme-blog__post-layout">
     <main class="vuepress-blog-theme-content p-lg-1">
-      <div class="span-wrap pb-2 mb-4">
+      <div class="span-wrap pb-2 mb-4 shadow">
       <img
         :src="$frontmatter.image"
         :alt="$frontmatter.title"
@@ -23,7 +23,7 @@
           class="el-button el-button--small text-decoration-none d-inline-block"
         >#{{tag}}</router-link>
       </div>
-      <Content />
+      <Content class="shadow"/>
       <Toc />
       <ClientOnly v-if="$themeConfig.disqus">
         <div class="comments-area mt-5 pt-5">
@@ -59,7 +59,6 @@ export default {
 
   .span-wrap {
     border-radius: 15px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.25);
 
     img {
       border-radius: 15px 15px 0 0;
@@ -68,7 +67,6 @@ export default {
   .content__default {
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.25);
   }
 }
 
