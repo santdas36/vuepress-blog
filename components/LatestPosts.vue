@@ -1,4 +1,5 @@
 <template>
+    <div class="latest-posts">
       <el-card
         v-for="(post, index) in posts"
         v-if="index < 5"
@@ -42,10 +43,12 @@
           </div>
         </div>
       </el-card>
+    </div>
 </template>
 
 <script>
 export default {
+  name: 'latest-posts',
   methods: {
     go (path) {
       this.$router.push(path)

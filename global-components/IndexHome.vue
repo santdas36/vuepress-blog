@@ -7,7 +7,7 @@
       <h1 class="font-dancing">{{ $site.title }}</h1>
       <h2>{{ $site.description }}</h2>
     </header>
-    <featured-posts class="mb-5 mx-3 d-none "></featured-posts>
+    <featured-posts class="mb-5 mx-3 d-none"></featured-posts>
     <div class="row container-fluid flex-row m-0 p-3 justify-content-center">
 
     <div class="col-12 py-5 px-3 px-lg-5">
@@ -18,9 +18,7 @@
 
       <div class="row col-12 flex-row justify-content-space-around">
         <h2>Latest Articles</h2>
-        <LatestPosts
-          class="col-sm-12 col-md-8 col-lg-6"
-        />
+        <latest-posts class="col-sm-12 col-md-8 col-lg-6"></latest-posts>
       </div>
 
           <el-button
