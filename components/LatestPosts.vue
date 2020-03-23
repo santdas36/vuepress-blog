@@ -1,11 +1,12 @@
 <template>
-    <div class="latest-posts row col-12 px-3 px-lg-5 d-flex justify-content-around align-items-center">
+    <div class="latest-posts row col-12 d-flex justify-content-around align-items-center">
       <div
         v-for="(post, index) in posts"
         v-if="index < 5"
         :key="post.key"
-        class="cursor-pointer col-sm-12 col-lg-5 py-4 px-2 card m-3 mx-lg-0 my-lg-3 latestposts-card"
+        class="cursor-pointer col-sm-12 col-lg-5 py-4 px-2 card m-3 mx-lg-0 my-lg-3"
         @click="go(post.path)"
+        shadow="hover"
         >
           <div
             class="col-12"
