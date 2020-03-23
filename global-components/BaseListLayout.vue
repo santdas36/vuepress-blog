@@ -1,25 +1,12 @@
 <template>
   <div id="base-list-layout">
-    <header
-      class="home-hero"
-      :style="{backgroundImage: 'url(' + $themeConfig.heroImage + ')'}"
-    >
-      <h1 class="font-dancing">{{ $site.title }}</h1>
-      <h2>{{ $site.description }}</h2>
-    </header>
-    <featured-posts class="mb-5 mx-3 d-none d-md-block"></featured-posts>
     <div class="row container-fluid flex-row m-0 p-3 justify-content-center">
-
-      <div class="about-section col-12 py-5 px-3 px-lg-5">
-        <h1>{{ $themeConfig.about.fullName }}</h1>
-        <p class="pt-2">{{ $themeConfig.about.bio }}</p>
-      </div>
 
       <div class="col-sm-12 col-lg-9">
 
         <PostsList
           :posts="pages"
-          title="Latest Posts"
+          title="Posts Archive"
         />
 
         <div class="d-flex w-100 align-items-center justify-content-center">
@@ -62,7 +49,6 @@
       </aside>
 
     </div>
-
   </div>
 </template>
 
