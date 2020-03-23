@@ -19,7 +19,6 @@
       <div class="row col-12 flex-row justify-content-space-around">
         <h2>Latest Articles</h2>
         <LatestPosts
-          :posts="pages"
           class="col-sm-12 col-md-8 col-lg-6"
         />
       </div>
@@ -51,11 +50,6 @@ import FeaturedPosts from "@theme/components/FeaturedPosts";
 
 export default {
   components: { LatestPosts, FeaturedPosts, Subscribe },
-  computed: {
-    pages () {
-      return this.$site.pages
-    },
-  },
   methods: {
     go () {
       this.$router.push('/post/')
