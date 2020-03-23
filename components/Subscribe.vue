@@ -14,7 +14,7 @@
     <el-input v-model="subscribe.email" placeholder="Email"></el-input>
   </el-form-item>
   <el-form-item>
-    <el-button size="small" :loading="loading" type="primary" @click="submitForm('subscribe')">Subscribe</el-button>
+    <el-button size="small" :loading="loading" type="primary" @click="submitForm('subscribe')">{{ sbtn-content }}</el-button>
   </el-form-item>
 </el-form>
 </div>
@@ -25,6 +25,7 @@ export default {
 	data() {
 		return {
                loading: false,
+               sbtn-content: "Subscribe",
 			subscribe: {
 				email: ""
 			},
