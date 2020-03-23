@@ -39,7 +39,7 @@ export default {
 					subscribeToMailchimp(this.mail).then(res => {
                            this.loading = false;
                            this.type = "success";
-                            setTimeout( function(){this.type = "primary"}, 1000);
+                            setTimeout( this.type = "primary", 1000);
                          });
 				} else {
 					this.loading = false
