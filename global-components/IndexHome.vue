@@ -24,10 +24,11 @@
         />
       </div>
 
-          <router-link
+          <el-button
             :to="/post/"
-            class="el-button el-button--primary"
-          >Browse Articles</router-link>
+            @click="go()"
+            type="primary"
+          >Browse Articles</el-button>
 
     </div>
 
@@ -53,6 +54,11 @@ export default {
   computed: {
     pages () {
       return this.$site.pages
+    },
+  },
+  methods: {
+    go () {
+      this.$router.push('/post/')
     }
   },
   
