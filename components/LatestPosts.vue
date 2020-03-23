@@ -46,10 +46,14 @@
 
 <script>
 export default {
-  props: ["posts"],
   methods: {
     go (path) {
       this.$router.push(path)
+    }
+  },
+  computed: {
+    posts () {
+      return this.$site.pages.filter(page => page.frontmatter.featured == true)
     }
   }
 };
