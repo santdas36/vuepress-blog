@@ -63,13 +63,13 @@ export default {
 }
 .el-card {
   width: 100%;
-  margin: 0;
+  margin: 1.5rem 0;
 
-  @media (min-width: $MQMobile) {
+  @media (min-width: 600px) {
     width: calc(50% - 3rem);
     margin: 1.5rem;
   }
-  @media (min-width: $MQNarrow) {
+  @media (min-width: 900px) {
     width: calc(33% - 2rem);
     margin: 1rem;
   }
