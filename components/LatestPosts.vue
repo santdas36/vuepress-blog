@@ -71,6 +71,8 @@ export default {
 .el-card-latest {
   width: 100%;
   margin: 1.5rem 0;
+  border-radius: 10px;
+  overflow: auto !important;
 
   @media (min-width: 600px) {
     width: calc(50% - 1rem);
@@ -83,12 +85,10 @@ export default {
 
   .el-card__body {
     padding: 0;
-    border-radius: 10px;
 
     img {
       margin-left: -1px;
       margin-top: -1px;
-      z-index: 2;
       width: calc(100% + 2px);
       border-radius: 10px 10px 0 0;
     }
