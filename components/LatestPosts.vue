@@ -66,8 +66,8 @@ export default {
   margin: 1.5rem 0;
 
   @media (min-width: 600px) {
-    width: calc(50% - 2rem);
-    margin: 1rem;
+    width: calc(50% - 1rem);
+    margin: 0.5rem;
   }
   @media (min-width: 900px) {
     width: calc(33% - 2rem);
@@ -78,7 +78,8 @@ export default {
     padding: 0;
 
     img {
-      margin: -1px;
+      margin: -2px !important;
+      width: calc(100% + 4px);
     }
   }
 }
