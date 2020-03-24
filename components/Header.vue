@@ -50,7 +50,7 @@ export default {
   components: { SearchBox },
   data () {	
     return {
-      activeIndex= '0',
+      activeIndex: '0',
     }
   }
 };
