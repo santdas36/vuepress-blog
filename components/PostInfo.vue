@@ -5,13 +5,13 @@
       {{ new Date(date.trim()).toDateString() }}
     </div>
     <div
-      class="post-info-item"
+      class="post-info-item pit-hidden"
       v-if="timeToRead"
     >
       <ClockIcon />
       {{ timeToRead }}
     </div>
-    <div class="post-info-item">
+    <div class="post-info-item pit-hidden">
       <NavigationIcon />
       {{ location }}
     </div>
@@ -35,6 +35,13 @@ div.post-info-item {
   svg {
     width: 17px;
     height: 17px;
+  }
+}
+.pit-hidden {
+  display: block;
+
+  @media (max-width: $MQMobileNarrow) {
+    display: none;
   }
 }
 </style>
