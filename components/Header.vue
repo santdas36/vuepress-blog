@@ -48,17 +48,17 @@ import SearchBox from "./SearchBox";
 
 export default {
   components: { SearchBox },
-  data () {	
-    return {	
-      activeIndex: '0',	
-    };	
+  computed {
+    activeIndex () {
+      return $themeConfig.nav.findIndex(index => index === this.$route.path) || 1;
+    }
   }
 };
 </script>
 
 <style lang="stylus">
 #header {
-  z-index: 99;
+  box-shadow: 0 5px 10px white;
 }
 .el-menu-item.is-active {
   border-bottom: 3px solid $accentColor !important;

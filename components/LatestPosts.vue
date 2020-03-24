@@ -87,6 +87,7 @@ export default {
 
     img {
       border-radius: 10px 10px 0 0;
+      width: 100%;
     }
   }
 }

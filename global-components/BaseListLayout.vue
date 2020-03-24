@@ -1,5 +1,5 @@
 <template>
-  <div id="base-list-layout">
+  <div id="base-list-layout mt-4">
     <div class="row container-fluid flex-row m-0 p-3 justify-content-center">
 
       <div class="col-sm-12 col-lg-9">
