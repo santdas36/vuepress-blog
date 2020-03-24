@@ -60,6 +60,14 @@ export default {
 .cursor-pointer {
   cursor: pointer;
 }
+.latest-posts {
+  @media (min-width: 600px) {
+    margin: -0.5rem;
+  }
+  @media (min-width: 900px) {
+    margin: -1rem;
+  }
+}
 .el-card-latest {
   width: 100%;
   margin: 1.5rem 0;
