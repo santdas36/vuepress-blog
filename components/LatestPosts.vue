@@ -1,10 +1,10 @@
 <template>
-    <div class="latest-posts row w-100 d-flex justify-content-around align-items-center">
+    <div class="latest-posts row no-gutters d-flex justify-content-around" style="background: #222">
       <el-card
         v-for="(post, index) in posts"
         v-if="index < 5"
         :key="post.key"
-        class="cursor-pointer row col-sm-12 col-lg-5 py-4 px-2 m-3 mx-lg-0 mb-lg-4"
+        class="cursor-pointer col-sm-12 col-lg-5"
         @click="go(post.path)"
         shadow="hover"
         >
@@ -18,7 +18,7 @@
               class="w-100 rounded"
             >
           </div>
-          <div class="col-12 pt-4">
+          <div class="col-12 p-4">
             <h3>
               <router-link
                 :to="post.path"

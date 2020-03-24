@@ -23,7 +23,7 @@
           class="el-button el-button--small text-decoration-none d-inline-block"
         >#{{tag}}</router-link>
       </div>
-      <Content class="shadow p-1 p-md-2"/>
+      <Content class="shadow p-2 m-2 p-md-4"/>
       <Toc />
       <ClientOnly v-if="$themeConfig.disqus">
         <div class="comments-area mt-5 pt-5">
