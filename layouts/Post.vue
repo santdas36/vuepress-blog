@@ -72,7 +72,7 @@ export default {
       padding-top: 2rem;
     }
 
-    @media (max-width: $MQMobile) {
+    @media (max-width: 400px) {
       padding: 1.2rem;
     }
   }

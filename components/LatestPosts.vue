@@ -4,7 +4,7 @@
         v-for="(post, index) in posts"
         v-if="index < 5"
         :key="post.key"
-        class="cursor-pointer col-sm-12 col-lg-5 mb-lg-4 p-0"
+        class="cursor-pointer"
         @click="go(post.path)"
         shadow="hover"
         >
@@ -61,5 +61,20 @@ export default {
 <style lang="stylus">
 .cursor-pointer {
   cursor: pointer;
+}
+.el-card {
+  width: calc(100% - 3rem);
+  margin: 1.5rem;
+
+  @media (max-width: $MQMobile) {
+    width: calc(50% - 3rem);
+  }
+  @media (max-width: $MQNarrow) {
+    width: calc(33% - 2rem);
+    margin: 1rem;
+  }
+}
+.el-card__body {
+  padding: 0;
 }
 </style>
