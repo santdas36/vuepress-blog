@@ -23,7 +23,7 @@
           class="el-button el-button--small text-decoration-none d-inline-block"
         >#{{tag}}</router-link>
       </div>
-      <Content class="shadow p-2 m-2 p-md-4"/>
+      <Content class="shadow"/>
       <Toc />
       <ClientOnly v-if="$themeConfig.disqus">
         <div class="comments-area mt-5 pt-5">
@@ -66,9 +66,14 @@ export default {
   }
   .content__default {
     border-radius: 15px;
+    padding: 2rem;
 
     h1, h2, h3, h4 {
       padding-top: 2rem;
+    }
+
+    @media (max-width: $MQMobile) {
+      padding: 1.2rem;
     }
   }
 }

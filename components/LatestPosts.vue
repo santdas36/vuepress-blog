@@ -4,7 +4,7 @@
         v-for="(post, index) in posts"
         v-if="index < 5"
         :key="post.key"
-        class="cursor-pointer col-sm-12 col-lg-5"
+        class="cursor-pointer col-sm-12 col-lg-5 mb-lg-4 p-0"
         @click="go(post.path)"
         shadow="hover"
         >
