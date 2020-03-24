@@ -14,7 +14,6 @@
             <img
               :src="post.frontmatter.image"
               :alt="post.title"
-              class="w-100 rounded"
             >
           </div>
           <div class="p-3">
@@ -76,10 +75,14 @@ export default {
 
   .el-card__body {
     padding: 0;
+    border-radius: 10px;
 
     img {
-      margin: -2px !important;
-      width: calc(100% + 4px);
+      margin-left: -1px;
+      margin-top: -1px;
+      z-index: 2;
+      width: calc(100% + 2px);
+      border-radius: 10px 10px 0 0;
     }
   }
 }
