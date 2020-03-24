@@ -72,7 +72,7 @@ export default {
       padding-top: 2rem;
     }
 
-    @media (max-width: 400px) {
+    @media (max-width: $MQMobileNarrow) {
       padding: 1.2rem;
     }
   }

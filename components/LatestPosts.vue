@@ -1,5 +1,5 @@
 <template>
-    <div class="latest-posts row no-gutters d-flex justify-content-around" style="background: #222">
+    <div class="latest-posts row no-gutters">
       <el-card
         v-for="(post, index) in posts"
         v-if="index < 5"
@@ -17,7 +17,7 @@
               class="w-100 rounded"
             >
           </div>
-          <div class="p-4">
+          <div class="p-3">
             <h3>
               <router-link
                 :to="post.path"
@@ -27,7 +27,7 @@
               </router-link>
             </h3>
             <div
-              class="text-secondary my-2"
+              class="text-secondary p-2"
               v-if="post.summary"
             ><span class="space-tab"></span>
               {{ post.summary }}
@@ -62,11 +62,12 @@ export default {
   cursor: pointer;
 }
 .el-card {
-  width: calc(100% - 3rem);
-  margin: 1.5rem;
+  width: 100%;
+  margin: 0;
 
   @media (min-width: $MQMobile) {
     width: calc(50% - 3rem);
+    margin: 1.5rem;
   }
   @media (min-width: $MQNarrow) {
     width: calc(33% - 2rem);
@@ -75,5 +76,9 @@ export default {
 }
 .el-card__body {
   padding: 0;
+
+  img {
+    margin: -1px;
+  }
 }
 </style>
