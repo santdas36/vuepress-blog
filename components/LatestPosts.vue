@@ -72,7 +72,6 @@ export default {
   width: 100%;
   margin: 1.5rem 0;
   border-radius: 10px;
-  overflow: auto !important;
 
   @media (min-width: 600px) {
     width: calc(50% - 1rem);
@@ -87,9 +86,6 @@ export default {
     padding: 0;
 
     img {
-      margin-left: -1px;
-      margin-top: -1px;
-      width: calc(100% + 2px);
       border-radius: 10px 10px 0 0;
     }
   }

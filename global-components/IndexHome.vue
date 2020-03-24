@@ -15,7 +15,7 @@
           <h1>{{ $themeConfig.about.fullName }}</h1>
           <p class="py-2">{{ $themeConfig.about.bio }}</p>
         </div>
-      <h2 class="py-2">Latest Articles</h2>
+      <h2 class="pt-2 mb-4">Latest Articles</h2>
 
       <latest-posts></latest-posts>
 
@@ -23,6 +23,7 @@
             :to="/post/"
             @click="go()"
             type="primary"
+            class="mt-4"
           >Browse Articles</el-button>
 
     </div>
