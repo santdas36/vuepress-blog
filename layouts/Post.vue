@@ -23,7 +23,7 @@
           class="el-button el-button--small text-decoration-none d-inline-block"
         >#{{tag}}</router-link>
       </div>
-      <Content class="shadow"/>
+      <Content class="shadow p-1 p-md-2"/>
       <Toc />
       <ClientOnly v-if="$themeConfig.disqus">
         <div class="comments-area mt-5 pt-5">
@@ -65,8 +65,11 @@ export default {
     }
   }
   .content__default {
-    padding: 2rem;
     border-radius: 15px;
+
+    h1, h2, h3, h4 {
+      padding-top: 2rem;
+    }
   }
 }
 
