@@ -66,10 +66,10 @@ export default {
   width: calc(100% - 3rem);
   margin: 1.5rem;
 
-  @media (max-width: $MQMobile) {
+  @media (min-width: $MQMobile) {
     width: calc(50% - 3rem);
   }
-  @media (max-width: $MQNarrow) {
+  @media (min-width: $MQNarrow) {
     width: calc(33% - 2rem);
     margin: 1rem;
   }
