@@ -19,8 +19,11 @@ module.exports = {
   plugins: [ 
     [ '@vuepress/pwa', 
       { 
-        serviceWorker: true, 
-        updatePopup: true 
+        serviceWorker: true,
+        updatePopup: { 
+          message: "Content Updated.",
+          buttonText: "Refresh"
+        }
       } 
     ],
     [ 'vuepress-plugin-mailchimp', 
