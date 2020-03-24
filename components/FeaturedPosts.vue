@@ -42,7 +42,7 @@ export default {
   box-shadow: 0 0.25rem 1rem rgba(0,0,0,0.2);
   border-radius: 10px;
 }
-.el-carousel__item .el-carousel__mask {
+.el-carousel__mask {
   background-color: #000 !important;
 }
 </style>
