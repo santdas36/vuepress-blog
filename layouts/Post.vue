@@ -58,14 +58,14 @@ export default {
   padding: 15px 30px;
 
   .span-wrap {
-    border-radius: 15px;
+    border-radius: 10px;
 
     img {
-      border-radius: 15px 15px 0 0;
+      border-radius: 10px 10px 0 0;
     }
   }
   .content__default {
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 2rem;
 
     h1, h2, h3, h4 {
