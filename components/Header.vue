@@ -48,7 +48,7 @@ import SearchBox from "./SearchBox";
 
 export default {
   components: { SearchBox },
-  computed {
+  computed: {
     activeIndex () {
       return $themeConfig.nav.findIndex(index => index === this.$route.path) || 1;
     }
