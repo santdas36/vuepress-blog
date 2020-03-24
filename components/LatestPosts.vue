@@ -4,7 +4,7 @@
         v-for="(post, index) in posts"
         v-if="index < 5"
         :key="post.key"
-        class="cursor-pointer"
+        class="cursor-pointer el-card-latest"
         @click="go(post.path)"
         shadow="hover"
         >
@@ -61,7 +61,7 @@ export default {
 .cursor-pointer {
   cursor: pointer;
 }
-.el-card {
+.el-card-latest {
   width: 100%;
   margin: 1.5rem 0;
 
@@ -73,12 +73,13 @@ export default {
     width: calc(33% - 2rem);
     margin: 1rem;
   }
-}
-.el-card__body {
-  padding: 0;
 
-  img {
-    margin: -1px;
+  .el-card__body {
+    padding: 0;
+
+    img {
+      margin: -1px;
+    }
   }
 }
 </style>
