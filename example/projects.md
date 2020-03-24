@@ -1,5 +1,6 @@
 ---
 layout: ProjectsLayout
+readingShow: false
 projects:
     - title: First project
       description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium hic nemo voluptatum.
