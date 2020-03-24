@@ -9,7 +9,6 @@
         shadow="hover"
         >
           <div
-            class="col-12"
             v-if="post.frontmatter.image"
           >
             <img
@@ -18,7 +17,7 @@
               class="w-100 rounded"
             >
           </div>
-          <div class="col-12 p-4">
+          <div class="p-4">
             <h3>
               <router-link
                 :to="post.path"
