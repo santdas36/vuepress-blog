@@ -50,7 +50,7 @@ export default {
   components: { SearchBox },
   computed: {
     activeIndex () {
-      return $themeConfig.nav.findIndex(index => index === this.$route.path) || 1;
+      return this.$site.themeConfig.nav.findIndex(index => index === this.$route.path) || 1;
     }
   }
 };
