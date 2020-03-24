@@ -18,7 +18,7 @@
             >
           </div>
           <div class="p-3">
-            <h3>
+            <h3 class="pt-2">
               <router-link
                 :to="post.path"
                 class="text-decoration-none"
@@ -27,7 +27,7 @@
               </router-link>
             </h3>
             <div
-              class="text-secondary p-2"
+              class="text-secondary py-2"
               v-if="post.summary"
             ><span class="space-tab"></span>
               {{ post.summary }}
@@ -66,8 +66,8 @@ export default {
   margin: 1.5rem 0;
 
   @media (min-width: 600px) {
-    width: calc(50% - 3rem);
-    margin: 1.5rem;
+    width: calc(50% - 2rem);
+    margin: 1rem;
   }
   @media (min-width: 900px) {
     width: calc(33% - 2rem);
