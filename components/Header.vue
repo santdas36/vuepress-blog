@@ -6,13 +6,13 @@
     <div class="p-4 row align-items-center justify-content-between">
       <router-link
         to="/"
-        class="text-decoration-none col-md-8"
+        class="text-decoration-none"
       >
         <h2>
           {{ $site.title }}
         </h2>
       </router-link>
-      <SearchBox class="col-4 d-flex justify-content-end" />
+      <SearchBox />
     </div>
     <nav class="px-5">
       <el-menu
@@ -63,5 +63,9 @@ export default {
 .el-menu-item.is-active {
   border-bottom: 3px solid $accentColor !important;
 }
-
+.search-box {
+ .suggestions {
+    z-index: 999;
+  }
+}
 </style>
