@@ -6,13 +6,13 @@
     <div class="p-4 row align-items-center justify-content-between">
       <router-link
         to="/"
-        class="text-decoration-none col-md-12 col-lg-9"
+        class="text-decoration-none col-md-8"
       >
         <h2>
           {{ $site.title }}
         </h2>
       </router-link>
-      <SearchBox class="col-md-12 col-lg-3 mt-sm-4 mt-lg-0 d-flex justify-content-end" />
+      <SearchBox class="col-4 d-flex justify-content-end" />
     </div>
     <nav class="px-5">
       <el-menu
