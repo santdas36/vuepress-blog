@@ -1,7 +1,7 @@
 <template>
   <header
     id="header"
-    class="border-bottom navFixed"
+    class="border-bottom"
   >
     <div class="p-4 row align-items-center justify-content-between">
       <router-link
@@ -14,7 +14,7 @@
       </router-link>
       <SearchBox class="pr-3 pr-lg-5"/>
     </div>
-    <nav>
+    <nav class="sticky">
       <el-menu
         v-if="$themeConfig.nav"
         :default-active="activeIndex"
