@@ -23,7 +23,7 @@
           class="el-button el-button--small text-decoration-none d-inline-block"
         >#{{tag}}</router-link>
       </div>
-      <Content class="shadow"/>
+      <Content class="shadow no-select"/>
       <Toc />
       <ClientOnly v-if="$themeConfig.disqus">
         <div class="comments-area mt-5 pt-5">
@@ -87,7 +87,12 @@ export default {
 .disqus-comments {
   margin-top: 0rem;
 }
-
+.no-select {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 .blog-tag {
   display: inline-flex;
   align-items: center;
