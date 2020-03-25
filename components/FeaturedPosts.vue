@@ -10,7 +10,6 @@
         :key="post.key"
         class="bg-light"
       >
-        <div class="carousel-card-bg" :style="{'background-image': post.frontmatter.image ? `url(${post.frontmatter.image})`: 'none'}"></div>
         <div class="carousel-card-content d-flex justify-content-center align-items-center flex-column h-100">
           <h2 class="story-title text-light text-center h3 mb-3">{{ post.title }}</h2>
           <router-link
@@ -43,6 +42,9 @@ export default {
 .el-carousel__item {
   box-shadow: 0 0.25rem 1rem rgba(0,0,0,0.2);
   border-radius: 10px;
+}
+.carousel-card-content {
+z-index: 33;
 }
 .carousel-card-bg {
 width: 150%;
