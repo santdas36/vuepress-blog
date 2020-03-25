@@ -2,7 +2,7 @@
 home: true
 title: Home
 readingShow: false
-copyright: true
+copyright:
   noCopy: true
   noSelect: true
   minLength: 5
