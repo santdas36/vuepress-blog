@@ -69,7 +69,7 @@ export default {
   }
  .suggestions {
     z-index: 999;
-    right: 0 !important;
+    right: 2rem !important;
     left: auto !important;
     top: 2.5rem !important;
     box-shadow: 0 3px 5px rgba(0,0,0,0.2);
