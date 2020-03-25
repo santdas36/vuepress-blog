@@ -28,7 +28,7 @@
 
     </div>
 
-      <aside class="col-sm-12 col-lg-8 offset-lg-2 py-3 my-2 flex-column">
+      <aside class="col-12 py-5 px-3 px-lg-5 py-3 my-2 flex-column">
         <div class="py-3">
           <h2>Newsletter</h2>
           <p class="py-2">Subscribe to get instant updates and notification about new content (Spam-Free)</p>
