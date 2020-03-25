@@ -50,6 +50,7 @@ export default {
   data () {	
     return {
       activeIndex: '0',
+      publicPath: process.env.BASE_URL
     }
   }
 };
@@ -81,7 +82,7 @@ export default {
 .search-box {
   input {
     border-radius: 5px;
-    background: #fff url(./search.svg) 0.6rem 0.5rem no-repeat;
+    background: #fff url('`${publicPath}search.svg`') 0.6rem 0.5rem no-repeat;
   }
  .suggestions {
     z-index: 999;
