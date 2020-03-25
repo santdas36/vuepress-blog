@@ -24,6 +24,7 @@ module.exports = (themeConfig, ctx) => {
         itemLayout: "Post",
         frontmatter: { title: "Articles" },
         itemPermalink: "/article/:year/:month/:day/:slug",
+        meta: { transition: 'fade-in-up' },
         pagination: {
           lengthPerPage: 6
         }
@@ -37,6 +38,7 @@ module.exports = (themeConfig, ctx) => {
         title: "Category",
         // layout: 'Tag',  defaults to `FrontmatterKey.vue`
         frontmatter: { title: "Category" },
+        meta: { transition: 'fade-in-up' },
         pagination: {
           lengthPerPage: 6
         }
