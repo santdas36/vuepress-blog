@@ -8,9 +8,9 @@
       <el-carousel-item
         v-for="post in posts"
         :key="post.key"
-        class="bg-light bg-cover"
-        :style="{'background-image': post.frontmatter.image ? `url(${post.frontmatter.image})`: 'none'}"
+        class="bg-light"
       >
+        <div class="carousel-card-bg" :style="{'background-image': post.frontmatter.image ? `url(${post.frontmatter.image})`: 'none'}"></div>
         <div class="carousel-card-content d-flex justify-content-center align-items-center flex-column h-100">
           <h2 class="story-title text-light text-center h3 mb-3">{{ post.title }}</h2>
           <router-link
@@ -41,5 +41,21 @@ export default {
 .el-carousel__item {
   box-shadow: 0 0.25rem 1rem rgba(0,0,0,0.2);
   border-radius: 10px;
+}
+.carousel-card-bg {
+width: 150%;
+position:absolute;
+top: 0;
+bottom: 0;
+left: 0;
+animation: bg-slide 4s linear infinite;
+}
+@keyframes bg-slide {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(50%);
+  }
 }
 </style>
