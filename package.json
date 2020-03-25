@@ -62,7 +62,6 @@
     "vuepress-plugin-social-share": "^0.0.6",
     "vuepress-auth0": "^0.2.5",
     "vuepress-plugin-mailchimp": "^1.4.1",
-    "vuepress-plugin-typescript": "^0.2.0",
     "vuepress-plugin-copyright": "^1.0.2"
   },
   "devDependencies": {

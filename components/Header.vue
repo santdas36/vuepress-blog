@@ -14,7 +14,6 @@
       </router-link>
       <SearchBox class="pr-3 pr-lg-5"/>
     </div>
-    <VueFixedHeader :threshold="100">
     <nav>
       <el-menu
         v-if="$themeConfig.nav"
@@ -41,16 +40,14 @@
         </el-menu-item>
       </el-menu>
     </nav>
-    </VueFixedHeader>
   </header>
 </template>
 
 <script>
 import SearchBox from "@SearchBox";
-import VueFixedHeader from "./vue-fixed-header.ts";
 
 export default {
-  components: { SearchBox, VueFixedHeader },
+  components: { SearchBox },
   data () {	
     return {
       activeIndex: '0',
@@ -84,11 +81,5 @@ export default {
   @media (max-width: $MQMobileNarrow) {
     display: none;
   }
-}
-.vue-fixed-header--isFixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
 }
 </style>

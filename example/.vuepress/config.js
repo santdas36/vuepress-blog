@@ -26,12 +26,6 @@ module.exports = {
         }
       } 
     ],
-    ["vuepress-plugin-typescript", 
-      {
-        tsLoaderOptions: {
-        },
-      },
-    ],
     ['copyright',
       {
         noCopy: true,
