@@ -44,7 +44,7 @@
 </template>
 
 <script>
-import SearchBox from "./SearchBox";
+import SearchBox from "@SearchBox";
 
 export default {
   components: { SearchBox },
