@@ -79,7 +79,7 @@ export default {
     display: none;
   }
 }
-.navFixed nav {
+.navFixed .sticky {
   position: fixed;
   top: 0;
   left: 0;
