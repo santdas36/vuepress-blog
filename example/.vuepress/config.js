@@ -14,7 +14,8 @@ module.exports = {
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'white' }],
     ['link', { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#3eaf7c' }], 
     ['meta', { name: 'msapplication-TileImage', content: '/mstile-150x150.png' }], 
-    ['meta', { name: 'msapplication-TileColor', content: '#fff' }] 
+    ['meta', { name: 'msapplication-TileColor', content: '#fff' }],
+    ['script', { src: '/protect.js' }],
   ],
   plugins: [ 
     [ '@vuepress/pwa', 
