@@ -35,7 +35,7 @@
               v-if="item.icon"
               :class="item.icon"
             ></i>
-            {{ item.text }}
+            <span class="navItem-text">{{ item.text }}</span>
           </router-link>
         </el-menu-item>
       </el-menu>
@@ -73,6 +73,13 @@ export default {
     left: auto !important;
     top: 2.5rem !important;
     box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+  }
+}
+.navItem-text {
+  display: inline;
+
+  @media (max-width: $MQMobileNarrow) {
+    display: none;
   }
 }
 </style>
