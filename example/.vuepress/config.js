@@ -16,6 +16,7 @@ module.exports = {
     ['meta', { name: 'msapplication-TileImage', content: '/mstile-150x150.png' }], 
     ['meta', { name: 'msapplication-TileColor', content: '#fff' }],
     ['script', { src: '/protect.js' }],
+    ['script', { src: 'https://code.jquery.com/jquery-3.4.1.min.js' }]
   ],
   plugins: [ 
     [ '@vuepress/pwa', 
