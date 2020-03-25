@@ -50,16 +50,18 @@ module.exports = {
         icon: "el-icon-house"
       },
       {
-        text: "Posts",
-        link: "/post/",
-        icon: "el-icon-user",
-        meta: {
-          auth: true
-        }
+        text: "Categories",
+        link: "/category/",
+        icon: "el-icon-user"
       },
       {
-        text: "Projects",
-        link: "/projects/",
+        text: "Articles",
+        link: "/article/",
+        icon: "el-icon-user"
+      },
+      {
+        text: "Contact",
+        link: "/contact/",
         icon: "el-icon-folder"
       }
     ],
