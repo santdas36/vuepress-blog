@@ -83,7 +83,6 @@ export default {
     border-radius: 5px;
     border: 1px solid darken($borderColor, 20%);
     background: #fff url(search.svg) 0.3rem 0.3rem no-repeat;
-    width: 15rem;
   }
  .suggestions {
     z-index: 999;
