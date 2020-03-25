@@ -81,7 +81,7 @@ export default {
 .search-box {
   input {
     border-radius: 5px;
-    background: #fff url(search.svg) 1.1rem 1rem no-repeat;
+    background: #fff url(search.svg) 0.4rem 0.3rem no-repeat;
   }
  .suggestions {
     z-index: 999;
