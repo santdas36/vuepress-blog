@@ -45,6 +45,7 @@ export default {
 }
 .carousel-card-content {
 z-index: 33;
+position: relative;
 }
 .carousel-card-bg {
 width: 150%;
