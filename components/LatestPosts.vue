@@ -10,13 +10,14 @@
         >
           <div
             v-if="post.frontmatter.image"
+            class="post-image-container"
           >
             <img
               :src="post.frontmatter.image"
               :alt="post.title"
             >
           </div>
-          <div class="p-3 post-body-white">
+          <div class="p-3">
             <h3 class="pt-2">
               <router-link
                 :to="post.path"
@@ -85,9 +86,8 @@ export default {
   .el-card__body {
     padding: 0;
 
-    .post-body-white {
-      z-index: 90;
-      background: #fff !important;
+    .post-image-container {
+      overflow: hidden;
     }
     img {
       border-radius: 10px 10px 0 0;
@@ -97,6 +97,9 @@ export default {
     &:hover {
       img {
         transform: scale(1.2);
+      }
+      .post-image-container {
+        box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
       }
     }
   }
