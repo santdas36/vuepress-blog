@@ -18,6 +18,8 @@
             class="el-button el-button--primary"
           >Read this Post <i class="el-icon-arrow-right"></i></router-link>
         </div>
+
+        <div class="carousel-card-bg" :style="{'background-image': post.frontmatter.image ? `url(${post.frontmatter.image})`: 'none'}"></div>
       </el-carousel-item>
     </el-carousel>
   </div>
@@ -46,6 +48,7 @@ export default {
 width: 150%;
 height: 150%;
 position:absolute;
+background-size: cover;
 top: 0;
 bottom: 0;
 left: 0;
@@ -58,7 +61,7 @@ animation: bg-slide 4s linear infinite;
     transform: translate(0, 0);
   }
   to{
-    transform: translate(-100px, -100px);
+    transform: translate(-20px, -20px);
   }
 }
 </style>
