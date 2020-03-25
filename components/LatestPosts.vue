@@ -96,10 +96,7 @@ export default {
     }
     &:hover {
       img {
-        transform: scale(1.2);
-      }
-      .post-image-container {
-        box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+        transform: scale(1.1);
       }
     }
   }
