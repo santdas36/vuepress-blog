@@ -44,18 +44,22 @@ export default {
 }
 .carousel-card-bg {
 width: 150%;
+width: 150%;
 position:absolute;
 top: 0;
 bottom: 0;
 left: 0;
+background-size: cover;
+}
+.el-carousel__item.is-active .carousel-card-bg {
 animation: bg-slide 4s linear infinite;
 }
 @keyframes bg-slide {
   from{
-    transform: translateX(0);
+    transform: translate(0, 0);
   }
   to{
-    transform: translateX(50%);
+    transform: translate(-50%, -50%);
   }
 }
 </style>
