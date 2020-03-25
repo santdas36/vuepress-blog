@@ -26,6 +26,18 @@ module.exports = {
         }
       } 
     ],
+    ["vuepress-plugin-typescript", 
+      {
+        tsLoaderOptions: {
+        },
+      },
+    ],
+    ['copyright',
+      {
+        noCopy: true,
+        noSelect: true,
+       }
+    ],
     [ 'vuepress-plugin-mailchimp', 
       { 
         endpoint: 'https://santdas.us19.list-manage.com/subscribe/post?u=71d679c6a39869fde4e46c635&amp;id=2ca318da1e' 
