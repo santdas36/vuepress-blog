@@ -12,7 +12,7 @@
           {{ $site.title }}
         </h2>
       </router-link>
-      <SearchBox class="pr-3 pr-lg-5"/>
+      <SearchBox class="pr-3 pr-lg-4"/>
     </div>
     <nav class="px-5">
       <el-menu
@@ -68,6 +68,8 @@ export default {
     z-index: 999;
     right: 0 !important;
     left: auto !important;
+    top: 2.5rem !important;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
   }
 }
 </style>
