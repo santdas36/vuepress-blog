@@ -68,7 +68,7 @@ export default {
     border-radius: 5px;
   }
  .suggestions {
-    z-index: 999;
+    z-index: 99;
     right: 2rem !important;
     left: auto !important;
     top: 2.5rem !important;
@@ -87,5 +87,6 @@ export default {
   top: 0;
   left: 0;
   width: 100vw;
+  z-index: 999;
 }
 </style>
