@@ -57,7 +57,18 @@ export default {
 
 <style lang="stylus">
 .el-menu-item.is-active {
-  border-bottom: 3px solid $accentColor !important;
+  border-bottom: none !important;
+  position: relative;
+}
+.el-menu-item.is-active:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: lighten($accentColor, 15%);
+  border-radius: 3px 3px 0 0;
 }
 .search-box {
   input {
