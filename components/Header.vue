@@ -14,7 +14,7 @@
       </router-link>
       <SearchBox class="pr-3 pr-lg-5"/>
     </div>
-    <nav>
+    <nav class="navFixed">
       <el-menu
         v-if="$themeConfig.nav"
         :default-active="activeIndex"
@@ -82,9 +82,10 @@ export default {
     display: none;
   }
 }
-nav {
-  position: -webkit-sticky;
-  position: sticky;
+.navFixed {
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100vw;
 }
 </style>
