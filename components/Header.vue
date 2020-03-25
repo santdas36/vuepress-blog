@@ -1,7 +1,6 @@
 <template>
   <header
     id="header"
-    class="border-bottom"
   >
     <div class="p-4 row align-items-center justify-content-between">
       <router-link
