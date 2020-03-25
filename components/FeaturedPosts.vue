@@ -44,12 +44,11 @@ export default {
 }
 .carousel-card-bg {
 width: 150%;
-width: 150%;
+height: 150%;
 position:absolute;
 top: 0;
 bottom: 0;
 left: 0;
-background-size: cover;
 }
 .el-carousel__item.is-active .carousel-card-bg {
 animation: bg-slide 4s linear infinite;
@@ -59,7 +58,7 @@ animation: bg-slide 4s linear infinite;
     transform: translate(0, 0);
   }
   to{
-    transform: translate(-50%, -50%);
+    transform: translate(-100px, -100px);
   }
 }
 </style>
