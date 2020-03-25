@@ -30,6 +30,7 @@ module.exports = {
       {
         noCopy: true,
         noSelect: true,
+        minLength: 5,
        }
     ],
     [ 'vuepress-plugin-mailchimp', 
