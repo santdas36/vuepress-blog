@@ -16,7 +16,7 @@
               :alt="post.title"
             >
           </div>
-          <div class="p-3">
+          <div class="p-3 post-body-white">
             <h3 class="pt-2">
               <router-link
                 :to="post.path"
@@ -85,9 +85,19 @@ export default {
   .el-card__body {
     padding: 0;
 
+    .post-body-white {
+      z-index: 5;
+      background: #fff;
+    }
     img {
       border-radius: 10px 10px 0 0;
       width: 100%;
+      transition: transform 0.3s;
+    }
+    &:hover {
+      img {
+        transform: scale(1.2);
+      }
     }
   }
 }
