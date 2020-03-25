@@ -1,6 +1,5 @@
 import ElementUI from 'element-ui';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import VuePageTransition from 'vue-page-transition'
 
 export default ({
     Vue, // the version of Vue being used in the VuePress app
@@ -9,5 +8,4 @@ export default ({
     siteData // site metadata
 }) => {
     Vue.use(ElementUI);
-    Vue.use(VuePageTransition);
 }
