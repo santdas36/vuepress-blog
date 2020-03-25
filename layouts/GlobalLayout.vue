@@ -1,7 +1,9 @@
 <template>
   <div>
     <Header />
-    <DefaultGlobalLayout />
+      <vue-page-transition>
+        <DefaultGlobalLayout />
+      </vue-page-transition>
     <Footer />
   </div>
 </template>
