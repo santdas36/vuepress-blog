@@ -81,7 +81,7 @@ export default {
 .search-box {
   input {
     border-radius: 5px;
-    border: 1px solid lighten($accentColor, 50%);
+    border: 1px solid darken($borderColor, 20%);
     background: #fff url(search.svg) 0.3rem 0.3rem no-repeat;
     width: 15rem;
   }
