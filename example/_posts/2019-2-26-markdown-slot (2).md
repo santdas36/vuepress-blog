@@ -7,7 +7,7 @@ author: Poleted
 location: Magic World
 title: See you now
 image: https://source.unsplash.com/random/800x600
-
+isArticle: true
 ---
 
 # See you now

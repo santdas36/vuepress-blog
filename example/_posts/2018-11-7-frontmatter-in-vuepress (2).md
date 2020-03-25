@@ -7,6 +7,7 @@ author: chem-dept
 location: china
 title: Tutorials
 image: https://source.unsplash.com/random/800x600
+isArticle: true
 ---
 
 #  Tutorial in Chemicals

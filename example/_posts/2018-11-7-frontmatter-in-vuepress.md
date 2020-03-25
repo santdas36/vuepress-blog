@@ -8,6 +8,7 @@ location: Hangzhou
 title: Front Matter in VuePress
 image: https://source.unsplash.com/random/800x600
 featured: true
+isArticle: true
 ---
 
 # Front Matter in VuePress

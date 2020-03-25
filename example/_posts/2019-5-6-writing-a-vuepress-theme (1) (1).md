@@ -8,6 +8,7 @@ author: ULIVZ
 location: Ceylon
 title: Seeing through a VuePress theme
 image: https://source.unsplash.com/random/800x600
+isArticle: true
 ---
 
 # Seeing through a VuePress theme

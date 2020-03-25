@@ -8,6 +8,7 @@ author: The Man
 location: China
 title: What's Up?
 image: https://source.unsplash.com/random/800x600
+isArticle: true
 ---
 
 # What's Up?

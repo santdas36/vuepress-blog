@@ -7,6 +7,7 @@ author: lipsum
 location: Latin
 title: Lipsum
 image: https://source.unsplash.com/random/800x600
+isArticle: true
 ---
 
 # h1 Heading 8-)

@@ -9,6 +9,7 @@ location: Shanghai
 title: Writing a VuePress theme
 image: https://source.unsplash.com/random/800x600
 featured: true
+isArticle: true
 ---
 
 # Writing a VuePress theme

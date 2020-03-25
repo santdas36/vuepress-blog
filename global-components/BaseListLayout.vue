@@ -72,7 +72,7 @@ export default {
       return this.$pagination.pages;
     },
     tags () {
-      return this.$tag.list
+      return this.$category.list
     }
   },
   methods: {

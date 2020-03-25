@@ -2,7 +2,7 @@
     <div class="latest-posts row no-gutters">
       <el-card
         v-for="(post, index) in posts"
-        v-if="index < 5"
+        v-if="index < 6"
         :key="post.key"
         class="cursor-pointer el-card-latest"
         @click="go(post.path)"
@@ -50,7 +50,7 @@ export default {
   },
   computed: {
     posts () {
-      return this.$site.pages.filter(page => page.frontmatter.featured == true)
+      return this.$site.pages.filter(page => page.frontmatter.isArticle == true)
     }
   }
 };

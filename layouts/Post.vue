@@ -17,7 +17,7 @@
       </div>
       <div class="d-flex justify-content-center mb-4">
         <router-link
-          :to="'/tag/'+tag"
+          :to="'/category/'+tag"
           v-for="tag in $page.frontmatter.tags"
           :key="tag"
           class="el-button el-button--small text-decoration-none d-inline-block"

@@ -16,14 +16,14 @@ module.exports = (themeConfig, ctx) => {
   const defaultBlogPluginOptions = {
     directories: [
       {
-        id: "post",
+        id: "article",
         dirname: "_posts",
-        path: "/post/",
+        path: "/article/",
         title: "Articles",
         // layout: 'IndexPost', defaults to `Layout.vue`
         itemLayout: "Post",
         frontmatter: { title: "Articles" },
-        itemPermalink: "/post/:year/:month/:day/:slug",
+        itemPermalink: "/article/:year/:month/:day/:slug",
         pagination: {
           lengthPerPage: 6
         }
@@ -31,9 +31,9 @@ module.exports = (themeConfig, ctx) => {
     ],
     frontmatters: [
       {
-        id: "tag",
+        id: "category",
         keys: ["tag", "tags"],
-        path: "/tag/",
+        path: "/category/",
         title: "Category",
         // layout: 'Tag',  defaults to `FrontmatterKey.vue`
         frontmatter: { title: "Category" },

@@ -7,6 +7,7 @@ author: SlotMan
 location: CA
 title: You know what Slot
 image: https://source.unsplash.com/random/800x600
+isArticle: true
 ---
 
 # You know what Slot
