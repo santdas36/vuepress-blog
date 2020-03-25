@@ -85,4 +85,10 @@ export default {
     display: none;
   }
 }
+.vue-fixed-header--isFixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
 </style>

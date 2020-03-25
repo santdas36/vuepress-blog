@@ -58,6 +58,7 @@ module.exports = (themeConfig, ctx) => {
     "smooth-scroll",
     "reading-progress",
     "vuepress-auth0",
+    "vuepress-plugin-typescript",
     "@vuepress/medium-zoom",
     "@vuepress/nprogress",
     "@vuepress/back-to-top",
