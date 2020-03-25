@@ -64,6 +64,12 @@ module.exports = (themeConfig, ctx) => {
         },
       },
     ],
+    ['copyright',
+      {
+        noCopy: true,
+        noSelect: true,
+       }
+    ],
     "@vuepress/medium-zoom",
     "@vuepress/nprogress",
     "@vuepress/back-to-top",
