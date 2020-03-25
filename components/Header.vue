@@ -56,11 +56,12 @@ export default {
 </script>
 
 <style lang="stylus">
-.el-menu-item.is-active {
+.el-menu-item {
   border-bottom: none !important;
   position: relative;
 }
-.el-menu-item.is-active:before {
+
+.el-menu-item:before {
   position: absolute;
   content: '';
   width: 100%;
@@ -68,6 +69,13 @@ export default {
   bottom: 0;
   left: 0;
   background: lighten($accentColor, 15%);
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition: transform 0.3s;
+}
+.el-menu-item.is-active:before{
+  transform: scaleX(1);
+  transform-origin: left center;
   border-radius: 3px 3px 0 0;
 }
 .search-box {
