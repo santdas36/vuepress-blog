@@ -6,7 +6,7 @@
     <div class="p-4 row align-items-center justify-content-between">
       <router-link
         to="/"
-        class="text-decoration-none pt-2 pl-3 pl-lg-5"
+        class="text-decoration-none pt-3 pl-3 pl-lg-5"
       >
         <h2>
           {{ $site.title }}
@@ -66,6 +66,8 @@ export default {
 .search-box {
  .suggestions {
     z-index: 999;
+    right: 0 !important;
+    left: auto !important;
   }
 }
 </style>
