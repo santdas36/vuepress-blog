@@ -2,6 +2,7 @@ const Auth = require('vuepress-auth0');
 
 module.exports = {
   head: [
+    ['script', { src: 'https://code.jquery.com/jquery-3.4.1.min.js' }],
     ['link', { rel: 'stylesheet', href: '/theme/index.css' }],
     ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' }],
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
@@ -15,8 +16,7 @@ module.exports = {
     ['link', { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#3eaf7c' }], 
     ['meta', { name: 'msapplication-TileImage', content: '/mstile-150x150.png' }], 
     ['meta', { name: 'msapplication-TileColor', content: '#fff' }],
-    ['script', { src: '/protect.js' }],
-    ['script', { src: 'https://code.jquery.com/jquery-3.4.1.min.js' }]
+    ['script', { src: '/protect.js' }]
   ],
   plugins: [ 
     [ '@vuepress/pwa', 
