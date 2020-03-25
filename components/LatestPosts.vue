@@ -86,8 +86,8 @@ export default {
     padding: 0;
 
     .post-body-white {
-      z-index: 5;
-      background: #fff;
+      z-index: 90;
+      background: #fff !important;
     }
     img {
       border-radius: 10px 10px 0 0;
