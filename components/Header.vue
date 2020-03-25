@@ -47,7 +47,7 @@
 
 <script>
 import SearchBox from "@SearchBox";
-import VueFixedHeader from "./vue-fixed-header.ts";
+import VueFixedHeader from "./vue-fixed-header.vue";
 
 export default {
   components: { SearchBox, FixedHeader },
