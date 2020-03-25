@@ -50,7 +50,7 @@ import SearchBox from "@SearchBox";
 import VueFixedHeader from "./vue-fixed-header.vue";
 
 export default {
-  components: { SearchBox, FixedHeader },
+  components: { SearchBox, VueFixedHeader },
   data () {	
     return {
       activeIndex: '0',
