@@ -14,7 +14,7 @@
       </router-link>
       <SearchBox class="pr-3 pr-lg-5"/>
     </div>
-    <fixed-header>
+    <VueFixedHeader :threshold="100">
     <nav>
       <el-menu
         v-if="$themeConfig.nav"
@@ -41,13 +41,13 @@
         </el-menu-item>
       </el-menu>
     </nav>
-    </fixed-header>
+    </VueFixedHeader>
   </header>
 </template>
 
 <script>
 import SearchBox from "@SearchBox";
-import FixedHeader from "vue-fixed-header";
+import VueFixedHeader from "./vue-fixed-header.ts";
 
 export default {
   components: { SearchBox, FixedHeader },
