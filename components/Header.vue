@@ -64,6 +64,9 @@ export default {
   border-bottom: 3px solid $accentColor !important;
 }
 .search-box {
+  input {
+    border-radius: 5px;
+  }
  .suggestions {
     z-index: 999;
     right: 0 !important;
