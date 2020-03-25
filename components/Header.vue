@@ -14,7 +14,8 @@
       </router-link>
       <SearchBox class="pr-3 pr-lg-5"/>
     </div>
-    <nav class="px-5">
+    <fixed-header>
+    <nav>
       <el-menu
         v-if="$themeConfig.nav"
         :default-active="activeIndex"
@@ -40,14 +41,16 @@
         </el-menu-item>
       </el-menu>
     </nav>
+    </fixed-header>
   </header>
 </template>
 
 <script>
 import SearchBox from "@SearchBox";
+import FixedHeader from "vue-fixed-header";
 
 export default {
-  components: { SearchBox },
+  components: { SearchBox, FixedHeader },
   data () {	
     return {
       activeIndex: '0',
@@ -82,4 +85,12 @@ export default {
     display: none;
   }
 }
+.vue-fixed-header--isFixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+}
+
+
 </style>
