@@ -49,7 +49,7 @@ export default {
   components: { LatestPosts, FeaturedPosts, Subscribe },
   methods: {
     go () {
-      this.$router.push('/post/')
+      this.$router.push('/article/')
     }
   },
   
