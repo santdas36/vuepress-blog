@@ -177,6 +177,9 @@ export default {
       right 0
 
 @media (max-width: $MQMobileNarrow)
+  .title-bar
+    display flex
+    justify-content center
   .title-bar > .row
     width 100%
     .search-box
