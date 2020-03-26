@@ -5,13 +5,20 @@ $(document).ready(function () {
     $('body').bind('cut copy', function (e) {
         e.preventDefault();
     });
-
-$('.search-box input').on('focus', function() {
-  $('.HeaderTitle').addClass('MobileHeaderTitle');
-});
-
-$('.search-box input').on('blur', function() {
-  $('.MobileHeaderTitle').removeClass('MobileHeaderTitle');
+$(window).resize(function(){
+       if ($(window).width() <= 419) {
+          $('#header').height($('#header').outerHeight());
+		$('.search-box input').on('focus', function() {
+		  $('.title-bar').hide();
+		  $('.auth-link').hide();
+		  $('.search-box').addClass('p-0');
+		});
+		$('.search-box input').on('blur', function() {
+		  $('.title-bar').show();
+		  $('.auth-link').show();
+		  $('.search-box').removeClass('p-0');
+		});
+       }     
 });
  
 var stickyOffset = $('.sticky').offset().top;

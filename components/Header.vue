@@ -3,12 +3,12 @@
     id="header"
   >
     <div class="p-4 row align-items-center justify-content-between">
-      <div class="row pl-5 ml-lg-5">
+      <div class="row pl-5 ml-lg-5 title-bar">
       <router-link
         to="/"
         class="text-decoration-none pt-3"
       >
-        <h2 class="HeaderTitle">
+        <h2>
           {{ $site.title }}
         </h2>
       </router-link>
@@ -98,15 +98,6 @@ export default {
   width: 100vw;
   z-index: 99;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
-.HeaderTitle {
-  transition: all 0.3s;
-}
-.MobileHeaderTitle {
-  @media (max-width: $MQMobileNarrow) {
-    width: 0 !important;
-    overflow: hidden;
-  }
 }
 .search-box
   display inline-block
