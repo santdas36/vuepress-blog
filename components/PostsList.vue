@@ -46,7 +46,6 @@
               <PostInfo
                 :date="post.frontmatter.date"
                 :timeToRead="post.readingTime.text"
-                :location="post.frontmatter.location"
               />
             </div>
           </div>

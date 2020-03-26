@@ -11,7 +11,6 @@
       <PostInfo
         :date="$frontmatter.date"
         :timeToRead="$page.readingTime.text"
-        :location="$frontmatter.location"
         class="text-secondary d-flex justify-content-center my-3"
       />
       </div>

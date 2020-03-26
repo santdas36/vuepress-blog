@@ -5,7 +5,6 @@ tags:
   - twitter
   - social media
 author: ULIVZ
-location: Hangzhou
 title: Social Slot
 image: https://source.unsplash.com/random/800x600
 featured: true

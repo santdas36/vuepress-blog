@@ -5,25 +5,21 @@
       {{ new Date(date.trim()).toDateString() }}
     </div>
     <div
-      class="post-info-item pit-hidden"
+      class="post-info-item"
       v-if="timeToRead"
     >
       <ClockIcon />
       {{ timeToRead }}
     </div>
-    <div class="post-info-item pit-hidden">
-      <NavigationIcon />
-      {{ location }}
-    </div>
   </div>
 </template>
 
 <script>
-import { NavigationIcon, ClockIcon, CalendarIcon } from "vue-feather-icons";
+import { ClockIcon, CalendarIcon } from "vue-feather-icons";
 
 export default {
-  components: { NavigationIcon, ClockIcon, CalendarIcon },
-  props: ["date", "timeToRead", "location"]
+  components: { ClockIcon, CalendarIcon },
+  props: ["date", "timeToRead"]
 };
 </script>
 
@@ -35,13 +31,6 @@ div.post-info-item {
   svg {
     width: 17px;
     height: 17px;
-  }
-}
-.pit-hidden {
-  display: block;
-
-  @media (max-width: $MQMobileNarrow) {
-    display: none;
   }
 }
 </style>

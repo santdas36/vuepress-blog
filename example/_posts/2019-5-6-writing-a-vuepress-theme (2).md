@@ -5,7 +5,6 @@ tags:
   - see
   - through
 author: Vassaul
-location: See through
 title: Can I do it?
 image: https://source.unsplash.com/random/800x600
 isArticle: true
