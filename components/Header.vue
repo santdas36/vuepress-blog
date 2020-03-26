@@ -3,7 +3,7 @@
     id="header"
   >
     <div class="p-4 row align-items-center justify-content-between">
-      <div class="row pl-5 ml-lg-5 title-bar">
+      <div class="row pl-5 ml-lg-5">
       <router-link
         to="/"
         class="text-decoration-none pt-3"
