@@ -2,7 +2,7 @@
   <header
     id="header"
   >
-    <div class="p-4 row align-items-center justify-content-between">
+    <div class="p-4 title-bar row align-items-center justify-content-between">
       <div class="row pl-5 ml-lg-5">
       <router-link
         to="/"
@@ -177,6 +177,11 @@ export default {
       right 0
 
 @media (max-width: $MQMobileNarrow)
+  .title-bar > .row
+    width 100%
+    .search-box
+      display flex
+      justify-content flex-end
   .search-box
     input:focus
       width 10rem
