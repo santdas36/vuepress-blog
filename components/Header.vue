@@ -15,7 +15,7 @@
       </div>
       <div class="row pr-5 mr-lg-5">
         <SearchBox class="pr-4 pr-lg-2"/>
-        <AuthLink class="pr-2">
+        <AuthLink class="pr-1">
       </div>
     </div>
     <nav class="sticky">
@@ -84,19 +84,6 @@ export default {
   transform-origin: left center;
   border-radius: 3px 3px 0 0;
 }
-.search-box {
-  input {
-    border-radius: 5px;
-    background: url(search.svg) 0.3rem 0.3rem no-repeat;
-  }
- .suggestions {
-    z-index: 999;
-    right: 2rem !important;
-    left: auto !important;
-    top: 2.5rem !important;
-    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
-  }
-}
 .navItem-text {
   display: inline;
 
@@ -112,4 +99,90 @@ export default {
   z-index: 99;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
+#header
+  position relative
+.search-box
+  display inline-block
+  margin-right 1rem
+  input
+    cursor text
+    width 15rem
+    height 2rem
+    color lighten($textColor, 25%)
+    display inline-block
+    border 1px solid darken($borderColor, 10%)
+    border-radius 5px
+    font-size 0.9rem
+    line-height 2rem
+    padding 0 0.5rem 0 2rem
+    outline none
+    transition all .2s ease
+    background url(search.svg) 0.3rem 0.3rem no-repeat
+    background-size 1rem
+    &:focus
+      cursor auto
+      border-color $accentColor
+  .suggestions
+    background #fff
+    width calc(100vw - 4rem)
+    margin 2rem
+    max-width 20rem
+    z-index 999
+    position absolute
+    top 2.5rem
+    right 0
+    border 1px solid darken($borderColor, 50%)
+    box-shadow 0 3px 5px rgba(0,0,0,0.2)
+    border-radius 6px
+    padding 0.4rem
+    list-style-type none
+  .suggestion
+    line-height 1.4
+    padding 0.4rem 0.6rem
+    border-radius 4px
+    cursor pointer
+    a
+      white-space normal
+      color lighten($textColor, 35%)
+      &:hover
+        color darken($textColor, 70%)
+      .page-title
+        font-weight 600
+      .header
+        font-size 0.9em
+        margin-left 0.25em
+    &.focused
+      background-color #f3f4f5
+      a
+        color $accentColor
+
+@media (max-width: $MQNarrow)
+  .search-box
+    input
+      cursor pointer
+      width 0
+      border-color transparent
+      position relative
+      &:focus
+        cursor text
+        left 0
+        width 12rem
+
+// Match IE11
+@media all and (-ms-high-contrast: none)
+  .search-box input
+    height 2rem
+
+@media (max-width: $MQMobile)
+  .search-box
+    margin-right 0
+    input
+      left 1rem
+    .suggestions
+      right 0
+
+@media (max-width: $MQMobileNarrow)
+  .search-box
+    input:focus
+      width 10rem
 </style>
