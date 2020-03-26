@@ -79,6 +79,17 @@ module.exports = (themeConfig, ctx) => {
     ]);
   }
 
+  if (themeConfig.socialShare && themeConfig.socialShareNetworks) {
+    plugins.push(
+      ["social-share", { 
+          networks: themeConfig.socialShareNetworks,
+          twitterUser: 'santdas36',
+          isPlain: true,
+          noGlobalSocialShare: true,
+        }]
+    )
+  }
+
   if (themeConfig.googleAnalytics) {
     plugins.push([
       "@vuepress/google-analytics",
