@@ -3,14 +3,16 @@
     id="header"
   >
     <div class="p-4 row align-items-center justify-content-between">
+      <div class="row pl-3 pl-lg-5">
       <router-link
         to="/"
-        class="text-decoration-none pt-3 pl-3 pl-lg-5"
+        class="text-decoration-none pt-3"
       >
         <h2>
           {{ $site.title }}
         </h2>
       </router-link>
+      </div>
       <div class="row pr-3 pr-lg-5">
         <SearchBox class="pr-2"/>
         <AuthLink />
