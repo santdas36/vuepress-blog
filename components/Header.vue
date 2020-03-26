@@ -108,7 +108,7 @@ export default {
     height 2rem
     color lighten($textColor, 25%)
     display inline-block
-    border 1px solid rgba(0,0,0,0.25)
+    border 1px solid rgba(36,51,65,0.33)
     border-radius 5px
     font-size 0.9rem
     line-height 2rem
@@ -125,7 +125,7 @@ export default {
     margin 2rem
     max-width 20rem
     z-index 999
-    border 1px solid rgba(36,51,65,0.5)
+    border 1px solid darken($borderColor, 50%)
     box-shadow 0 3px 5px rgba(0,0,0,0.2)
     border-radius 6px
     padding 0.4rem
