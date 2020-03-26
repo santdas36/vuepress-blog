@@ -15,7 +15,7 @@
       </div>
       <div class="row pr-5 mr-lg-5">
         <SearchBox class="pr-3 pr-lg-2"/>
-        <AuthLink class="pr-1">
+        <AuthLink class="pr-1 authLink">
       </div>
     </div>
     <nav class="sticky">
@@ -99,9 +99,13 @@ export default {
   z-index: 99;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
+.HeaderTitle {
+  transition: all 0.2s;
+}
 .MobileHeaderTitle {
   @media (max-width: $MQMobileNarrow) {
-    display: none;
+    width: 0 !important;
+    overflow: hidden;
   }
 }
 .search-box
@@ -184,7 +188,7 @@ export default {
 @media (max-width: $MQMobileNarrow)
   .search-box
     input:focus
-      width 10rem
+      width 100%
   .search-box
     position static !important
     input
