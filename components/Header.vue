@@ -11,9 +11,9 @@
           {{ $site.title }}
         </h2>
       </router-link>
-      <div class="row">
-        <SearchBox class="pr-3"/>
-        <AuthLink class="pr-3 pr-lg-5"/>
+      <div class="row pr-3 pr-lg-5">
+        <SearchBox class="pr-2"/>
+        <AuthLink />
       </div>
     </div>
     <nav class="sticky">
