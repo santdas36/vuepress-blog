@@ -186,6 +186,7 @@ export default {
     top 2rem
     right 2rem
   .search-box
+    padding: 1.5rem 0
     input
       width 100%
       border 1px solid rgba(36,51,65,0.33)
