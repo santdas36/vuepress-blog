@@ -183,6 +183,9 @@ export default {
   .title-bar > .row
     width 100%
     text-align center
+    display flex
+    align-item center
+    justify-content center
   .search-box
     input
       margin-left: 3rem
