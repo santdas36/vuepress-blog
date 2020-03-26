@@ -14,7 +14,7 @@
       </router-link>
       </div>
       <div class="row pr-5 mr-lg-5">
-        <SearchBox class="pr-4 pr-lg-2"/>
+        <SearchBox class="pr-2"/>
         <AuthLink class="pr-1">
       </div>
     </div>
@@ -118,7 +118,6 @@ export default {
     outline none
     transition all .2s ease
     background url(search.svg) 0.3rem 0.3rem no-repeat
-    background-size 1rem
     &:focus
       cursor auto
       border-color $accentColor
@@ -162,7 +161,6 @@ export default {
       cursor pointer
       width 0
       border-color transparent
-      position relative
       &:focus
         cursor text
         left 0
