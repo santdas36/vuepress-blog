@@ -156,11 +156,12 @@ export default {
   .search-box
     input
       cursor pointer
-      width 12rem
+      width 0
       border-color transparent
       &:focus
         cursor text
         left 0
+        width 12rem
 
 // Match IE11
 @media all and (-ms-high-contrast: none)
@@ -183,8 +184,10 @@ export default {
     width 100%
     text-align center
   .search-box
-    input, input:focus
-      width 100%
+    input
+      margin-left: 3rem
+      &:focus
+        width 100%
   .search-box
     position static !important
     input
