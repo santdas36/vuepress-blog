@@ -177,20 +177,15 @@ export default {
       right 0
 
 @media (max-width: $MQMobileNarrow)
-  .title-bar
-    display flex
-    justify-content center
   .title-bar > .row
     width 100%
-    text-align center
     display flex
-    align-item center
-    justify-content center
+    justify-content flex-end
   .search-box
     input
       margin-left: 3rem
       &:focus
-        width 100%
+        width 10rem
   .search-box
     position static !important
     input
