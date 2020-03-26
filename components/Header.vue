@@ -11,7 +11,8 @@
           {{ $site.title }}
         </h2>
       </router-link>
-      <SearchBox class="pr-3 pr-lg-5"/>
+      <SearchBox class="pr-3"/>
+      <AuthLink class="pr-3 pr-lg-5"/>
     </div>
     <nav class="sticky">
       <el-menu
@@ -44,9 +45,10 @@
 
 <script>
 import SearchBox from "@SearchBox";
+import AuthLink from "@AuthLink";
 
 export default {
-  components: { SearchBox },
+  components: { SearchBox, AuthLink },
   data () {	
     return {
       activeIndex: '0',

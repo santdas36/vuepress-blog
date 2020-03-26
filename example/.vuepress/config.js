@@ -61,17 +61,17 @@ module.exports = {
       {
         text: "Categories",
         link: "/category/",
-        icon: "el-icon-tickets"
+        icon: "el-icon-collection"
       },
       {
         text: "Articles",
         link: "/article/",
-        icon: "el-icon-edit-outline"
+        icon: "el-icon-notebook-2"
       },
       {
         text: "Contact",
         link: "/contact/",
-        icon: "el-icon-chat-line-square"
+        icon: "el-icon-user"
       }
     ],
     sitemap: true, // enables sitemap plugin
