@@ -99,18 +99,10 @@ export default {
   z-index: 99;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
-#header
-  position relative
-  .suggestions
-    position absolute
-    top 2.5rem
-    right 0
 .search-box
   display inline-block
   margin-right 1rem
-  position static !important
   input
-    position static !important
     cursor text
     width 15rem
     height 2rem
@@ -188,6 +180,11 @@ export default {
   .search-box
     input:focus
       width 10rem
+  .search-box
+    position static !important
+    input
+      position static !important
+
   #header
     position relative
     .suggestions
