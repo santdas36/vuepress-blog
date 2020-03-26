@@ -113,9 +113,23 @@ a {
   font-weight: 500;
   color: $accentColor;
   text-decoration: none;
+  background:
+     linear-gradient(
+       to bottom, $borderColor 0%,
+       darken($borderColor, 20%) 100%
+     );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+  color: #000;
+  text-decoration: none;
+  transition: background-size .2s;
+}
 
   &:hover {
     color: darken($accentColor, 20%);
+    background-size: 4px 50px;
+    text-decoration: none;
   }
 }
 
