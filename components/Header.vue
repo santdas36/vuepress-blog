@@ -8,7 +8,7 @@
         to="/"
         class="text-decoration-none pt-3"
       >
-        <h2>
+        <h2 class="HeaderTitle">
           {{ $site.title }}
         </h2>
       </router-link>
@@ -98,6 +98,11 @@ export default {
   width: 100vw;
   z-index: 99;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.MobileHeaderTitle {
+  @media (max-width: $MQMobileNarrow) {
+    display: none;
+  }
 }
 .search-box
   display inline-block

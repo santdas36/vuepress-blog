@@ -5,7 +5,15 @@ $(document).ready(function () {
     $('body').bind('cut copy', function (e) {
         e.preventDefault();
     });
-    
+
+$('.search-box input').on('focus', function() {
+  $('.HeaderTitle').addClass('MobileHeaderTitle');
+});
+
+$('.search-box input').on('blur', function() {
+  $('.MobileHeaderTitle').removeClass('MobileHeaderTitle');
+});
+ 
 var stickyOffset = $('.sticky').offset().top;
 var paddingHeight = $('.sticky').outerHeight();
 
