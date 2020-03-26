@@ -15,7 +15,7 @@
       </div>
       <div class="row pr-5 mr-lg-5">
         <SearchBox class="pr-3 pr-lg-2"/>
-        <AuthLink class="pr-1 authLink">
+        <AuthLink class="pr-1 authlink">
       </div>
     </div>
     <nav class="sticky">
@@ -100,7 +100,7 @@ export default {
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 .HeaderTitle {
-  transition: all 0.2s;
+  transition: all 0.3s;
 }
 .MobileHeaderTitle {
   @media (max-width: $MQMobileNarrow) {
