@@ -45,6 +45,7 @@ export default {
 }
 .carousel-card-content {
 position: relative;
+z-index: 33;
 }
 .el-carousel__mask {
 display: none;
