@@ -14,8 +14,8 @@
       </router-link>
       </div>
       <div class="row pr-5 mr-lg-5">
-        <SearchBox class="pr-2"/>
-        <AuthLink />
+        <SearchBox class="pr-4 pr-lg-2"/>
+        <AuthLink class="pr-2">
       </div>
     </div>
     <nav class="sticky">
