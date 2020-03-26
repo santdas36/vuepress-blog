@@ -130,7 +130,7 @@ export default {
     border-radius 6px
     padding 0.4rem
     list-style-type none
-    top 3rem 
+    top 1rem 
     right 0 !important
   .suggestion
     line-height 1.4
@@ -188,6 +188,6 @@ export default {
     position relative
     .suggestions
       position absolute
-      top 5rem
+      top 4rem
       right 0
 </style>
