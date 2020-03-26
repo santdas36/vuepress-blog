@@ -1,6 +1,5 @@
 <template>
-<transition name="fade" mode="out-in">
-  <div id="vuperess-theme-blog__post-layout">
+  <div id="vuperess-theme-blog__post-layout fade-in-up">
     <main class="vuepress-blog-theme-content p-lg-1">
       <div class="span-wrap pb-2 mb-4 shadow">
       <img
@@ -35,7 +34,6 @@
       </ClientOnly>
     </main>
   </div>
-</transition>
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-  <el-container>
+  <el-container class="fade-in-up">
     <el-main>
       <el-row
         :gutter="10"
