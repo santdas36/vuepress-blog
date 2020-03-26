@@ -1,4 +1,5 @@
 <template>
+<transition name="fade" mode="out-in">
   <div id="vuperess-theme-blog__post-layout">
     <main class="vuepress-blog-theme-content p-lg-1">
       <div class="span-wrap pb-2 mb-4 shadow">
@@ -34,6 +35,7 @@
       </ClientOnly>
     </main>
   </div>
+</transition>
 </template>
 
 <script>
