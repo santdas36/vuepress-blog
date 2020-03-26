@@ -15,7 +15,7 @@
       </div>
       <div class="row pr-5 mr-lg-5 title-menu">
         <SearchBox class="pr-3 pr-lg-2"/>
-        <AuthLink class="pr-1">
+        <AuthLink class="pr-1 authlink">
       </div>
     </div>
     <nav class="sticky">
@@ -185,6 +185,8 @@ export default {
     position absolute
     top 2rem
     right 2rem
+  .authlink
+    padding 0
   .search-box
     padding: 1.5rem 0
     input
