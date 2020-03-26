@@ -186,7 +186,10 @@ export default {
     top 2rem
     right 2rem
   .search-box
-    input, input:focus
+    input
+      width 100%
+      border 1px solid rgba(36,51,65,0.33)
+    input:focus
       width 100%
       left 0
   .search-box
