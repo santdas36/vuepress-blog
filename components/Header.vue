@@ -138,6 +138,8 @@ export default {
     border-radius 6px
     padding 0.4rem
     list-style-type none
+    top 3rem 
+    right 0 !important
   .suggestion
     line-height 1.4
     padding 0.4rem 0.6rem
@@ -186,4 +188,10 @@ export default {
   .search-box
     input:focus
       width 10rem
+  #header
+    position relative
+    .suggestions
+      position absolute
+      top 5rem
+      right 0
 </style>
