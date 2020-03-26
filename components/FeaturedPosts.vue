@@ -44,7 +44,9 @@ export default {
   border-radius: 10px;
 }
 .carousel-card-content {
-z-index: 33;
+position: relative;
+}
+.el-carousel__mask {
 position: relative;
 }
 .carousel-card-bg {
