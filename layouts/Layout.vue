@@ -1,7 +1,7 @@
 <template>
   <div>
-    <BaseListLayout v-if="$pagination" class="fade-in-up"/>
-    <Content v-else class="fade-in-up"/>
+    <BaseListLayout v-if="$pagination" />
+    <Content v-else />
   </div>
 </template>
 

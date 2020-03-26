@@ -1,5 +1,5 @@
 <template>
-  <div id="vuperess-theme-blog__post-layout fade-in-up">
+  <div id="vuperess-theme-blog__post-layout">
     <main class="vuepress-blog-theme-content p-lg-1">
       <div class="span-wrap pb-2 mb-4 shadow">
       <img
