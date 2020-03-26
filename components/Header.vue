@@ -179,10 +179,16 @@ export default {
 @media (max-width: $MQMobileNarrow)
   .title-menu
     display flex
-    flex-flow column-reverse wrap-reverse   
+    flex-direction column-reverse
+    align-items flex-end
+    justify-content flex-end
+    position absolute
+    top 2rem
+    right 2rem
   .search-box
     input, input:focus
       width 100%
+      left 0
   .search-box
     position static !important
     input
