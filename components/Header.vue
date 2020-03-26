@@ -13,9 +13,9 @@
         </h2>
       </router-link>
       </div>
-      <div class="row pr-5 mr-lg-5">
+      <div class="row pr-5 mr-lg-5 title-menu">
         <SearchBox class="pr-3 pr-lg-2"/>
-        <AuthLink class="pr-1 authlink">
+        <AuthLink class="pr-1">
       </div>
     </div>
     <nav class="sticky">
@@ -177,9 +177,12 @@ export default {
       right 0
 
 @media (max-width: $MQMobileNarrow)
+  .title-menu
+    display flex
+    flex-flow column-reverse wrap-reverse   
   .search-box
-    input:focus
-      width 10rem
+    input, input:focus
+      width 100%
   .search-box
     position static !important
     input
