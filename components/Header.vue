@@ -2,7 +2,7 @@
   <header
     id="header"
   >
-    <div class="p-4 title-bar row align-items-center justify-content-between">
+    <div class="p-4 row align-items-center justify-content-between">
       <div class="row pl-5 ml-lg-5">
       <router-link
         to="/"
@@ -99,19 +99,24 @@ export default {
   z-index: 99;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
-.title-bar
+#header
   position relative
-  width 100vw
+  .suggestions
+    position absolute
+    top 2.5rem
+    right 0
 .search-box
   display inline-block
   margin-right 1rem
+  position static !important
   input
+    position static !important
     cursor text
     width 15rem
     height 2rem
     color lighten($textColor, 25%)
     display inline-block
-    border 1px solid rgba(0,0,0,0.5)
+    border 1px solid rgba(0,0,0,0.25)
     border-radius 5px
     font-size 0.9rem
     line-height 2rem
@@ -128,9 +133,6 @@ export default {
     margin 2rem
     max-width 20rem
     z-index 999
-    position absolute
-    top 2.5rem
-    right 0
     border 1px solid darken($borderColor, 50%)
     box-shadow 0 3px 5px rgba(0,0,0,0.2)
     border-radius 6px
