@@ -3,7 +3,7 @@
     id="header"
   >
     <div class="p-4 row align-items-center justify-content-between">
-      <div class="row pl-3 pl-lg-5">
+      <div class="row pl-5 ml-lg-5">
       <router-link
         to="/"
         class="text-decoration-none pt-3"
@@ -13,7 +13,7 @@
         </h2>
       </router-link>
       </div>
-      <div class="row pr-3 pr-lg-5">
+      <div class="row pr-5 mr-lg-5">
         <SearchBox class="pr-2"/>
         <AuthLink />
       </div>
@@ -87,7 +87,7 @@ export default {
 .search-box {
   input {
     border-radius: 5px;
-    background: #fff url(search.svg) 0.3rem 0.3rem no-repeat;
+    background: url(search.svg) 0.3rem 0.3rem no-repeat;
   }
  .suggestions {
     z-index: 999;
