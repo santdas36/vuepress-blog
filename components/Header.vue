@@ -2,7 +2,7 @@
   <header
     id="header"
   >
-    <div class="p-4 row align-items-center justify-content-between">
+    <div class="p-4 title-bar row align-items-center justify-content-between">
       <div class="row pl-5 ml-lg-5">
       <router-link
         to="/"
@@ -14,7 +14,7 @@
       </router-link>
       </div>
       <div class="row pr-5 mr-lg-5">
-        <SearchBox class="pr-2"/>
+        <SearchBox class="pr-3 pr-lg-2"/>
         <AuthLink class="pr-1">
       </div>
     </div>
@@ -99,8 +99,9 @@ export default {
   z-index: 99;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
-#header
+.title-bar
   position relative
+  width 100vw
 .search-box
   display inline-block
   margin-right 1rem
@@ -110,7 +111,7 @@ export default {
     height 2rem
     color lighten($textColor, 25%)
     display inline-block
-    border 1px solid darken($borderColor, 10%)
+    border 1px solid rgba(0,0,0,0.5)
     border-radius 5px
     font-size 0.9rem
     line-height 2rem
