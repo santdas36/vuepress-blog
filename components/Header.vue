@@ -45,7 +45,7 @@
 
 <script>
 import SearchBox from "@SearchBox";
-import AuthLink from "@AuthLink";
+import AuthLink from "./AuthLink.vue";
 
 export default {
   components: { SearchBox, AuthLink },
