@@ -188,7 +188,7 @@ export default {
 @media (max-width: $MQMobileNarrow)
   .search-box
     input:focus
-      width 100%
+      width 10rem
   .search-box
     position static !important
     input

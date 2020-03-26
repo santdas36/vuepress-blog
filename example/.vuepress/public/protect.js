@@ -7,7 +7,7 @@ $(document).ready(function () {
     });
 
 $('.search-box input').on('focus', function() {
-  $('.HeaderTitle, .authlink').addClass('MobileHeaderTitle');
+  $('.HeaderTitle').addClass('MobileHeaderTitle');
 });
 
 $('.search-box input').on('blur', function() {
