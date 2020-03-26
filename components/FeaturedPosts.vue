@@ -47,26 +47,29 @@ export default {
 position: relative;
 }
 .el-carousel__mask {
-position: relative;
+display: none;
 }
 .carousel-card-bg {
-width: 150%;
-height: 150%;
+width: 125%;
+height: 125%;
 position:absolute;
 background-size: cover;
 top: 0;
 bottom: 0;
 left: 0;
+filter: grayscale(50%) brightness(50%);
+transition: filter 0.3s;
 }
 .el-carousel__item.is-active .carousel-card-bg {
-animation: bg-slide 4s linear infinite;
+animation: bg-slide 3.5s 1 ease forwards;
+filter: grayscale(0%) brightness(100%)
 }
 @keyframes bg-slide {
   from{
     transform: translate(0, 0);
   }
   to{
-    transform: translate(-20px, -20px);
+    transform: translate(-25px, -25px);
   }
 }
 </style>
