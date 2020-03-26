@@ -1,6 +1,5 @@
 <template>
   <div>
-    <LoadingPage ></LoadingPage>
     <Header />
       <DefaultGlobalLayout />
     <Footer />
@@ -11,7 +10,6 @@
 import GlobalLayout from "@app/components/GlobalLayout.vue";
 import Header from "@theme/components/Header.vue";
 import Footer from "@theme/components/Footer.vue";
-import LoadingPage from "@nines/vuepress-plugin-loading-page";
 
 export default {
   components: {
