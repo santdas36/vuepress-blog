@@ -156,12 +156,11 @@ export default {
   .search-box
     input
       cursor pointer
-      width 0
+      width 12rem
       border-color transparent
       &:focus
         cursor text
         left 0
-        width 12rem
 
 // Match IE11
 @media all and (-ms-high-contrast: none)
@@ -182,17 +181,14 @@ export default {
     justify-content center
   .title-bar > .row
     width 100%
-    .search-box
-      display flex
-      justify-content flex-end
+    text-align center
   .search-box
-    input:focus
-      width 10rem
+    input, input:focus
+      width 100%
   .search-box
     position static !important
     input
       position static !important
-
   #header
     position relative
     .suggestions
