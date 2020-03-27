@@ -1,7 +1,7 @@
 $(window).on('load', function() {
-  $('#loader').fade(500);
+  $('#loader').fadeOut(500);
   setTimeout( function() {
-    $('.preload-container').fade(500);
+    $('.preload-container').fadeOut(500);
   }, 500);
 });
 
