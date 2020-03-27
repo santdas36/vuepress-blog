@@ -14,7 +14,7 @@
       </router-link>
       </div>
       <div class="row pr-5 mr-lg-5 title-menu">
-        <SearchBox class="pr-xs-0 pr-md-3 pr-lg-2"/>
+        <SearchBox class="pr-sm-3 pr-lg-2"/>
         <AuthLink class="pr-1 authlink">
       </div>
     </div>
@@ -186,11 +186,11 @@ export default {
     justify-content flex-end
     position absolute
     top 2.25rem
-    right 0
+    right 1rem
   .authlink
     padding 0
   .search-box
-    padding 0 !important
+    padding-right 1rem
     margin-top 1.5rem
     input
       width 100%
