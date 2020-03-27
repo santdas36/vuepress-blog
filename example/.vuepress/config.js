@@ -78,7 +78,7 @@ module.exports = {
     hostname: "https://ahmadmostafa.com/", // required for sitemap
     disqus: "disquswebsiteshortname", // if you want to incorporate Disqus for comments replace this value else just get rid of it
     socialShare: true, // enables social share
-    socialShareNetworks: ["facebook", "twitter", "whatsapp", "telegram"], // required for social share plugin
+    socialShareNetworks: ["facebook", "telegram", "twitter", "whatsapp"], // required for social share plugin
     googleAnalytics: "", // Google Analytics tracking ID
     about: {
       fullName: "What do we have here...",
