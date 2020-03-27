@@ -3,7 +3,7 @@
     id="header"
   >
     <div class="p-4 row align-items-center justify-content-between">
-      <div class="row pl-5 ml-lg-5">
+      <div class="row pl-5 ml-lg-5 headerTitle">
       <router-link
         to="/"
         class="text-decoration-none pt-3"
@@ -177,18 +177,21 @@ export default {
       right 0
 
 @media (max-width: $MQMobileNarrow)
+  .HeaderTitle
+    padding-bottom 2rem
   .title-menu
     display flex
     flex-direction column-reverse
     align-items flex-end
     justify-content flex-end
     position absolute
-    top 2rem
+    top 2.5rem
     right 2rem
   .authlink
     padding 0
   .search-box
-    padding: 1.5rem 0
+    padding 0 !important
+    margin-top 1.5rem
     input
       width 100%
       border 1px solid rgba(36,51,65,0.33)
