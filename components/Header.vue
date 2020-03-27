@@ -180,7 +180,6 @@ export default {
   .headerTitle
     padding-bottom 2rem
   .title-menu
-    background #222
     display flex
     flex-direction column-reverse
     align-items flex-end
