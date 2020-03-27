@@ -14,7 +14,7 @@
       </router-link>
       </div>
       <div class="row pr-5 mr-lg-5 title-menu">
-        <SearchBox class="pr-sm-3 pr-lg-2"/>
+        <SearchBox class="pr-3 pr-lg-2"/>
         <AuthLink class="pr-1 authlink">
       </div>
     </div>
@@ -180,6 +180,7 @@ export default {
   .headerTitle
     padding-bottom 2rem
   .title-menu
+    background #222
     display flex
     flex-direction column-reverse
     align-items flex-end
