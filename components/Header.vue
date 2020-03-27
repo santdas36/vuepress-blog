@@ -14,7 +14,7 @@
       </router-link>
       </div>
       <div class="row pr-5 mr-lg-5 title-menu">
-        <SearchBox class="pr-3 pr-lg-2"/>
+        <SearchBox class="pr-xs-0 pr-md-3 pr-lg-2"/>
         <AuthLink class="pr-1 authlink">
       </div>
     </div>
@@ -177,7 +177,7 @@ export default {
       right 0
 
 @media (max-width: $MQMobileNarrow)
-  .HeaderTitle
+  .headerTitle
     padding-bottom 2rem
   .title-menu
     display flex
@@ -185,8 +185,8 @@ export default {
     align-items flex-end
     justify-content flex-end
     position absolute
-    top 2.5rem
-    right 2rem
+    top 2.25rem
+    right 0
   .authlink
     padding 0
   .search-box
