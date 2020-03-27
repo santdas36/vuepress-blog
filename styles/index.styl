@@ -52,7 +52,15 @@ body {
   box-sizing: border-box;
   border-bottom: 1px solid $borderColor;
 }
-
+.social-share-btn {
+  width: 40px;
+  height: 40px;
+  font-size: 28px;
+  margin: 0 7px;
+  color: lighten($accentColor, 50%);
+  &:hover
+    color: lighten($accentColor, 25%);
+}
 .sidebar-mask {
   position: fixed;
   z-index: 9;

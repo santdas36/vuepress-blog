@@ -25,7 +25,7 @@ export default {
 
 <style lang="stylus">
 div.post-info-item {
-  margin-right: 1rem;
+  margin: 0.5rem;
   font-size: .8rem;
 
   svg {
