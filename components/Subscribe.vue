@@ -35,17 +35,19 @@ export default {
 	methods: {
 		submitForm(formName) {
                this.loading = true;
+               this.type = 'primary';
                this.SubscribeText = 'Loading...';
 			this.$refs[formName].validate(valid => {
 				if (valid) {
-					subscribeToMailchimp(this.mail).then(res => {
+					subscribeToMailchimp(subscribe.email, { LNAME: subscribe.email }).then(res => {
                            this.loading = false;
                            this.SubscribeText = 'Done';
                            this.type = 'success';
-                           this.$message({ message: 'Congrats! Your subscription is now active. Check your mail for confirmation.', type: 'success' });
+                           this.$message({ message: 'Congrats! Your subscription is now active.', type: 'success' });
                          });
 				} else {
-					this.loading = false
+					this.loading = false;
+					this.type = 'warning';
 				}
 			});
 		}
