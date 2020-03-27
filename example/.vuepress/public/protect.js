@@ -9,6 +9,13 @@ $(document).ready(function () {
 var stickyOffset = $('.sticky').offset().top;
 var paddingHeight = $('.sticky').outerHeight();
 
+$(window).on('load', function() {
+  $('#loader').fade(500);
+  setTimeout( function() {
+    $('.preload-container').fade(500);
+  }, 500);
+});
+
 $(window).on('scroll',function(){
   var sticky = $('.sticky'),
       scroll = $(window).scrollTop();
