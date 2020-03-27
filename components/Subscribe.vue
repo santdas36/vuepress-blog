@@ -43,7 +43,7 @@ export default {
                            this.loading = false;
                            this.SubscribeText = 'Error';
                            this.type = 'warning';
-                           this.$message({ message: err, type: 'warning' }).then(res => {
+                           this.$message({ message: err, type: 'warning' }); }).then(res => {
                            this.loading = false;
                            this.SubscribeText = 'Done';
                            this.type = 'success';
