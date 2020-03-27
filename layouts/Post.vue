@@ -13,6 +13,7 @@
         :timeToRead="$page.readingTime.text"
         class="text-secondary d-flex justify-content-center my-3"
       />
+      <social-share class="d-flex justify-content-center my-3" />
       </div>
       <div class="d-flex justify-content-center mb-4">
         <router-link
