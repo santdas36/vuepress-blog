@@ -8,13 +8,13 @@
   <el-form-item
     prop="email"
     :rules="[
-      { required: true, message: 'Please enter your email address', trigger: 'blur' }
+      { required: true, type: 'email', message: 'Please check again...', trigger: 'blur' }
     ]"
   >
-    <el-input v-model="subscribe.email" type="email" placeholder="Email"></el-input>
+    <el-input v-model="subscribe.email" placeholder="Email"></el-input>
   </el-form-item>
   <el-form-item>
-    <el-button size="small" :loading="loading" :type="type" @click="submitForm('subscribe')">{{ subscribeText }}</el-button>
+    <el-button size="small" :loading="loading" :type="type" @click="submitForm('subscribe')">{{ SubscribeText }}</el-button>
   </el-form-item>
 </el-form>
 </div>
@@ -26,21 +26,23 @@ export default {
 		return {
                loading: false,
                type: "primary",
-			subscribe: {email: ''},
-			subscribeText: "Subscribe",
+			subscribe: {
+				email: ""
+			},
+               SubscribeText: 'Subscribe',
 		};
 	},
 	methods: {
 		submitForm(formName) {
                this.loading = true;
-               this.subscribeText = "Loading";
+               this.SubscribeText = 'Loading...';
 			this.$refs[formName].validate(valid => {
 				if (valid) {
-					subscribeToMailchimp(this.email).then(res => {
+					subscribeToMailchimp(this.mail).then(res => {
                            this.loading = false;
+                           this.SubscribeText = 'Done';
                            this.type = 'success';
-                           this.subscribeText = 'Done';
-                           this.$message({ message: 'Congrats. Your subscription is now active.', type: 'success' });
+                           this.$message({ message: 'Congrats. You subscription is now active.', type: 'success' });
                          });
 				} else {
 					this.loading = false
