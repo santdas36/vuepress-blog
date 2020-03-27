@@ -39,7 +39,11 @@ export default {
                this.SubscribeText = 'Loading...';
 			this.$refs[formName].validate(valid => {
 				if (valid) {
-					subscribeToMailchimp(this.subscribe.email).then(res => {
+					subscribeToMailchimp(this.subscribe.email).catch(err => {
+                           this.loading = false;
+                           this.SubscribeText = 'Error';
+                           this.type = 'warning';
+                           this.$message({ message: err, type: 'warning' }).then(res => {
                            this.loading = false;
                            this.SubscribeText = 'Done';
                            this.type = 'success';
