@@ -42,7 +42,7 @@ export default {
                            this.loading = false;
                            this.SubscribeText = 'Done';
                            this.type = 'success';
-                           this.$message({ message: 'Congrats. You subscription is now active.', type: 'success' });
+                           this.$message({ message: 'Congrats! Your subscription is now active. Check your mail for confirmation.', type: 'success' });
                          });
 				} else {
 					this.loading = false
