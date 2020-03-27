@@ -6,12 +6,12 @@
 	class="subscription-form"
 >
   <el-form-item
-    prop="mail"
+    prop="email"
     :rules="[
-      { required: true, message: 'Please enter your email address', trigger: 'change' }
+      { required: true, message: 'Please enter your email address', trigger: 'blur' }
     ]"
   >
-    <el-input v-model="smail" type="email" placeholder="Email"></el-input>
+    <el-input v-model="subscribe.email" type="email" placeholder="Email"></el-input>
   </el-form-item>
   <el-form-item>
     <el-button size="small" :loading="loading" :type="type" @click="submitForm('subscribe')">{{ subscribeText }}</el-button>
@@ -26,7 +26,7 @@ export default {
 		return {
                loading: false,
                type: "primary",
-			smail: '',
+			subscribe: {email: ''},
 			subscribeText: "Subscribe",
 		};
 	},
@@ -36,7 +36,7 @@ export default {
                this.subscribeText = "Loading";
 			this.$refs[formName].validate(valid => {
 				if (valid) {
-					subscribeToMailchimp(this.smail).then(res => {
+					subscribeToMailchimp(this.email).then(res => {
                            this.loading = false;
                            this.type = 'success';
                            this.subscribeText = 'Done';
