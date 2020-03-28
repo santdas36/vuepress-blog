@@ -12,14 +12,12 @@ $(document).ready(function () {
     $('body').bind('cut copy', function (e) {
         e.preventDefault();
     });
- 
-var stickyOffset = $('.sticky').offset().top;
-var paddingHeight = $('.sticky').outerHeight();
 
-$(window).on('scroll',function(){
+$(window).on('scroll, resize',function(){
   var sticky = $('.sticky'),
-      scroll = $(window).scrollTop();
-    
+         scroll = $(window).scrollTop();
+    var stickyOffset = $('.sticky').offset().top;
+    var paddingHeight = $('.sticky').outerHeight();
   if (scroll >= stickyOffset) {
     $('#header').addClass('navFixed').css('padding-bottom', paddingHeight+'px');
   }
