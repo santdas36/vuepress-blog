@@ -13,17 +13,13 @@ $(document).ready(function () {
         e.preventDefault();
     });
 
-var stickyOffset = $('.sticky').offset().top;
+var stickyOffset = $('.sticky').offset().top + 50;
 var paddingHeight = $('.sticky').outerHeight();
 
 $(window).on('scroll',function(){
 var scroll = $(window).scrollTop();
   if (scroll >= stickyOffset) {
     $('#header').addClass('navFixed').css('padding-bottom', paddingHeight+'px');
-    $('.sticky').hide();
-    setTimeout( function() {
-      $('.sticky').slideDown(300);
-    }, 100);
   }
   else $('#header').removeClass('navFixed').css('padding-bottom', '0');
 });
