@@ -97,12 +97,7 @@ export default {
   left: 0;
   width: 100vw;
   z-index: 99;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  animation: navBarAnim 0.3s 1 ease-in forwards;
-}
-@keyframes navBarAnim {
-  from { transform: translateY(-100%); }
-  to { transform: translateY(0%); }
+  box-shadow: 0 0 1rem rgba(0,0,0,0.15);
 }
 .search-box
   display inline-block
