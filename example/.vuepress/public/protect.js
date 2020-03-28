@@ -22,11 +22,7 @@ var scroll = $(window).scrollTop();
     $('#header').addClass('navFixed').css('padding-bottom', paddingHeight+'px');
   }
   else {
-    $('.sticky').slideUp(300);
-    setTimeout( function() {
-      $('#header').removeClass('navFixed').css('padding-bottom', '0');
-      $('.sticky').show();
-    }, 301);
+    $('#header').removeClass('navFixed').css('padding-bottom', '0');
   }
 });
 
