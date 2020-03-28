@@ -1,10 +1,10 @@
 <template>
+<div class="d-flex align-items-center justify-content-center">
   <div class="featured-posts">
     <el-carousel
       :interval="4000"
       type="card"
       height="300px"
-      class="d-flex align-items-center justify-content-center"
     >
       <el-carousel-item
         v-for="post in posts"
@@ -23,6 +23,7 @@
       </el-carousel-item>
     </el-carousel>
   </div>
+</div>
 </template>
 
 <script>
@@ -39,9 +40,7 @@ export default {
 <style lang="stylus" scoped>
 .featured-posts {
   margin-top: 2rem;
-}
-.el-carousel {
-max-width: 960px;
+  max-width: 960px;
 }
 .el-carousel__item {
   box-shadow: 0 0.25rem 1rem rgba(0,0,0,0.2);
