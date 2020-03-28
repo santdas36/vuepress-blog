@@ -28,7 +28,8 @@
   width: calc(100% - 2rem);
   margin: 1rem;
   z-index: 2;
-  border: none;
+  border: none !important;
+  overflow: hidden;
 
   @media (min-width: $MQMobileNarrow) {
     width: calc(50% - 2rem);
