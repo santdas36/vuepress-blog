@@ -2,7 +2,7 @@
 <div class="featured-posts-container">
   <div class="featured-posts">
     <el-carousel
-      :interval="4000"
+      :interval="5000"
       type="card"
       height="300px"
     >
@@ -79,7 +79,7 @@ filter: grayscale(50%) brightness(50%);
 transition: filter 0.3s;
 }
 .el-carousel__item.is-active .carousel-card-bg {
-animation: bg-slide 3.5s 1 ease forwards;
+animation: bg-slide 4s 1 ease forwards;
 filter: grayscale(0%) brightness(100%)
 }
 @keyframes bg-slide {
