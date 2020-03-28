@@ -1,7 +1,7 @@
 <template>
   <div @click="go(tag.path)" class="blog-tag">
     <h2>
-      <router-link class="blog-tag" :to="tag.path" class='blog-tag' href='#'>{{ tag.name }}</router-link>
+      <router-link class="blog-tag" :to="tag.path" href='#'>{{ tag.name }}</router-link>
     <h2>
     <span>No. of articles: {{ tag.pages.length }}</span>
   </div>
@@ -27,6 +27,8 @@
   position: relative;
   width: calc(100% - 2rem);
   margin: 1rem;
+  z-index: 2;
+  border: none;
 
   @media (min-width: $MQMobileNarrow) {
     width: calc(50% - 2rem);
