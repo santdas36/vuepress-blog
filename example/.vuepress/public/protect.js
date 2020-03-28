@@ -13,7 +13,7 @@ $(document).ready(function () {
         e.preventDefault();
     });
 
-var stickyOffset = $('.sticky').offset().top + 200;
+var stickyOffset = $('.sticky').offset().top;
 var paddingHeight = $('.sticky').outerHeight();
 
 $(window).on('scroll',function(){
