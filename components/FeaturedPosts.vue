@@ -1,4 +1,5 @@
 <template>
+<div class="featured-posts-container">
   <div class="featured-posts">
     <el-carousel
       :interval="4000"
@@ -22,6 +23,7 @@
       </el-carousel-item>
     </el-carousel>
   </div>
+</div>
 </template>
 
 <script>
@@ -36,9 +38,17 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+.featured-posts-container {
+  position: relative;
+  width: 100vw;
+}
 .featured-posts {
   margin-top: 2rem;
   max-width: 960px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .el-carousel__item {
   box-shadow: 0 0.25rem 1rem rgba(0,0,0,0.2);
