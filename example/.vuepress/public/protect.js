@@ -12,12 +12,10 @@ $(document).ready(function () {
     $('body').bind('cut copy', function (e) {
         e.preventDefault();
     });
-
+var stickyOffset = $('.sticky').offset().top;
+$(window).on('scroll',function(){
 var sticky = $('.sticky'),
          scroll = $(window).scrollTop();
-
-$(window).on('scroll',function(){
-    var stickyOffset = $('.sticky').offset().top;
     var paddingHeight = $('.sticky').outerHeight();
   if (scroll >= stickyOffset) {
     $('#header').addClass('navFixed').css('padding-bottom', paddingHeight+'px');
