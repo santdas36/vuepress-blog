@@ -87,7 +87,7 @@ filter: grayscale(0%) brightness(100%)
     transform: translate(0, 0);
   }
   to{
-    transform: translate(-25px, -25px);
+    transform: translate(-10%, -10%);
   }
 }
 </style>
