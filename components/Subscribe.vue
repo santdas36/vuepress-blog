@@ -54,7 +54,7 @@ export default {
 					this.loading = false;
 					this.type = 'warning';
                          this.SubscribeText = 'Subscribe';
-                         setTimeout(()=>{ this.type = 'primary; this.SubscribeText = 'Subscribe' }, 2000);
+                         setTimeout(()=>{ this.type = 'primary'; this.SubscribeText = 'Subscribe' }, 2000);
 				}
 			});
 		}
