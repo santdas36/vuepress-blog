@@ -12,6 +12,6 @@ export default {
 
 <style lang="stylus">
 .blog-tag-container {
-  max-width: 900px;
+  max-width: 960px;
 }
 </style>

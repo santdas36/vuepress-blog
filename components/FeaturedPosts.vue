@@ -1,5 +1,5 @@
 <template>
-  <div class="featured-posts">
+  <div class="featured-posts d-flex justify-content-center">
     <el-carousel
       :interval="4000"
       type="card"
@@ -39,6 +39,9 @@ export default {
 .featured-posts {
   margin-top: 2rem;
 }
+.el-carousel {
+max-width: 960px;
+}
 .el-carousel__item {
   box-shadow: 0 0.25rem 1rem rgba(0,0,0,0.2);
   border-radius: 10px;
@@ -46,6 +49,7 @@ export default {
 .carousel-card-content {
 position: relative;
 z-index: 33;
+text-shadow: 2px 2px 3px rgba(0,0,0,0.15);
 }
 .el-carousel__mask {
 display: none;
