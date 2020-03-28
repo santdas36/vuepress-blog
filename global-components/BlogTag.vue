@@ -57,6 +57,7 @@
     top: 120%;
     font-weight: 400;
     font-family: 'Open Sans';
+    text-transform: initial;
   }
 }
 .blog-tag:hover {
