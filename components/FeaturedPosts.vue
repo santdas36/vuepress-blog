@@ -36,7 +36,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.el-carousel {
+.featured-posts {
   margin-top: 2rem;
   width: 100vw;
   display: flex;
