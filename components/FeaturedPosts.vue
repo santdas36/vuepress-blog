@@ -1,5 +1,4 @@
 <template>
-<div class="row d-flex align-items-center justify-content-center">
   <div class="featured-posts">
     <el-carousel
       :interval="4000"
@@ -23,7 +22,6 @@
       </el-carousel-item>
     </el-carousel>
   </div>
-</div>
 </template>
 
 <script>
@@ -40,6 +38,12 @@ export default {
 <style lang="stylus" scoped>
 .featured-posts {
   margin-top: 2rem;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.el-carousel {
   max-width: 960px;
 }
 .el-carousel__item {
