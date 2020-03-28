@@ -1,5 +1,5 @@
 <template>
-<div class="d-flex align-items-center justify-content-center">
+<div class="row d-flex align-items-center justify-content-center">
   <div class="featured-posts">
     <el-carousel
       :interval="4000"
