@@ -1,44 +1,71 @@
 <template>
-  <router-link class="blog-tag" :to="tag.path">
-    {{ tag.name }} ({{ tag.pages.length }})
-  </router-link>
+  <div @click="go(tag.path)" class="blog-tag">
+    <h2>
+      <router-link class="blog-tag" :to="tag.path" class='blog-tag' href='#'>{{ tag.name }}</router-link>
+    <h2>
+    <span>No. of articles: {{ tag.pages.length }}</span>
+  </div>
 </template>
 
 <script>
   export default {
     props: ['tag'],
+    methods: {
+      go (path) {
+        this.$router.push(path)
+      }
+    },
   }
 </script>
 
 <style lang="stylus">
-  .blog-tag
-    display inline-flex
-    align-items center
-    height 45px
-    word-break break-word
-    font-size 20px
-    margin-right 20px
-    margin-bottom 20px
-    padding 0 15px
-    border-radius 5px
-    font-weight: 300
-    text-align left
-    box-sizing border-box
-    transition: background-color .3s
-    color #222
-    border 1px solid #222
-    text-decoration none
-    transition all .5s
+.blog-tag {
+  height: 250px;
+  background: linear-gradient(135deg, #00d2ff 0%, #3a47d5 100%);
+  border-radius: 10px;
+  transition: all 0.3s;
+  position: relative;
+  width: calc(100% - 2rem);
+  margin: 1rem;
 
-    &:hover
-      color: $accentColor !important
-      border 1px solid $accentColor
-      box-shadow 0 0 5px $accentColor
+  @media (min-width: $MQMobileNarrow) {
+    width: calc(50% - 2rem);
+  }
+  @media (min-width: $MQMobile) {
+    width: calc(33% - 2rem);
+  }
+  span, a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .3s;
+    width: 100%;
+    text-align: center;
+    display:block;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.15);
+  }
+  span {
+    font-size: 1rem;
+    top: 120%;
+    font-weight: 400;
+  }
+}
+.blog-tag:hover {
+  background: linear-gradient(135deg, #4b6cb7 0%, #182848 100%);
+  box-shadow: 0 5px 1rem 5px rgba(0,0,0,0.25);
+  transform: scale(1.1);
 
-  @media screen and (max-width: 768px)
-    .blog-tag
-      font-size 14px
-      padding 3px 10px
-      margin-right 10px
-      margin-bottom 10px
+  span {
+    top: 60%;
+  }
+  a {
+    top: 40%;
+    font-size: 1.5rem;
+  }
+}
 </style>
