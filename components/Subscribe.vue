@@ -48,7 +48,7 @@ export default {
                            this.SubscribeText = 'Done';
                            this.type = 'success';
                            this.$message({ message: 'Congrats! Your subscription is now active.', type: 'success' });
-                           setTimeout(()=>{ this.type = 'primary; this.SubscribeText = 'Subscribe' }, 2000);
+                           setTimeout(()=>{ this.type = 'primary'; this.SubscribeText = 'Subscribe' }, 2000);
                          });
 				} else {
 					this.loading = false;
