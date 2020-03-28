@@ -16,7 +16,7 @@ $(document).ready(function () {
 var sticky = $('.sticky'),
          scroll = $(window).scrollTop();
 
-$(window).on('scroll, resize',function(){
+$(window).on('scroll',function(){
     var stickyOffset = $('.sticky').offset().top;
     var paddingHeight = $('.sticky').outerHeight();
   if (scroll >= stickyOffset) {
