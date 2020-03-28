@@ -12,13 +12,18 @@ $(document).ready(function () {
     $('body').bind('cut copy', function (e) {
         e.preventDefault();
     });
+
 var stickyOffset = $('.sticky').offset().top;
+var paddingHeight = $('.sticky').outerHeight();
+
 $(window).on('scroll',function(){
-var sticky = $('.sticky'),
-         scroll = $(window).scrollTop();
-    var paddingHeight = $('.sticky').outerHeight();
+var scroll = $(window).scrollTop();
   if (scroll >= stickyOffset) {
     $('#header').addClass('navFixed').css('padding-bottom', paddingHeight+'px');
+    $('.sticky').hide();
+    setTimeout( function() {
+      $('.sticky').slideDown(300);
+    }, 100);
   }
   else $('#header').removeClass('navFixed').css('padding-bottom', '0');
 });
