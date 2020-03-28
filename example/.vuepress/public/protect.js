@@ -13,7 +13,7 @@ $(document).ready(function () {
         e.preventDefault();
     });
 
-var stickyOffset = $('.sticky').offset().top;
+var stickyOffset = $('.sticky').offset().top + 200;
 var paddingHeight = $('.sticky').outerHeight();
 
 $(window).on('scroll',function(){
@@ -21,7 +21,13 @@ var scroll = $(window).scrollTop();
   if (scroll >= stickyOffset) {
     $('#header').addClass('navFixed').css('padding-bottom', paddingHeight+'px');
   }
-  else $('#header').removeClass('navFixed').css('padding-bottom', '0');
+  else {
+    $('.sticky').slideUp(300);
+    setTimeout( function() {
+      $('#header').removeClass('navFixed').css('padding-bottom', '0');
+      $('.sticky').show();
+    }, 301);
+  }
 });
 
 });
