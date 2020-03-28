@@ -1,9 +1,10 @@
 <template>
-  <div class="featured-posts d-flex align-items-center justify-content-center">
+  <div class="featured-posts">
     <el-carousel
       :interval="4000"
       type="card"
       height="300px"
+      class="d-flex align-items-center justify-content-center"
     >
       <el-carousel-item
         v-for="post in posts"
