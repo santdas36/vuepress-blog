@@ -1,7 +1,7 @@
 <template>
   <div @click="go(tag.path)" class="blog-tag">
     <h2>
-      <router-link class="blog-tag" :to="tag.path" href='#'>{{ tag.name }}</router-link>
+      <router-link :to="tag.path" href='#'>{{ tag.name }}</router-link>
     <h2>
     <span>No. of articles: {{ tag.pages.length }}</span>
   </div>
