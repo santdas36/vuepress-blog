@@ -41,10 +41,12 @@ export default {
 .featured-posts-container {
   position: relative;
   width: 100vw;
+  height: 400px;
 }
 .featured-posts {
   margin-top: 2rem;
   max-width: 960px;
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
