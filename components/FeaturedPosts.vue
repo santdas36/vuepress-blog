@@ -40,8 +40,9 @@ export default {
 <style lang="stylus" scoped>
 .featured-posts-container {
   position: relative;
-  width: 100vw;
+  width: calc(100vw - 3rem);
   height: 400px;
+  margin: 0 1.5rem 3rem 1.5rem ;
 }
 .featured-posts {
   margin-top: 2rem;
@@ -51,9 +52,6 @@ export default {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-.el-carousel {
-  padding: 1rem;
 }
 .el-carousel__item {
   box-shadow: 0 0.25rem 1rem rgba(0,0,0,0.2);
