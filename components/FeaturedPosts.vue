@@ -52,6 +52,9 @@ export default {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.el-carousel {
+  padding: 1rem;
+}
 .el-carousel__item {
   box-shadow: 0 0.25rem 1rem rgba(0,0,0,0.2);
   border-radius: 10px;
