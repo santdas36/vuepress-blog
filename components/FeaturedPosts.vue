@@ -36,14 +36,14 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.featured-posts {
+.el-carousel {
   margin-top: 2rem;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.el-carousel {
+.el-carousel__container {
   max-width: 960px;
 }
 .el-carousel__item {
