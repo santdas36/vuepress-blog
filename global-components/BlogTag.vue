@@ -33,17 +33,9 @@
 
   @media (min-width: $MQMobileNarrow) {
     width: calc(50% - 2rem);
-
-    a {
-      font-size: 1.75rem;
-    }
   }
   @media (min-width: $MQMobile) {
     width: calc(33% - 2rem);
-
-    a {
-      font-size: 2.25rem;
-    }
   }
   span, a {
     text-decoration: none;
