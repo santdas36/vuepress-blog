@@ -54,8 +54,10 @@ export default {
   transform: translate(-50%, -50%);
 }
 .el-carousel__item {
-  box-shadow: 0 0.25rem 1rem rgba(0,0,0,0.2);
   border-radius: 10px;
+  &.is-active {
+    box-shadow: 0 0.25rem 1rem 2px rgba(0,0,0,0.2);
+  }
 }
 .carousel-card-content {
 position: relative;
