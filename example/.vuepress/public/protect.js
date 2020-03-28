@@ -13,9 +13,10 @@ $(document).ready(function () {
         e.preventDefault();
     });
 
-$(window).on('scroll, resize',function(){
-  var sticky = $('.sticky'),
+var sticky = $('.sticky'),
          scroll = $(window).scrollTop();
+
+$(window).on('scroll, resize',function(){
     var stickyOffset = $('.sticky').offset().top;
     var paddingHeight = $('.sticky').outerHeight();
   if (scroll >= stickyOffset) {
