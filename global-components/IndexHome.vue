@@ -65,9 +65,9 @@ export default {
 header.home-hero {
   height: calc(100vh - 10rem);
   background-size: cover;
-  background-color: #eee;
+  background-color: #fff;
   background-attachment: fixed;
-  background-position: center;
+  background-position: 50% 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
