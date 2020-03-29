@@ -64,7 +64,8 @@ export default {
 }
 header.home-hero {
   height: calc(100vh - 10rem);
-  background-size: cover;
+  min-height: 800px;
+  background-size: 100%;
   background-color: #fff;
   background-attachment: fixed;
   background-position: 50% 100%;
