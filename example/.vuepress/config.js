@@ -70,7 +70,7 @@ module.exports = {
       },
       {
         text: "Contact",
-        link: "/contact/",
+        link: "/contact.html",
         icon: "el-icon-user"
       }
     ],
