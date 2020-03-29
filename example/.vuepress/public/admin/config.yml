@@ -4,6 +4,8 @@ backend:
 
 publish_mode: editorial_workflow
 
+site_url: https://stoic-gates-d38a79.netlify.com
+
 media_folder: "/example/.vuepress/public/images"
 
 collections:
