@@ -6,8 +6,6 @@ publish_mode: editorial_workflow
 
 media_folder: "/example/.vuepress/public/images"
 
-public_folder: "/example/.vuepress/public/images"
-
 collections:
   - name: "post"
     label: "Blog"
