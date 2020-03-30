@@ -48,7 +48,7 @@ module.exports = {
   ],
   pwa: true,
   title: "Site Name",
-  description: "Site Description goes here",
+  description: "Saque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas",
   theme: require.resolve("../../"),
   themeConfig: {
     summary: true,

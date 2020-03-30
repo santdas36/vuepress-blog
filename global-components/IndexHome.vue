@@ -64,13 +64,10 @@ export default {
 }
 header.home-hero {
   height: calc(100vh - 10rem);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: norepeat;
   background-color: #fff;
-  background-attachment: fixed;
-  background-position: 50% 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  background-position: 100% 100%;
 
   @media (max-width: $MQMobileNarrow) {
     height: 100%;
