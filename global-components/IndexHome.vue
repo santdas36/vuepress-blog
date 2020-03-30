@@ -1,10 +1,11 @@
 <template>
   <div id="base-list-layout">
     <header
-      class="home-hero"
+      class="home-hero p-3"
       :style="{backgroundImage: 'url(' + $themeConfig.heroImage + ')'}"
     >
-      <h2>{{ $site.description }}</h2>
+      <img class="w-100 p-3 d-md-none :src="$themeConfig.heroImage" />
+      <h2 class="col-12 col-md-10 col-lg-8 py-5 px-3 px-lg-5">{{ $site.description }}</h2>
       <el-button type="primary" :to="/post/">Get Started</el-button>
     </header>
     <featured-posts class="d-none d-md-block"></featured-posts>
@@ -67,11 +68,9 @@ header.home-hero {
   background-size: cover;
   background-color: #fff;
   background-position: 100% 100%;
-  padding: 1.5rem;
 
   @media (max-width: $MQMobileNarrow) {
     height: 100%;
-    padding: 2rem;
     baclground-image: none;
     background: #fff;
   }
@@ -81,7 +80,7 @@ header.home-hero {
     max-width: 720px;
     width: 100%;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-shadow: none;
   }
 }
