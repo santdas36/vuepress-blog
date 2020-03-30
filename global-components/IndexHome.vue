@@ -81,6 +81,7 @@ header.home-hero {
     max-width: 720px;
     width: 100%;
     font-weight: 500;
+    font-size: 1.2rem;
     text-shadow: none;
   }
 }

@@ -96,38 +96,6 @@ export default {
     padding-bottom: 80px;
   }
 }
-header.home-hero {
-  height: 420px;
-  background-size: cover;
-  background-color: #eee;
-  background-attachment: fixed;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  h1 {
-    color: white;
-    margin: 0;
-    font-size: 4em;
-    text-align: center;
-    text-shadow: 3px 3px 4px rgba(0,0,0,0.25);
-
-    @media (max-width: 600px) {
-      font-size: 2em;
-    }
-  }
-
-  h2 {
-    color: darken(white, 9%);
-    margin-top: 0;
-    max-width: 600px;
-    margin-right: auto;
-    margin-left: auto;
-    font-weight: 300;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.25);
-  }
-}
 </style>
 
 
