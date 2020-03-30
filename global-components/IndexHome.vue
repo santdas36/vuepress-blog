@@ -4,7 +4,6 @@
       class="home-hero"
       :style="{backgroundImage: 'url(' + $themeConfig.heroImage + ')'}"
     >
-      <h1 class="font-dancing">{{ $site.title }}</h1>
       <h2>{{ $site.description }}</h2>
     </header>
     <featured-posts class="d-none d-md-block"></featured-posts>
@@ -70,7 +69,7 @@ header.home-hero {
   background-position: 50% 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 
   @media (max-width: $MQMobileNarrow) {
     height: 100%;
@@ -79,26 +78,12 @@ header.home-hero {
     background: #fff;
   }
 
-  h1 {
-    color: white;
-    margin: 0;
-    font-size: 4em;
-    text-align: center;
-    text-shadow: 3px 3px 4px rgba(0,0,0,0.25);
-
-    @media (max-width: 600px) {
-      font-size: 2em;
-    }
-  }
-
   h2 {
-    color: darken(white, 9%);
-    margin-top: 0;
-    max-width: 600px;
-    margin-right: auto;
-    margin-left: auto;
-    font-weight: 300;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.25);
+    color: $accentColor;
+    margin: 2rem 0 1rem 1rem;
+    max-width: 60%;
+    width: 100%;
+    font-weight: 500;
   }
 }
 </style>
