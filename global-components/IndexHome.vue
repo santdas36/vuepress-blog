@@ -5,6 +5,7 @@
       :style="{backgroundImage: 'url(' + $themeConfig.heroImage + ')'}"
     >
       <h2>{{ $site.description }}</h2>
+      <el-button type="primary">Get Started</el-button>
     </header>
     <featured-posts class="d-none d-md-block"></featured-posts>
     <div class="row container-fluid m-0 p-3">
@@ -80,10 +81,11 @@ header.home-hero {
 
   h2 {
     color: $accentColor;
-    margin: 2rem 0 1rem 1rem;
+    margin: 3.5rem 0 1rem 3.5rem;
     max-width: 60%;
     width: 100%;
     font-weight: 500;
+    text-shadow: none;
   }
 }
 </style>
