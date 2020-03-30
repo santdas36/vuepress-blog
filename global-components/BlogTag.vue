@@ -58,6 +58,7 @@
     font-weight: 400;
     font-family: 'Open Sans';
     text-transform: initial;
+    opacity: 0;
   }
 }
 .blog-tag:hover {
@@ -67,6 +68,7 @@
 
   span {
     top: 60%;
+    opacity: 1;
   }
   a {
     top: 40%;

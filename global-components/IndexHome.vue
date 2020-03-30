@@ -72,6 +72,13 @@ header.home-hero {
   flex-direction: column;
   justify-content: center;
 
+  @media (max-width: $MQMobileNarrow) {
+    height: 100%;
+    padding: 2rem;
+    baclground-image: none;
+    background: #fff;
+  }
+
   h1 {
     color: white;
     margin: 0;
