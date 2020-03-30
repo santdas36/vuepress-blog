@@ -5,7 +5,7 @@
       :style="{backgroundImage: 'url(' + $themeConfig.heroImage + ')'}"
     >
       <h2>{{ $site.description }}</h2>
-      <el-button type="primary">Get Started</el-button>
+      <el-button type="primary" :to="/post/">Get Started</el-button>
     </header>
     <featured-posts class="d-none d-md-block"></featured-posts>
     <div class="row container-fluid m-0 p-3">
@@ -64,10 +64,10 @@ export default {
 }
 header.home-hero {
   height: calc(100vh - 10rem);
-  background-size: contain;
-  background-repeat: norepeat;
+  background-size: cover;
   background-color: #fff;
   background-position: 100% 100%;
+  padding: 1.5rem;
 
   @media (max-width: $MQMobileNarrow) {
     height: 100%;
@@ -78,8 +78,7 @@ header.home-hero {
 
   h2 {
     color: $accentColor;
-    margin: 3.5rem 0 1rem 3.5rem;
-    max-width: 60%;
+    max-width: 720px;
     width: 100%;
     font-weight: 500;
     text-shadow: none;
