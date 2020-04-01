@@ -1,17 +1,17 @@
 <template>
   <div id="base-list-layout">
     <div class="home-hero">
-      <div class="header-div  pt-3 pt-lg-5 px-3 px-lg-5">
-        <h2>{{ $site.description }}</h2>
-        <div class="buttons pt-2">
+      <div class="header-div pt-3 pt-lg-5 px-3 px-lg-5">
+        <h2 class="p-3">{{ $site.description }}</h2>
+        <div class="buttons p-3">
           <el-button type="primary" :to="/post/">Get Started</el-button>   
           <el-button :to="/post/">Know More</el-button>
         </div>
       </div>
     </div>
     <featured-posts class="d-none d-md-block"></featured-posts>
+    
     <div class="row container-fluid m-0 p-3">
-
     <div class="col-12 py-5 px-3 px-lg-5">
         <div class="about-section">
           <h1>{{ $themeConfig.about.fullName }}</h1>
