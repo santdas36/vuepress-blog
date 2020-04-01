@@ -1,7 +1,7 @@
 <template>
   <div id="base-list-layout">
-    <div class="home-hero pt-3 pt-lg-5 px-3 px-lg-5">
-      <div class="header-div">
+    <div class="home-hero">
+      <div class="header-div  pt-3 pt-lg-5 px-3 px-lg-5">
         <h2>{{ $site.description }}</h2>
         <div class="buttons pt-2">
           <el-button type="primary" :to="/post/">Get Started</el-button>   
@@ -74,9 +74,9 @@ export default {
   position: relative;
 
   @media (orientation: portrait) {
-    background-position: 100% 100%;
+    background-position: 50% 50%;
     background-image: url('/images/hero.png');
-    background-size: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
   }
 }
