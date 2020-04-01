@@ -86,11 +86,13 @@ export default {
   width: 100%;
   font-weight: 500;
   font-size: 1rem;
-  line-height: 1.5;
   position: absolute;
   top: 10rem;
   left: 0;
 
+  h2 {
+    line-height: 1.5;
+  }
   @media (min-width: $MQNarrow) {
     margin-left: 5rem;
   }
