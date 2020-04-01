@@ -1,12 +1,13 @@
 <template>
   <div id="base-list-layout">
-    <div class="header-div">
-      <h2 class="pt-3 pt-lg-5 px-3 px-lg-5">{{ $site.description }}</h2>
-      <el-button type="primary" :to="/post/">Get Started</el-button>
-    </div>
-    <div
-      class="home-hero"
-    >
+    <div class="home-hero pt-3 pt-lg-5 px-3 px-lg-5">
+      <div class="header-div">
+        <h2>{{ $site.description }}</h2>
+        <div class="buttons pt-2">
+          <el-button type="primary" :to="/post/">Get Started</el-button>   
+          <el-button :to="/post/">Know More</el-button>
+        </div>
+      </div>
     </div>
     <featured-posts class="d-none d-md-block"></featured-posts>
     <div class="row container-fluid m-0 p-3">
@@ -70,24 +71,26 @@ export default {
   background-image: url('/images/hero.png'), url('/images/bush.png');
   background-size: contain;
   background-repeat: no-repeat;
-}
+  position: relative;
+
   @media (orientation: portrait) {
-  header.home-hero{
-  background-position: 100% 100%;
-  background-image: url('/images/hero.png');
-  background-size: 100%;
-  background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-image: url('/images/hero.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
   }
 }
-  .header-div {
-    color: $accentColor;
-    margin: 2rem 3rem;
-    max-width: 600px;
-    width: calc(100% - 6rem);
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.5;
-  }
+.header-div {
+  color: $accentColor;
+  max-width: 600px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
 </style>
 
