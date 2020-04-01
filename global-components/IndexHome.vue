@@ -91,7 +91,7 @@ export default {
   top: 10rem;
   left: 0;
 
-  @media (orientation: portrait), (max-width: $MQMobile) {
+  @media (orientation: portrait) and (max-width: $MQMobile) , (max-width: $MQMobile) {
     position: relative;
     font-size: 0.8rem;
     top: 0;
