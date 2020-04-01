@@ -66,11 +66,17 @@ export default {
 .home-hero {
   height: calc(100vh - 10rem);
   width: 100vw;
-  background-color: #fff;
   background-position: 100% 100%, 0% 100%;
   background-image: url('/images/hero.png'), url('/images/bush.png');
   background-size: contain;
   background-repeat: no-repeat;
+
+  @media (min-height: 800px) {
+    background-position: 100% 100%, 0% 100%;
+    background-image: url('/images/hero.png'), url('/images/bush.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
 
   @media (orientation: portrait), (max-width: $MQMobile) {
     background-position: 50% 50%;
