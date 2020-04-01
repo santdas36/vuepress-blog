@@ -67,14 +67,14 @@ export default {
   height: calc(100vh - 10rem);
   background-color: #fff;
   background-position: 100% 100%, 0% 100%;
-  background-image: url('images/hero.png'), url('images/bush.png');
+  background-image: url('/images/hero.png'), url('/images/bush.png');
   background-size: contain;
   background-repeat: no-repeat;
 }
   @media (orientation: portrait) {
   header.home-hero{
   background-position: 100% 100%;
-  background-image: url('images/hero.png');
+  background-image: url('/images/hero.png');
   background-size: 100%;
   background-repeat: no-repeat;
   }
