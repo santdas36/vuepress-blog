@@ -1,7 +1,7 @@
 <template>
   <div id="base-list-layout">
     <div class="home-hero"></div>
-      <div class="header-div pt-3 pt-lg-5 px-3 px-lg-5 ml-lg-5">
+      <div class="header-div pt-3 pt-lg-5 px-3 px-lg-5">
         <h2 class="p-3">{{ $site.description }}</h2>
         <div class="buttons p-3">
           <el-button type="primary" :to="/post/">Get Started</el-button>   
@@ -82,7 +82,7 @@ export default {
 }
 .header-div {
   color: $accentColor;
-  max-width: 600px;
+  max-width: $MQMobile;
   width: 100%;
   font-weight: 500;
   font-size: 1rem;
@@ -90,6 +90,10 @@ export default {
   position: absolute;
   top: 10rem;
   left: 0;
+
+  @media (min-width: $MQNarrow) {
+    margin-left: 5rem;
+  }
 
   @media (orientation: portrait) and (max-width: $MQMobile) , (max-width: $MQMobile) {
     position: relative;
