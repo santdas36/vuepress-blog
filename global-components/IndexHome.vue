@@ -1,14 +1,13 @@
 <template>
   <div id="base-list-layout">
-    <div class="home-hero">
-      <div class="header-div pt-3 pt-lg-5 px-3 px-lg-5">
+    <div class="home-hero"></div>
+      <div class="header-div pt-3 pt-lg-5 px-3 px-lg-5 ml-lg-5">
         <h2 class="p-3">{{ $site.description }}</h2>
         <div class="buttons p-3">
           <el-button type="primary" :to="/post/">Get Started</el-button>   
           <el-button :to="/post/">Know More</el-button>
         </div>
       </div>
-    </div>
     <featured-posts class="d-none d-md-block"></featured-posts>
     
     <div class="row container-fluid m-0 p-3">
@@ -90,6 +89,15 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
+
+  @media (orientation: portrait) {
+    position: relative;
+    font-size: 0.8rem;
+    .el-button {
+      width: 100%;
+      margin: 1rem 0;
+    }
+  }
 }
 
 </style>
