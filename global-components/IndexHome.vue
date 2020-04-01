@@ -65,6 +65,7 @@ export default {
 }
 .home-hero {
   height: calc(100vh - 10rem);
+  width: 100vw;
   background-color: #fff;
   background-position: 100% 100%, 0% 100%;
   background-image: url('/images/hero.png'), url('/images/bush.png');
@@ -77,6 +78,7 @@ export default {
     background-image: url('/images/hero.png');
     background-size: contain;
     background-repeat: no-repeat;
+    height: 100vw;
   }
 }
 .header-div {
@@ -95,7 +97,7 @@ export default {
     font-size: 0.8rem;
     .el-button {
       width: 100%;
-      margin: 1rem 0;
+      margin: 0.5rem 0;
     }
   }
 }
