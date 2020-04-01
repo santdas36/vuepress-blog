@@ -71,7 +71,6 @@ export default {
   background-image: url('/images/hero.png'), url('/images/bush.png');
   background-size: contain;
   background-repeat: no-repeat;
-  position: relative;
 
   @media (orientation: portrait) {
     background-position: 50% 50%;
@@ -89,12 +88,13 @@ export default {
   font-size: 1rem;
   line-height: 1.5;
   position: absolute;
-  top: 0;
+  top: 10rem;
   left: 0;
 
   @media (orientation: portrait) {
     position: relative;
     font-size: 0.8rem;
+
     .el-button {
       width: 100%;
       margin: 0.5rem 0;
