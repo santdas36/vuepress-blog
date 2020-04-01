@@ -72,7 +72,7 @@ export default {
   background-size: contain;
   background-repeat: no-repeat;
 
-  @media (orientation: portrait) and (max-width: $MQMobile) {
+  @media (orientation: portrait), (max-width: $MQMobile) {
     background-position: 50% 50%;
     background-image: url('/images/hero.png');
     background-size: contain;
@@ -91,7 +91,7 @@ export default {
   top: 10rem;
   left: 0;
 
-  @media (orientation: portrait) and (max-width: $MQMobile) {
+  @media (orientation: portrait), (max-width: $MQMobile) {
     position: relative;
     font-size: 0.8rem;
     top: 0;
