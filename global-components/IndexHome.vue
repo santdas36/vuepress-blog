@@ -76,7 +76,7 @@ export default {
     background-image: url('/images/hero.png');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 83vw;
+    height: 75vw;
   }
 }
 .header-div {
