@@ -71,14 +71,14 @@ export default {
   background-size: contain;
   background-repeat: no-repeat;
 
-  @media (orientation: portrait), (max-width: $MQMobile) {
+  @media (orientation: portrait) and (max-width: $MQMobile), (max-width: $MQMobile) {
     background-position: 50% 50%;
     background-image: url('/images/hero.png');
     background-size: contain;
     background-repeat: no-repeat;
     height: 100vw;
   }
-  @media (min-width: $MQMobile) and  (min-height: 800px) {
+  @media only screen and (min-width: $MQMobile) and (min-height: 800px) {
     background-position: 100% 100%, 0% 100%;
     background-image: url('/images/hero.png'), url('/images/bush.png');
     background-size: auto !important;
