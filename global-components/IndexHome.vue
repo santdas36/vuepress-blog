@@ -4,7 +4,7 @@
       <div class="header-div pt-3 pt-lg-5 px-3 px-lg-5">
         <h2 class="p-3">{{ $site.description }}</h2>
         <div class="buttons p-3">
-          <el-button type="primary" :to="/post/">Get Started</el-button>   
+          <el-button type="primary" to="/post/">Get Started</el-button>   
           <el-button :to="/post/">Know More</el-button>
         </div>
       </div>
@@ -71,19 +71,18 @@ export default {
   background-size: contain;
   background-repeat: no-repeat;
 
-  @media (min-height: 800px) {
-    background-position: 100% 100%, 0% 100%;
-    background-image: url('/images/hero.png'), url('/images/bush.png');
-    background-size: auto;
-    background-repeat: no-repeat;
-  }
-
   @media (orientation: portrait), (max-width: $MQMobile) {
     background-position: 50% 50%;
     background-image: url('/images/hero.png');
     background-size: contain;
     background-repeat: no-repeat;
     height: 100vw;
+  }
+  @media (min-width: $MQMobile) and  (min-height: 800px) {
+    background-position: 100% 100%, 0% 100%;
+    background-image: url('/images/hero.png'), url('/images/bush.png');
+    background-size: auto !important;
+    background-repeat: no-repeat;
   }
 }
 .header-div {
