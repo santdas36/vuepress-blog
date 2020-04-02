@@ -53,9 +53,9 @@ import AuthLink from "./AuthLink.vue";
 
 export default {
   components: { SearchBox, AuthLink },
-  computed: {	
+  computed: {
     activeIndex () {
-      return this.$page.frontmatter.activeId || 0,
+      return this.$page.frontmatter.activeId
     }
   }
 };
