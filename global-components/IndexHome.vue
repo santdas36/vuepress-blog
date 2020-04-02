@@ -72,11 +72,11 @@ export default {
   background-repeat: no-repeat;
 
   @media (orientation: portrait) and (max-width: $MQMobile), (max-width: $MQMobile) {
-    background-position: 50% 50%;
+    background-position: 50% 100%;
     background-image: url('/images/hero.png');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 100vw;
+    height: 83vw;
   }
 }
 .header-div {
