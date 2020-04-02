@@ -78,12 +78,6 @@ export default {
     background-repeat: no-repeat;
     height: 100vw;
   }
-  @media only screen and (min-width: $MQMobile) and (min-height: 800px) {
-    background-position: 100% 100%, 0% 100%;
-    background-image: url('/images/hero.png'), url('/images/bush.png');
-    background-size: auto !important;
-    background-repeat: no-repeat;
-  }
 }
 .header-div {
   color: $accentColor;
@@ -99,7 +93,7 @@ export default {
     line-height: 1.5;
   }
   @media (min-width: $MQNarrow) {
-    margin-left: 5rem;
+    margin-left: $MQNarrow - $MQMobile;
   }
 
   @media (orientation: portrait) and (max-width: $MQMobile) , (max-width: $MQMobile) {
