@@ -8,7 +8,6 @@ title: Markdown Slot
 image: https://source.unsplash.com/random/800x600
 featured: true
 isArticle: true
-activeId: 2
 ---
 
 # Markdown Slot

@@ -88,18 +88,17 @@ export default {
   position: absolute;
   top: 10rem;
   left: 0;
+  margin-left: 15%;
 
   h2 {
     line-height: 1.5;
-  }
-  @media (min-width: $MQNarrow) {
-    margin-left: 15%;
   }
 
   @media (orientation: portrait) and (max-width: $MQMobile) , (max-width: $MQMobile) {
     position: relative;
     font-size: 0.8rem;
     top: 0;
+    margin-left: 0;
 
     .el-button {
       width: 100%;
