@@ -55,7 +55,7 @@ export default {
   components: { SearchBox, AuthLink },
   computed: {
     activeIndex () {
-      return this.$page.frontmatter.activeId
+      return '' + this.$page.frontmatter.activeId || '0'
     }
   }
 };
