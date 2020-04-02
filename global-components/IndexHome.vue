@@ -95,7 +95,7 @@ export default {
   @media (min-width: $MQNarrow) {
     margin-left: 20%;
   }
-  @media (min-width: $MQNarrow + $MQMobile) {
+  @media (min-width: $MQNarrow + $MQMobile + $MQMobileNarrow) {
     margin-left: $MQNarrow - $MQMobile;
   }
 
