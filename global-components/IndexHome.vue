@@ -93,10 +93,7 @@ export default {
     line-height: 1.5;
   }
   @media (min-width: $MQNarrow) {
-    margin-left: 20%;
-  }
-  @media (min-width: $MQNarrow + $MQMobile + $MQMobileNarrow) {
-    margin-left: $MQNarrow - $MQMobile;
+    margin-left: 15%;
   }
 
   @media (orientation: portrait) and (max-width: $MQMobile) , (max-width: $MQMobile) {
