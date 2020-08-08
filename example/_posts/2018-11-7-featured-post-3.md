@@ -1,11 +1,9 @@
 ---
-title: 'More the lore, lore the more.'
-date: 2020-03-28T12:25:44.621Z
+title: 'This is a Featured Post.'
+date: 2018-11-7
 tags:
-  - more
-  - lore
-  - science
-image: /example/.vuepress/public/images/aerial-background-blog-cafe.jpg
+  - physics
+image: https://source.unsplash.com/random/800x600
 author: Admin
 isArticle: true
 featured: true
